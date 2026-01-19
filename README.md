@@ -12,7 +12,7 @@ Performance issues are rarely caused by a single component or a single tool. The
 
 This repository was created with a clear intent:
 
-> **To promote a performance engineering mindset**, where observability and performance testing are not isolated activities, but complementary practices forming a continuous improvement loop.
+> **To promote a performance engineering mindset**, where observability, performance testing, data realism and system understanding are treated as a continuous discipline rather than isolated practices.
 
 Rather than a simple catalog, this project aims to:
 
@@ -152,5 +152,3 @@ You are free to use, share, and adapt it without restriction.
 ## 🙏 Acknowledgments
 
 Thanks to all contributors and reviewers who help keep these lists accurate, relevant, and valuable to the community.
-
-**Made with care by practitioners, for practitioners.**
