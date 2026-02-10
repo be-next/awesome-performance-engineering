@@ -22,7 +22,7 @@ Thanks for your interest in contributing! This project aims to maintain a high-q
 
 ### Suggesting a tool
 
-The easiest way to contribute is to [open an issue](../../issues/new/choose) using the **Tool Suggestion** template. This lets us discuss the tool before adding it.
+The easiest way to contribute is to [open an issue](https://github.com/be-next/awesome-performance-engineering/issues/new/choose) using the **Tool Suggestion** template. This lets us discuss the tool before adding it.
 
 ### Submitting a pull request
 

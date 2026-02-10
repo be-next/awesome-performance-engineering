@@ -1,0 +1,9 @@
+# Sites that block automated requests (WAF / bot protection)
+https://www.webpagetest.org/
+https://www.servicenow.com/
+
+# Temporarily unreachable
+https://academy.gatling.io/
+
+# Acquired company — site no longer maintained (expected failure)
+https://www.neosync.dev/

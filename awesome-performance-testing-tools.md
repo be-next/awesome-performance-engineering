@@ -71,7 +71,7 @@ Tools are organized by **functional category**, but real performance testing oft
 * **[Artillery](https://www.artillery.io/)** 🟢🔵🔗🧪 — Node.js-based load testing toolkit with YAML-based scenarios. Cloud-native, good Kubernetes support. Supports HTTP, WebSocket, Socket.io, and custom engines. [Node.js] [MPL-2.0] — [GitHub](https://github.com/artilleryio/artillery)
 * **[NBomber](https://nbomber.com/)** 🟢🔗🧪 — Load testing framework for .NET. C#/F# scripting with a focus on developer ergonomics. v5+ requires commercial license for organizational use (v4 remains Apache-2.0). [C#] [Commercial/Apache-2.0] — [GitHub](https://github.com/PragmaticFlow/NBomber)
 * **[Tsung](https://github.com/processone/tsung)** 🚀🧰 — Distributed, multi-protocol load testing tool built on Erlang. Handles massive concurrent connections efficiently. Supports HTTP, WebSocket, XMPP, LDAP, and database protocols. Low maintenance activity since 2023. [Erlang] [GPL-2.0]
-* **[GoReplay (gor)](https://goreplay.org/)** 🟢🚀 — Capture and replay production HTTP traffic for load testing and monitoring. Uses real traffic patterns for maximum realism. [Go] [LGPL-3.0] — [GitHub](https://github.com/buger/goreplay)
+* **[GoReplay (gor)](https://goreplay.org/)** 🟢🚀 — Capture and replay production HTTP traffic for load testing and monitoring. Uses real traffic patterns for maximum realism. [Go] [LGPL-3.0] — [GitHub](https://github.com/probelabs/goreplay)
 * **[Anteon (formerly Ddosify)](https://getanteon.com/)** 🔵🧪 — eBPF-based Kubernetes monitoring and performance testing platform with distributed load generation and visual UI. Reduced development activity since mid-2024. [Go] [AGPL-3.0] — [GitHub](https://github.com/getanteon/anteon)
 * **[Neoload](https://www.tricentis.com/products/performance-testing-neoload)** 🟠📚 — Enterprise performance testing platform with codeless and as-code options. Strong SAP, Citrix, and legacy protocol support. [Commercial]
 * **[LoadRunner / OpenText](https://www.opentext.com/products/loadrunner-professional)** 🟠🧰 — The legacy enterprise standard for performance testing. Broad protocol support. Expensive but deeply embedded in many large organizations. [Commercial]
@@ -126,7 +126,7 @@ Tools are organized by **functional category**, but real performance testing oft
 *Measuring and optimizing the performance users actually experience — Core Web Vitals, rendering, resource loading, and perceived speed.*
 
 * **[Lighthouse](https://developer.chrome.com/docs/lighthouse/)** ⭐🟢📚🔗 — Google's auditing tool for performance, accessibility, SEO, and best practices. Produces actionable scores and recommendations. Runnable in Chrome DevTools, CLI, or CI. The baseline for web performance assessment. [JavaScript] [Apache-2.0] — [GitHub](https://github.com/GoogleChrome/lighthouse)
-* **[WebPageTest](https://www.webpagetest.org/)** ⭐🟢📚 — Deep web performance analysis with filmstrip views, waterfall charts, and multi-location testing. The gold standard for detailed frontend performance diagnosis. Self-hostable. [PHP] [Apache-2.0] — [GitHub](https://github.com/WPO-Foundation/webpagetest)
+* **[WebPageTest](https://www.webpagetest.org/)** ⭐🟢📚 — Deep web performance analysis with filmstrip views, waterfall charts, and multi-location testing. The gold standard for detailed frontend performance diagnosis. Self-hostable. [PHP] [Apache-2.0] — [GitHub](https://github.com/catchpoint/WebPageTest)
 * **[Playwright](https://playwright.dev/)** ⭐🟢📚🔗 — Browser automation framework with built-in performance timing APIs. Supports Chromium, Firefox, and WebKit. Excellent for performance testing of single-page applications. [TypeScript] [Apache-2.0] — [GitHub](https://github.com/microsoft/playwright)
 * **[Sitespeed.io](https://www.sitespeed.io/)** 🟢🔗📚 — Open-source toolkit for monitoring and measuring web performance. Integrates Lighthouse, WebPageTest, and browser-level metrics into dashboards (Grafana). Strong for continuous performance monitoring. [JavaScript] [MIT] — [GitHub](https://github.com/sitespeedio/sitespeed.io)
 * **[Puppeteer](https://pptr.dev/)** 🟢📚 — Chrome DevTools Protocol API for Node.js. Enables programmatic access to Chrome performance traces, network interception, and rendering metrics. [TypeScript] [Apache-2.0] — [GitHub](https://github.com/puppeteer/puppeteer)
@@ -140,7 +140,7 @@ Tools are organized by **functional category**, but real performance testing oft
 *Simulating dependencies to isolate components for targeted performance testing — essential when real services are unavailable, expensive, or rate-limited.*
 
 * **[WireMock](https://wiremock.org/)** ⭐🟢📚🔵 — Flexible HTTP mock server and service virtualization tool. Supports request matching, stateful behavior, response templating, and fault injection. Runs standalone or embedded in JVM tests. [Java] [Apache-2.0] — [GitHub](https://github.com/wiremock/wiremock)
-* **[Mountebank](https://github.com/bbyars/mountebank)** 🟢📚 — Multi-protocol service virtualization (HTTP, HTTPS, TCP, SMTP). Supports stubs, proxies, and injection. Test doubles over the wire. [JavaScript] [MIT] — [GitHub](https://github.com/bbyars/mountebank)
+* **[Mountebank](https://github.com/bbyars/mountebank)** 🟢📚 — Multi-protocol service virtualization (HTTP, HTTPS, TCP, SMTP). Supports stubs, proxies, and injection. Test doubles over the wire. [JavaScript] [MIT] — [GitHub](https://github.com/mountebank-testing/mountebank)
 * **[Hoverfly](https://hoverfly.io/)** 🟢🔵 — Lightweight service virtualization for API simulation and testing. Capture-and-replay mode for building realistic simulations from production traffic. [Go] [Apache-2.0] — [GitHub](https://github.com/SpectoLabs/hoverfly)
 * **[MockServer](https://www.mock-server.com/)** 🟢 — Enables mocking of any HTTP/HTTPS system via expectations. Supports forward and callback actions. [Java] [Apache-2.0] — [GitHub](https://github.com/mock-server/mockserver)
 * **[Microcks](https://microcks.io/)** 🟢🔵 — Open-source tool for API mocking and testing. Imports OpenAPI, AsyncAPI, gRPC, GraphQL, and SOAP contracts. Kubernetes-native. [Java] [Apache-2.0] — [GitHub](https://github.com/microcks/microcks)
@@ -218,7 +218,7 @@ Tools are organized by **functional category**, but real performance testing oft
 * **[Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci)** 🟢🔗 — Run Lighthouse in CI with performance budgets. Assert on scores, compare against baselines, and track trends. [JavaScript] [Apache-2.0]
 * **[Sitespeed.io](https://www.sitespeed.io/)** 🟢🔗 — Continuous web performance monitoring with CI/CD integration. Performance budgets, Grafana dashboards, and historical tracking. [JavaScript] [MIT] — [GitHub](https://github.com/sitespeedio/sitespeed.io)
 * **[Taurus](https://gettaurus.org/)** 🟢🔗📚 — Automation wrapper for JMeter, Gatling, Locust, and other tools. YAML-based test configuration, unified reporting. Simplifies CI/CD integration for existing test suites. [Python] [Apache-2.0] — [GitHub](https://github.com/Blazemeter/taurus)
-* **[Grafana k6 Cloud](https://k6.io/cloud/)** 🟠🔗 — Managed k6 execution with CI/CD integration and geographic distribution. *(See [Commercial & SaaS](#commercial--saas-platforms) for details)* [Commercial]
+* **[Grafana k6 Cloud](https://grafana.com/products/cloud/k6/)** 🟠🔗 — Managed k6 execution with CI/CD integration and geographic distribution. *(See [Commercial & SaaS](#commercial--saas-platforms) for details)* [Commercial]
 * **[BlazeMeter](https://www.blazemeter.com/)** 🟠🔗 — Cloud performance testing with native CI/CD pipeline integration. *(See [Commercial & SaaS](#commercial--saas-platforms) for details)* [Commercial]
 
 ---
@@ -242,7 +242,7 @@ Tools are organized by **functional category**, but real performance testing oft
 
 ### Developer-Centric Platforms
 
-* **[Grafana k6 Cloud](https://k6.io/cloud/)** 🟠🔗 — Managed k6 execution with geographic distribution across multiple global load zones, real-time result visualization in Grafana, and native CI/CD integration. Performance Insights provide automated analysis of test results. The natural choice for teams already using k6 OSS who need scale and collaboration. [Commercial]
+* **[Grafana k6 Cloud](https://grafana.com/products/cloud/k6/)** 🟠🔗 — Managed k6 execution with geographic distribution across multiple global load zones, real-time result visualization in Grafana, and native CI/CD integration. Performance Insights provide automated analysis of test results. The natural choice for teams already using k6 OSS who need scale and collaboration. [Commercial]
 * **[Octoperf](https://octoperf.com/)** 🟠🔗📚 — SaaS performance testing platform built on JMeter with a modern UI, team collaboration, and trend analysis. European-hosted (GDPR-compliant). Supports JMeter scripts natively with enhanced reporting and distributed load generation. Good fit for teams migrating from JMeter to a managed platform. [Commercial]
 * **~~Flood (Tricentis)~~** — Cloud load testing platform supporting JMeter, Gatling, and Selenium. **Decommissioned in June 2024.** Tricentis has migrated users to NeoLoad. Listed for historical reference only.
 
@@ -268,7 +268,7 @@ Key areas where AI delivers value in performance testing today:
 
 ### Tools & Integrations
 
-* **[k6 Cloud Performance Insights](https://k6.io/cloud/)** 🟠 — Automated analysis of k6 test results. Identifies performance issues, correlates metrics, and suggests root causes. [Commercial]
+* **[k6 Cloud Performance Insights](https://grafana.com/products/cloud/k6/)** 🟠 — Automated analysis of k6 test results. Identifies performance issues, correlates metrics, and suggests root causes. [Commercial]
 * **[Datadog Synthetic Monitoring + AI](https://docs.datadoghq.com/synthetics/)** 🟠 — Synthetic API and browser tests with ML-powered anomaly detection and intelligent alerting. Correlates synthetic test failures with APM traces. [Commercial]
 * **[Dynatrace Load Testing Integration](https://docs.dynatrace.com/docs/deliver/test-pipeline-observability)** 🟠 — Automated quality gates in CI/CD using AI-based performance evaluation. Davis AI compares test results against baselines and detects anomalies in real time. [Commercial]
 * **[Checkly](https://www.checklyhq.com/)** 🟢🔗 — Monitoring-as-code with Playwright-based synthetic tests. AI-assisted test generation from browsing sessions (beta). [TypeScript] [Free tier/Commercial] — [GitHub](https://github.com/checkly/checkly-cli)

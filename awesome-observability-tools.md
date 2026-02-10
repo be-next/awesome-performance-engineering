@@ -172,7 +172,7 @@ Tools are organized by **technical building blocks**, but observability problems
 * **[Honeycomb](https://www.honeycomb.io/)** 🟠🧠 — Observability platform built around high-cardinality, high-dimensionality event data. Pioneers of the "observability vs. monitoring" distinction. BubbleUp feature for automated correlation. [Commercial]
 * **[Grafana Cloud](https://grafana.com/products/cloud/)** 🟠🧠 — Managed Grafana stack (Mimir, Loki, Tempo, Pyroscope) with a generous free tier. Best of open-source with SaaS convenience. [Commercial]
 * **[Instana (IBM)](https://www.ibm.com/products/instana)** 🟠🧠 — Automatic infrastructure and application discovery with real-time observability. Strong in containerized and microservice environments. [Commercial]
-* **[AppDynamics (Cisco)](https://www.appdynamics.com/)** 🟠🧰 — Enterprise APM with business transaction monitoring and code-level diagnostics. Deep integration with Cisco networking observability. [Commercial]
+* **[AppDynamics (Splunk/Cisco)](https://www.splunk.com/en_us/products/splunk-appdynamics.html)** 🟠🧰 — Enterprise APM with business transaction monitoring and code-level diagnostics. Merged into Splunk in 2025. [Commercial]
 * **[Chronosphere](https://chronosphere.io/)** 🟠🧠 — Cloud-native observability platform focused on metrics at scale. Founded by Uber M3 creators. Strong cost control and cardinality management. [Commercial]
 * **[Lightstep / ServiceNow Cloud Observability](https://www.servicenow.com/products/observability.html)** 🟠🧠 — OpenTelemetry-native observability platform, now part of ServiceNow. [Commercial]
 
@@ -234,7 +234,7 @@ This is an emerging and fast-moving space. The tools below represent current cap
 * **[Datadog Watchdog](https://docs.datadoghq.com/watchdog/)** 🟠🧠 — ML-driven anomaly detection across metrics, logs, and APM data. Automatic story generation for correlated anomalies. [Commercial]
 * **[Moogsoft](https://www.moogsoft.com/)** 🟠🧠 — AIOps platform for alert correlation, noise reduction, and incident clustering. [Commercial]
 * **[New Relic AI](https://newrelic.com/platform/applied-intelligence)** 🟠🧠 — Applied intelligence with anomaly detection, incident correlation, and natural-language querying (NRAI). [Commercial]
-* **[Honeycomb BubbleUp](https://www.honeycomb.io/blog/introducing-bubbleup)** 🟠🧠 — Automated outlier correlation across high-cardinality dimensions. Helps identify "what's different" about slow requests without manual hypotheses. [Commercial]
+* **[Honeycomb BubbleUp](https://www.honeycomb.io/platform/bubbleup)** 🟠🧠 — Automated outlier correlation across high-cardinality dimensions. Helps identify "what's different" about slow requests without manual hypotheses. [Commercial]
 * **[Coroot](https://coroot.com/)** 🟢🔵🧠 — Open-source eBPF-powered observability with automated service map discovery and anomaly detection. [Go] [Apache-2.0] — [GitHub](https://github.com/coroot/coroot)
 
 ---
