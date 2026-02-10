@@ -1,6 +1,5 @@
-# Awesome Performance Engineering
+# Awesome Performance Engineering [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![Lint Markdown](https://github.com/be-next/awesome-performance-engineering/actions/workflows/lint.yml/badge.svg)](https://github.com/be-next/awesome-performance-engineering/actions/workflows/lint.yml)
 [![Check Links](https://github.com/be-next/awesome-performance-engineering/actions/workflows/links.yml/badge.svg)](https://github.com/be-next/awesome-performance-engineering/actions/workflows/links.yml)
 
@@ -39,19 +38,15 @@ A curated list of tools enabling **deep, actionable visibility** into modern dis
 
 Covered domains include:
 
-* **Metrics collection & time-series databases** — Prometheus, VictoriaMetrics, OpenTelemetry, and beyond
-* **Distributed tracing** — understanding request flows, latency propagation, and dependency chains
-* **Log management & telemetry pipelines** — from ingestion to correlation at scale
-* **Continuous profiling** — always-on, low-overhead production profiling with eBPF and beyond
-* **APM & observability platforms** — integrated solutions for teams at different maturity levels
-* **Visualization, dashboards & exploration** — turning signals into decisions
-* **Open standards** — OpenTelemetry as the unifying layer of modern observability
+* Metrics collection & time-series databases — Prometheus, VictoriaMetrics, OpenTelemetry, and beyond
+* Distributed tracing — understanding request flows, latency propagation, and dependency chains
+* Log management & telemetry pipelines — from ingestion to correlation at scale
+* Continuous profiling — always-on, low-overhead production profiling with eBPF and beyond
+* Observability platforms — integrated solutions for teams at different maturity levels
+* Visualization & dashboards — turning signals into decisions
+* AI-augmented observability — ML-powered anomaly detection and root-cause analysis
 
-The focus is on tools that support:
-
-* **High-throughput, large-scale systems** — where sampling strategies and storage costs matter
-* **Cloud-native and hybrid architectures** — Kubernetes, service meshes, serverless, and legacy coexistence
-* **Production diagnostics and root-cause analysis** — from golden signals to unknown-unknowns
+The focus is on tools that support **high-throughput, large-scale systems** (where sampling strategies and storage costs matter), **cloud-native and hybrid architectures** (Kubernetes, service meshes, serverless, and legacy coexistence), and **production diagnostics and root-cause analysis** (from golden signals to unknown-unknowns).
 
 👉 **Goal:** observe systems as they really behave — not as we assume they behave.
 
@@ -65,14 +60,14 @@ A curated list of tools covering the **full performance testing lifecycle** — 
 
 Included categories:
 
-* **Load & stress testing** — modern, scriptable generators (k6, Gatling, Locust) and protocol-level tools
-* **HTTP benchmarking** — high-precision tools for latency measurement and saturation testing
-* **API testing & contract testing** — validating performance at the service boundary
-* **Browser & frontend performance** — Core Web Vitals, Lighthouse, real-user and synthetic measurement
-* **Service virtualization & mocking** — isolating components for targeted performance testing
-* **Synthetic data generation** — creating realistic datasets that reflect production cardinality and distribution
-* **Chaos engineering & fault injection** — testing resilience and graceful degradation under failure
-* **CI/CD integration** — embedding performance validation into delivery pipelines
+* Load & stress testing — modern, scriptable generators (k6, Gatling, Locust) and protocol-level tools
+* HTTP benchmarking — high-precision tools for latency measurement and saturation testing
+* API testing & contract testing — validating performance at the service boundary
+* Browser & frontend performance — Core Web Vitals, Lighthouse, real-user and synthetic measurement
+* Service virtualization & mocking — isolating components for targeted performance testing
+* Synthetic data generation — creating realistic datasets that reflect production cardinality and distribution
+* Chaos engineering & fault injection — testing resilience and graceful degradation under failure
+* CI/CD integration — embedding performance validation into delivery pipelines
 
 Special attention is given to tools that:
 
@@ -89,18 +84,16 @@ Special attention is given to tools that:
 
 Throughout both lists, tools are annotated with emoji indicators that provide quick guidance. Each list defines its own legend, but the common indicators are:
 
-| Indicator | Meaning |
-| --------- | ------- |
-| ⭐ | Widely adopted / reference solution |
-| 🟢 | Actively maintained |
-| 🔵 | Cloud-native / Kubernetes-friendly |
-| 🟠 | Commercial / paid offering |
-| 🚀 | High performance / low overhead |
-| 📚 | Extensive documentation |
-| 🧠 | Observability-first or engineering-first philosophy |
-| 🧰 | Operations heritage / legacy-friendly |
-| 🔗 | CI/CD pipeline-ready |
-| 🧪 | Developer-friendly / PoC-friendly |
+* ⭐ Widely adopted / reference solution
+* 🟢 Actively maintained
+* 🔵 Cloud-native / Kubernetes-friendly
+* 🟠 Commercial / paid offering
+* 🚀 High performance / low overhead
+* 📚 Extensive documentation
+* 🧠 Observability-first or engineering-first philosophy
+* 🧰 Operations heritage / legacy-friendly
+* 🔗 CI/CD pipeline-ready
+* 🧪 Developer-friendly / PoC-friendly
 
 These are **guidance signals based on field experience**, not absolute classifications. Context always wins over labels.
 
@@ -144,57 +137,14 @@ The tools in this repository are selected with this pragmatic view: we highlight
 
 This repository complements existing awesome lists while maintaining a distinct focus on performance engineering:
 
-### 🚀 Site Reliability Engineering (SRE)
-
-[![GitHub stars](https://img.shields.io/github/stars/SquadcastHub/awesome-sre-tools?style=social)](https://github.com/SquadcastHub/awesome-sre-tools)
-![Last commit](https://img.shields.io/github/last-commit/SquadcastHub/awesome-sre-tools)
-
-* **[awesome-sre-tools](https://github.com/SquadcastHub/awesome-sre-tools)** — SRE and production engineering tools covering monitoring, incident response, CI/CD, alerting, and reliability workflows.
-
-[![GitHub stars](https://img.shields.io/github/stars/flanksource/sre-learning-resources?style=social)](https://github.com/flanksource/sre-learning-resources)
-![Last commit](https://img.shields.io/github/last-commit/flanksource/sre-learning-resources)
-
-* **[sre-learning-resources](https://github.com/flanksource/sre-learning-resources)** — Learning paths and hands-on resources for building modern SRE skills.
-
-### 📊 Monitoring & Observability
-
-[![GitHub stars](https://img.shields.io/github/stars/Enapiuz/awesome-monitoring?style=social)](https://github.com/Enapiuz/awesome-monitoring)
-![Last commit](https://img.shields.io/github/last-commit/Enapiuz/awesome-monitoring)
-
-* **[awesome-monitoring](https://github.com/Enapiuz/awesome-monitoring)** — A broad, well-structured list of monitoring and observability tools covering metrics, logs, traces, alerting, and visualization.
-
-### 🧪 Testing
-
-[![GitHub stars](https://img.shields.io/github/stars/TheJambo/awesome-testing?style=social)](https://github.com/TheJambo/awesome-testing)
-![Last commit](https://img.shields.io/github/last-commit/TheJambo/awesome-testing)
-
-* **[awesome-testing](https://github.com/TheJambo/awesome-testing)** — Comprehensive overview of software testing methodologies, frameworks, and tools spanning unit, integration, performance, and quality engineering.
-
-### 💥 Chaos Engineering
-
-[![GitHub stars](https://img.shields.io/github/stars/dastergon/awesome-chaos-engineering?style=social)](https://github.com/dastergon/awesome-chaos-engineering)
-![Last commit](https://img.shields.io/github/last-commit/dastergon/awesome-chaos-engineering)
-
-* **[awesome-chaos-engineering](https://github.com/dastergon/awesome-chaos-engineering)** — Chaos engineering principles, experiments, platforms, and resilience learning resources.
-
-### ☸️ Kubernetes & Cloud-Native
-
-[![GitHub stars](https://img.shields.io/github/stars/run-x/awesome-kubernetes?style=social)](https://github.com/run-x/awesome-kubernetes)
-![Last commit](https://img.shields.io/github/last-commit/run-x/awesome-kubernetes)
-
-* **[awesome-kubernetes](https://github.com/run-x/awesome-kubernetes)** — Actively maintained Kubernetes list covering tooling, observability, CI/CD, service meshes, operators, and cloud-native patterns.
-
-[![GitHub stars](https://img.shields.io/github/stars/magnologan/awesome-k8s-security?style=social)](https://github.com/magnologan/awesome-k8s-security)
-![Last commit](https://img.shields.io/github/last-commit/magnologan/awesome-k8s-security)
-
-* **[awesome-k8s-security](https://github.com/magnologan/awesome-k8s-security)** — Kubernetes security tools, hardening guides, and threat-modeling resources.
-
-### 📈 Scalability & Distributed Systems
-
-[![GitHub stars](https://img.shields.io/github/stars/binhnguyennus/awesome-scalability?style=social)](https://github.com/binhnguyennus/awesome-scalability)
-![Last commit](https://img.shields.io/github/last-commit/binhnguyennus/awesome-scalability)
-
-* **[awesome-scalability](https://github.com/binhnguyennus/awesome-scalability)** — Scalability patterns, architectures, and engineering techniques for large-scale distributed systems.
+* [awesome-sre-tools](https://github.com/SquadcastHub/awesome-sre-tools) - SRE and production engineering tools covering monitoring, incident response, CI/CD, alerting, and reliability workflows.
+* [sre-learning-resources](https://github.com/flanksource/sre-learning-resources) - Learning paths and hands-on resources for building modern SRE skills.
+* [awesome-monitoring](https://github.com/Enapiuz/awesome-monitoring) - A broad, well-structured list of monitoring and observability tools covering metrics, logs, traces, alerting, and visualization.
+* [awesome-testing](https://github.com/TheJambo/awesome-testing) - Comprehensive overview of software testing methodologies, frameworks, and tools spanning unit, integration, performance, and quality engineering.
+* [awesome-chaos-engineering](https://github.com/dastergon/awesome-chaos-engineering) - Chaos engineering principles, experiments, platforms, and resilience learning resources.
+* [awesome-kubernetes](https://github.com/run-x/awesome-kubernetes) - Actively maintained Kubernetes list covering tooling, observability, CI/CD, service meshes, operators, and cloud-native patterns.
+* [awesome-k8s-security](https://github.com/magnologan/awesome-k8s-security) - Kubernetes security tools, hardening guides, and threat-modeling resources.
+* [awesome-scalability](https://github.com/binhnguyennus/awesome-scalability) - Scalability patterns, architectures, and engineering techniques for large-scale distributed systems.
 
 ---
 
