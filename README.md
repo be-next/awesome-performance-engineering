@@ -1,6 +1,8 @@
 # Awesome Performance Engineering
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![Lint Markdown](https://github.com/be-next/awesome-performance-engineering/actions/workflows/lint.yml/badge.svg)](https://github.com/be-next/awesome-performance-engineering/actions/workflows/lint.yml)
+[![Check Links](https://github.com/be-next/awesome-performance-engineering/actions/workflows/links.yml/badge.svg)](https://github.com/be-next/awesome-performance-engineering/actions/workflows/links.yml)
 
 A curated, opinionated collection of tools and resources dedicated to **Performance Engineering** — the discipline that ensures systems deliver fast, reliable, and cost-efficient experiences at any scale.
 
