@@ -8,6 +8,10 @@ on:
   schedule:
     - cron: "0 8 * * 1"
 
+permissions:
+  contents: read
+  issues: write
+
 jobs:
   linkcheck:
     name: Check links
@@ -16,6 +20,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Lychee link checker
+        id: lychee
         uses: lycheeverse/lychee-action@v2
         with:
           args: >-
@@ -25,4 +30,21 @@ jobs:
             --timeout 30
             --max-retries 3
             '*.md'
+          output: lychee/out.md
           fail: true
+
+      - name: Create or update issue on broken links
+        if: failure() && github.event_name == 'schedule'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh label create "broken-links" --description "Automated broken link detection" --color "d73a4a" 2>/dev/null || true
+          existing=$(gh issue list --label "broken-links" --state open --json number --jq '.[0].number // empty')
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --body-file lychee/out.md
+          else
+            gh issue create \
+              --title "Broken links detected by scheduled check" \
+              --body-file lychee/out.md \
+              --label "broken-links"
+          fi
