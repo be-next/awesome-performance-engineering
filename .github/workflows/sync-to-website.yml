@@ -1,0 +1,22 @@
+name: Sync to Website
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "README.md"
+      - "awesome-observability-tools.md"
+      - "awesome-performance-testing-tools.md"
+
+jobs:
+  dispatch:
+    name: Trigger idle-ti.me sync
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send repository_dispatch
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.DISPATCH_TOKEN }}
+          repository: be-next/idle-ti.me
+          event-type: awesome-lists-updated
+          client-payload: '{"ref": "${{ github.sha }}"}'
