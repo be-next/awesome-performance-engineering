@@ -1,0 +1,51 @@
+name: Tool Suggestion
+description: Suggest a tool to add to the performance engineering lists
+title: "[Tool] "
+labels: ["suggestion"]
+body:
+  - type: dropdown
+    id: list
+    attributes:
+      label: Which list?
+      options:
+        - Awesome Observability Tools
+        - Awesome Performance Testing Tools
+        - Both / Unsure
+    validations:
+      required: true
+
+  - type: input
+    id: tool-name
+    attributes:
+      label: Tool name
+      placeholder: e.g. Prometheus, k6, Grafana
+    validations:
+      required: true
+
+  - type: input
+    id: tool-url
+    attributes:
+      label: Website or repository URL
+      placeholder: https://
+    validations:
+      required: true
+
+  - type: input
+    id: license
+    attributes:
+      label: License
+      placeholder: e.g. Apache-2.0, MIT, Commercial
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Why should this tool be included?
+      description: What makes it relevant to performance engineering? How is it different from tools already listed?
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Any relevant links, comparisons, or personal experience with the tool.

@@ -1,0 +1,26 @@
+name: Lint Markdown
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  markdownlint:
+    name: Markdown lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: markdownlint-cli2
+        uses: DavidAnson/markdownlint-cli2-action@v19
+        with:
+          globs: "*.md"
+          config: >
+            {
+              "MD013": false,
+              "MD033": false,
+              "MD041": false,
+              "MD029": false
+            }
