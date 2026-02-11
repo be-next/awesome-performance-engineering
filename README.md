@@ -198,18 +198,6 @@ The intent is to support **learning and skill progression**, not just tool selec
 
 ---
 
-## 🌐 About idle-ti.me
-
-This repository is part of the broader **idle-ti.me** initiative, which explores:
-
-* Performance and resilience of information systems
-* Observability practices and tooling
-* Feedback from real-world, production environments
-
-The GitHub repository serves as a **technical reference**, while idle-ti.me provides additional context through articles, analyses, and experiments.
-
----
-
 ## 📄 License
 
 This work is released under the **CC0 1.0 Universal** license.
