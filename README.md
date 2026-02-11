@@ -208,4 +208,4 @@ You are free to use, share, and adapt it without restriction.
 
 ## 🙏 Acknowledgments
 
-Thanks to all contributors and reviewers who help keep these lists accurate, relevant, and valuable to the community.
+Thanks to all contributors and reviewers who help keep these lists accurate, relevant, and valuable to the performance engineering community.
