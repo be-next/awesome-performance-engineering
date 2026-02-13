@@ -240,6 +240,11 @@ Tools are organized by **functional category**, but real performance testing oft
 
 *Integrated performance testing platforms for teams that need managed infrastructure, geographic distribution, collaboration features, and enterprise support. Choosing between SaaS and open-source is often a question of team maturity, scale, and budget — not technical capability.*
 
+### Cloud Provider Services
+
+* **[Azure App Testing](https://azure.microsoft.com/en-us/products/app-testing/)** 🟠🔵📚 — Microsoft's managed load testing service (formerly Azure Load Testing, rebranded September 2025). Supports JMeter and Locust natively with multi-region traffic simulation, server-side metrics correlation via Azure Monitor, and CI/CD integration (Azure DevOps, GitHub Actions). Copilot-assisted test authoring. Pay-per-use pricing (~$0.15/VUH). The most complete first-party cloud provider offering for performance testing. [Commercial]
+* **[AWS Distributed Load Testing](https://aws.amazon.com/solutions/implementations/distributed-load-testing-on-aws/)** 🟠🔵 — AWS Solutions Implementation that deploys a distributed load testing architecture via CloudFormation (ECS Fargate). Supports JMeter, k6, and Locust scripts. Multi-region execution, scheduling, and baseline comparison. Not a managed SaaS — you deploy and pay for the underlying AWS resources. [Commercial] — [GitHub](https://github.com/aws-solutions/distributed-load-testing-on-aws)
+
 ### Developer-Centric Platforms
 
 * **[Grafana k6 Cloud](https://grafana.com/products/cloud/k6/)** 🟠🔗 — Managed k6 execution with geographic distribution across multiple global load zones, real-time result visualization in Grafana, and native CI/CD integration. Performance Insights provide automated analysis of test results. The natural choice for teams already using k6 OSS who need scale and collaboration. [Commercial]
