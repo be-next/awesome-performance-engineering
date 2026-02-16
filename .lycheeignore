@@ -10,3 +10,9 @@ https://www.neosync.dev/
 
 # Slow response — causes timeout on CI runners
 https://chaos-mesh.org/
+
+# Unreliable server — connection reset intermittently
+https://www.rsyslog.com/
+
+# Intermittent 503 — high-traffic PostgreSQL docs
+https://www.postgresql.org/docs/current/pgbench.html

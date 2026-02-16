@@ -68,7 +68,7 @@ Tools are organized by **technical building blocks**, but observability problems
 * **[Mimir](https://grafana.com/oss/mimir/)** ⭐🟢🔵🚀 — Grafana's horizontally scalable, highly available Prometheus-compatible TSDB. Designed from the ground up for multi-tenant, large-scale deployments. [Go] [AGPL-3.0] — [GitHub](https://github.com/grafana/mimir)
 * **[InfluxDB](https://www.influxdata.com/)** 🟢🟠 — Purpose-built time-series database with high write throughput. Strong ecosystem. v3 re-open-sourced under Apache 2.0 in 2024 with a Rust-based engine. [Go/Rust] [Apache-2.0/Commercial] — [GitHub](https://github.com/influxdata/influxdb)
 * **[OpenTelemetry Collector](https://opentelemetry.io/docs/collector/)** ⭐🟢🔵🧠 — Vendor-neutral telemetry collection, processing, and export pipeline. The backbone of modern instrumentation architectures. [Go] [Apache-2.0] — [GitHub](https://github.com/open-telemetry/opentelemetry-collector)
-* **[Grafana Alloy](https://grafana.com/oss/alloy/)** ⭐🟢🔵🧠 — OpenTelemetry-native telemetry collector from Grafana Labs (successor to Grafana Agent). Supports metrics, logs, traces, and profiles. Native integration with the Grafana stack. [Go] [Apache-2.0] — [GitHub](https://github.com/grafana/alloy)
+* **[Grafana Alloy](https://grafana.com/oss/alloy-opentelemetry-collector/)** ⭐🟢🔵🧠 — OpenTelemetry-native telemetry collector from Grafana Labs (successor to Grafana Agent). Supports metrics, logs, traces, and profiles. Native integration with the Grafana stack. [Go] [Apache-2.0] — [GitHub](https://github.com/grafana/alloy)
 * **[Telegraf](https://www.influxdata.com/time-series-platform/telegraf/)** 🟢 — Plugin-driven agent for collecting and reporting metrics. 300+ input plugins make it versatile for heterogeneous environments. [Go] [MIT] — [GitHub](https://github.com/influxdata/telegraf)
 * **[StatsD](https://github.com/statsd/statsd)** 🧰 — Lightweight, UDP-based metrics aggregation daemon. Simple protocol, widely supported by applications. Still relevant in legacy environments. [Node.js] [MIT]
 * **[Graphite](https://graphiteapp.org/)** 🧰 — One of the original time-series storage and graphing systems. Whisper backend, Carbon collector. Historical significance but limited compared to modern alternatives. [Python] [Apache-2.0] — [GitHub](https://github.com/graphite-project/graphite-web)
@@ -101,7 +101,7 @@ Tools are organized by **technical building blocks**, but observability problems
 * **[Elasticsearch](https://www.elastic.co/elasticsearch)** ⭐🟢🟠🧰 — Distributed search and analytics engine. Powerful full-text search, but storage costs and operational complexity can be significant at scale. License changed from Apache-2.0 to SSPL. [Java] [SSPL/Commercial] — [GitHub](https://github.com/elastic/elasticsearch)
 * **[OpenSearch](https://opensearch.org/)** 🟢🔵 — Community-driven fork of Elasticsearch (post-license change). AWS-backed, Apache-2.0 licensed. Drop-in replacement for Elasticsearch in most deployments. [Java] [Apache-2.0] — [GitHub](https://github.com/opensearch-project/OpenSearch)
 * **[Logstash](https://www.elastic.co/logstash)** 🧰 — Flexible log ingestion and transformation pipeline. Part of the Elastic Stack. Heavy JVM footprint. [Java] [SSPL/Commercial] — [GitHub](https://github.com/elastic/logstash)
-* **[Graylog](https://www.graylog.org/)** 🟢🟠🧰 — Centralized log management with built-in alerting and dashboards. Good for teams that want a self-contained log platform. [Java] [SSPL/Commercial] — [GitHub](https://github.com/Graylog2/graylog2-server)
+* **[Graylog](https://graylog.org/)** 🟢🟠🧰 — Centralized log management with built-in alerting and dashboards. Good for teams that want a self-contained log platform. [Java] [SSPL/Commercial] — [GitHub](https://github.com/Graylog2/graylog2-server)
 * **[rsyslog](https://www.rsyslog.com/)** 🟢🚀🧰 — High-performance system logging daemon. Handles millions of messages per second. Essential in Linux infrastructure. [C] [GPL-3.0] — [GitHub](https://github.com/rsyslog/rsyslog)
 
 ---
@@ -138,10 +138,10 @@ Tools are organized by **technical building blocks**, but observability problems
 * **[Parca](https://www.parca.dev/)** ⭐🟢🔵🧠 — eBPF-based continuous profiling platform. Zero-instrumentation, always-on profiling with differential flame graphs. CNCF sandbox project. [Go] [Apache-2.0] — [GitHub](https://github.com/parca-dev/parca)
 * **[Grafana Pyroscope](https://grafana.com/oss/pyroscope/)** ⭐🟢🔵🧠 — Continuous profiling with flame graph visualization. Supports multiple languages. Integrates naturally with the Grafana stack. [Go] [AGPL-3.0] — [GitHub](https://github.com/grafana/pyroscope)
 * **[async-profiler](https://github.com/async-profiler/async-profiler)** 🟢🚀 — Low-overhead sampling profiler for JVM. Captures CPU, allocation, lock contention, and wall-clock profiles. The reference tool for Java performance analysis. [Java/C++] [Apache-2.0]
-* **[perf](https://perf.wiki.kernel.org/)** 🧰🚀 — Linux kernel performance analysis tool. Hardware counters, tracepoints, and sampling. Foundational for system-level performance work. [C] [GPL-2.0]
+* **[perf](https://perfwiki.github.io/)** 🧰🚀 — Linux kernel performance analysis tool. Hardware counters, tracepoints, and sampling. Foundational for system-level performance work. [C] [GPL-2.0]
 * **[bpftrace](https://bpftrace.org/)** 🟢🚀🧠 — High-level tracing language for Linux eBPF. One-liners and scripts for dynamic kernel and user-space tracing. Invaluable for ad-hoc production investigation. [C++] [Apache-2.0] — [GitHub](https://github.com/bpftrace/bpftrace)
 * **[bcc (BPF Compiler Collection)](https://github.com/iovisor/bcc)** 🟢🚀 — Toolkit for creating eBPF-based tracing and networking programs. Includes dozens of ready-to-use tools (execsnoop, biolatency, tcplife, etc.). [C/Python] [Apache-2.0]
-* **[Grafana Beyla](https://grafana.com/oss/beyla/)** 🟢🔵🧠🚀 — eBPF-based auto-instrumentation for HTTP and gRPC services. Zero-code, zero-configuration application observability. Generates RED metrics and distributed traces without SDK integration. [Go] [Apache-2.0] — [GitHub](https://github.com/grafana/beyla)
+* **[Grafana Beyla](https://grafana.com/oss/beyla-ebpf/)** 🟢🔵🧠🚀 — eBPF-based auto-instrumentation for HTTP and gRPC services. Zero-code, zero-configuration application observability. Generates RED metrics and distributed traces without SDK integration. [Go] [Apache-2.0] — [GitHub](https://github.com/grafana/beyla)
 * **[Perfetto](https://perfetto.dev/)** 🟢 — System-wide tracing and profiling toolkit from Google. Designed for Android and Chrome but increasingly used for general system analysis. [C++] [Apache-2.0] — [GitHub](https://github.com/google/perfetto)
 
 ---
@@ -206,7 +206,7 @@ Tools are organized by **technical building blocks**, but observability problems
 * **[PMM (Percona Monitoring and Management)](https://www.percona.com/software/database-tools/percona-monitoring-and-management)** 🟢 — Open-source database performance monitoring for MySQL, PostgreSQL, and MongoDB. Query analytics, slow query analysis. [Go] [AGPL-3.0] — [GitHub](https://github.com/percona/pmm)
 * **[pgwatch](https://github.com/cybertec-postgresql/pgwatch)** 🟢 — PostgreSQL-specific monitoring and metrics collection. [Go] [BSD-3-Clause]
 * **[pg_stat_monitor](https://github.com/percona/pg_stat_monitor)** 🟢 — PostgreSQL extension for enhanced query performance monitoring. More granular than pg_stat_statements. [C] [Apache-2.0]
-* **[VividCortex / SolarWinds DPM](https://www.solarwinds.com/database-performance-monitor)** 🟠 — SaaS query-level database performance monitoring. [Commercial]
+* **[VividCortex / SolarWinds DPM](https://www.solarwinds.com/solarwinds-observability/use-cases/system-performance)** 🟠 — SaaS query-level database performance monitoring. [Commercial]
 * **[Datadog DBM](https://www.datadoghq.com/product/database-monitoring/)** 🟠🧠 — Database monitoring with query-level explain plans, wait event analysis, and trace correlation. [Commercial]
 
 ---

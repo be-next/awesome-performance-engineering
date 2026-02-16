@@ -74,7 +74,7 @@ Tools are organized by **functional category**, but real performance testing oft
 * **[GoReplay (gor)](https://goreplay.org/)** 🟢🚀 — Capture and replay production HTTP traffic for load testing and monitoring. Uses real traffic patterns for maximum realism. [Go] [LGPL-3.0] — [GitHub](https://github.com/probelabs/goreplay)
 * **[Anteon (formerly Ddosify)](https://getanteon.com/)** 🔵🧪 — eBPF-based Kubernetes monitoring and performance testing platform with distributed load generation and visual UI. Reduced development activity since mid-2024. [Go] [AGPL-3.0] — [GitHub](https://github.com/getanteon/anteon)
 * **[Neoload](https://www.tricentis.com/products/performance-testing-neoload)** 🟠📚 — Enterprise performance testing platform with codeless and as-code options. Strong SAP, Citrix, and legacy protocol support. [Commercial]
-* **[LoadRunner / OpenText](https://www.opentext.com/products/loadrunner-professional)** 🟠🧰 — The legacy enterprise standard for performance testing. Broad protocol support. Expensive but deeply embedded in many large organizations. [Commercial]
+* **[LoadRunner / OpenText](https://www.opentext.com/products/professional-performance-engineering)** 🟠🧰 — The legacy enterprise standard for performance testing. Broad protocol support. Expensive but deeply embedded in many large organizations. [Commercial]
 
 ---
 
@@ -117,7 +117,7 @@ Tools are organized by **functional category**, but real performance testing oft
 * **[k6 + xk6-kafka](https://github.com/mostafa/xk6-kafka)** 🟢🔵🔗 — k6 extension for Apache Kafka load testing. Produce and consume messages at scale. [Go] [Apache-2.0]
 * **[kafka-producer-perf-test / kafka-consumer-perf-test](https://kafka.apache.org/documentation/#basic_ops_producer_consumer_perf)** 🟢🧰 — Built-in Kafka benchmarking tools for measuring producer and consumer throughput. [Java] [Apache-2.0]
 * **[RabbitMQ PerfTest](https://github.com/rabbitmq/rabbitmq-perf-test)** 🟢 — Official benchmarking tool for RabbitMQ. Measures throughput and latency for publishing and consuming. [Java] [Apache-2.0/MPL-2.0]
-* **[k6 + xk6-websockets](https://grafana.com/docs/k6/latest/javascript-api/k6-experimental/websockets/)** 🟢🔵🔗 — Built-in k6 WebSocket support for testing real-time applications, streaming APIs, and bidirectional protocols. [Go] [AGPL-3.0]
+* **[k6 + xk6-websockets](https://grafana.com/docs/k6/latest/javascript-api/k6-websockets/)** 🟢🔵🔗 — Built-in k6 WebSocket support for testing real-time applications, streaming APIs, and bidirectional protocols. [Go] [AGPL-3.0]
 
 ---
 
@@ -140,7 +140,7 @@ Tools are organized by **functional category**, but real performance testing oft
 *Simulating dependencies to isolate components for targeted performance testing — essential when real services are unavailable, expensive, or rate-limited.*
 
 * **[WireMock](https://wiremock.org/)** ⭐🟢📚🔵 — Flexible HTTP mock server and service virtualization tool. Supports request matching, stateful behavior, response templating, and fault injection. Runs standalone or embedded in JVM tests. [Java] [Apache-2.0] — [GitHub](https://github.com/wiremock/wiremock)
-* **[Mountebank](https://github.com/bbyars/mountebank)** 🟢📚 — Multi-protocol service virtualization (HTTP, HTTPS, TCP, SMTP). Supports stubs, proxies, and injection. Test doubles over the wire. [JavaScript] [MIT] — [GitHub](https://github.com/mountebank-testing/mountebank)
+* **[Mountebank](https://github.com/mountebank-testing/mountebank)** 🟢📚 — Multi-protocol service virtualization (HTTP, HTTPS, TCP, SMTP). Supports stubs, proxies, and injection. Test doubles over the wire. [JavaScript] [MIT] — [GitHub](https://github.com/mountebank-testing/mountebank)
 * **[Hoverfly](https://hoverfly.io/)** 🟢🔵 — Lightweight service virtualization for API simulation and testing. Capture-and-replay mode for building realistic simulations from production traffic. [Go] [Apache-2.0] — [GitHub](https://github.com/SpectoLabs/hoverfly)
 * **[MockServer](https://www.mock-server.com/)** 🟢 — Enables mocking of any HTTP/HTTPS system via expectations. Supports forward and callback actions. [Java] [Apache-2.0] — [GitHub](https://github.com/mock-server/mockserver)
 * **[Microcks](https://microcks.io/)** 🟢🔵 — Open-source tool for API mocking and testing. Imports OpenAPI, AsyncAPI, gRPC, GraphQL, and SOAP contracts. Kubernetes-native. [Java] [Apache-2.0] — [GitHub](https://github.com/microcks/microcks)
@@ -214,7 +214,7 @@ Tools are organized by **functional category**, but real performance testing oft
 *Embedding performance validation into delivery pipelines — making performance feedback continuous rather than episodic.*
 
 * **[k6](https://k6.io/) + [k6-operator](https://github.com/grafana/k6-operator)** ⭐🟢🔵🔗 — Run distributed k6 load tests in Kubernetes via a custom operator. Native threshold-based pass/fail for pipeline gates. [Go] [Apache-2.0]
-* **[Gatling Enterprise](https://gatling.io/enterprise/)** 🟠🔗 — Managed Gatling execution with CI/CD integrations, team collaboration, and historical comparison. [Commercial]
+* **[Gatling Enterprise](https://gatling.io/platform)** 🟠🔗 — Managed Gatling execution with CI/CD integrations, team collaboration, and historical comparison. [Commercial]
 * **[Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci)** 🟢🔗 — Run Lighthouse in CI with performance budgets. Assert on scores, compare against baselines, and track trends. [JavaScript] [Apache-2.0]
 * **[Sitespeed.io](https://www.sitespeed.io/)** 🟢🔗 — Continuous web performance monitoring with CI/CD integration. Performance budgets, Grafana dashboards, and historical tracking. [JavaScript] [MIT] — [GitHub](https://github.com/sitespeedio/sitespeed.io)
 * **[Taurus](https://gettaurus.org/)** 🟢🔗📚 — Automation wrapper for JMeter, Gatling, Locust, and other tools. YAML-based test configuration, unified reporting. Simplifies CI/CD integration for existing test suites. [Python] [Apache-2.0] — [GitHub](https://github.com/Blazemeter/taurus)
@@ -255,8 +255,8 @@ Tools are organized by **functional category**, but real performance testing oft
 
 * **[BlazeMeter](https://www.blazemeter.com/)** 🟠🔗📚 — Cloud performance testing supporting JMeter, Gatling, Locust, Selenium, and Playwright. Mock services, API monitoring, and shared workspaces. Part of Perforce. [Commercial]
 * **[Neoload (Tricentis)](https://www.tricentis.com/products/performance-testing-neoload)** 🟠📚 — Enterprise performance testing with codeless design, as-code scripting, and RPA-based protocol support. Strong coverage for SAP, Citrix, and legacy protocols. SLA-based analysis and CI/CD integration. [Commercial]
-* **[LoadRunner / OpenText](https://www.opentext.com/products/loadrunner-professional)** 🟠🧰 — The legacy enterprise standard with the broadest protocol support in the industry (50+ protocols). LoadRunner Professional (on-premise) and LoadRunner Cloud (SaaS). Deep APM integration. Expensive but deeply embedded in regulated industries. [Commercial]
-* **[Gatling Enterprise](https://gatling.io/enterprise/)** 🟠🔗 — Managed Gatling with distributed execution, real-time dashboards, historical comparison, and team collaboration. Self-hosted or cloud options. [Commercial]
+* **[LoadRunner / OpenText](https://www.opentext.com/products/professional-performance-engineering)** 🟠🧰 — The legacy enterprise standard with the broadest protocol support in the industry (50+ protocols). LoadRunner Professional (on-premise) and LoadRunner Cloud (SaaS). Deep APM integration. Expensive but deeply embedded in regulated industries. [Commercial]
+* **[Gatling Enterprise](https://gatling.io/platform)** 🟠🔗 — Managed Gatling with distributed execution, real-time dashboards, historical comparison, and team collaboration. Self-hosted or cloud options. [Commercial]
 
 ---
 
@@ -303,7 +303,7 @@ Key areas where AI delivers value in performance testing today:
 
 ### Online Resources
 
-* [k6 Documentation](https://k6.io/docs/) — Excellent guides, tutorials, and examples for modern load testing
+* [k6 Documentation](https://grafana.com/docs/k6/latest/) — Excellent guides, tutorials, and examples for modern load testing
 * [Brendan Gregg's Blog](https://www.brendangregg.com/) — Deep technical content on systems performance
 * [Web.dev Performance](https://web.dev/performance/) — Google's comprehensive guide to web performance
 * [Gil Tene — How NOT to Measure Latency](https://www.youtube.com/watch?v=lJ8ydIuPFeU) — Essential talk on coordinated omission and latency measurement
@@ -313,7 +313,7 @@ Key areas where AI delivers value in performance testing today:
 ### Standards & Methodologies
 
 * [USE Method](https://www.brendangregg.com/usemethod.html) — Utilization, Saturation, Errors — for resource analysis
-* [RED Method](https://grafana.com/blog/2018/08/02/the-red-method-how-to-instrument-your-services/) — Rate, Errors, Duration — for service-level analysis
+* [RED Method](https://grafana.com/blog/the-red-method-how-to-instrument-your-services/) — Rate, Errors, Duration — for service-level analysis
 * [Google SRE — Testing for Reliability](https://sre.google/sre-book/testing-reliability/) — Testing practices from Google SRE
 * [Performance Testing Guidance (Microsoft)](https://learn.microsoft.com/en-us/previous-versions/msp-n-p/bb924375(v=pandp.10)) — Methodology for web application performance testing
 
