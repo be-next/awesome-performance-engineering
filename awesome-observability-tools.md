@@ -175,7 +175,7 @@ Tools are organized by **technical building blocks**, but observability problems
 * **[AppDynamics (Splunk/Cisco)](https://www.splunk.com/en_us/products/splunk-appdynamics.html)** 🟠🧰 — Enterprise APM with business transaction monitoring and code-level diagnostics. Merged into Splunk in 2025. [Commercial]
 * **[Chronosphere](https://chronosphere.io/)** 🟠🧠 — Cloud-native observability platform focused on metrics at scale. Founded by Uber M3 creators. Strong cost control and cardinality management. [Commercial]
 * **[Lightstep / ServiceNow Cloud Observability](https://www.servicenow.com/products/observability.html)** 🟠🧠 — OpenTelemetry-native observability platform, now part of ServiceNow. [Commercial]
-
+* **[Sematext](https://www.sematext.com/)** 🔵🟢🟠🧠📚🚀 — Comprehensive SaaS observability platform, OpenTelemetry-native, automatic topology discovery. [Commercial]
 ---
 
 ## Monitoring Suites (Operations-Oriented)
@@ -257,6 +257,8 @@ This is an emerging and fast-moving space. The tools below represent current cap
 * **[Checkly](https://www.checklyhq.com/)** 🟢🔵🔗🧠 — Monitoring as code for APIs and browsers. Playwright-based synthetic checks with CI/CD integration. [TypeScript] [Free tier/Commercial] — [GitHub](https://github.com/checkly/checkly-cli)
 * **[Grafana Synthetic Monitoring](https://grafana.com/docs/grafana-cloud/testing/synthetic-monitoring/)** 🟢🔵 — Probe-based synthetic monitoring integrated into Grafana Cloud. Multi-location HTTP, DNS, TCP, and ICMP checks. [Commercial]
 * **[Uptime Kuma](https://uptime.kuma.pet/)** ⭐🟢🧪 — Self-hosted monitoring tool with a clean UI. HTTP, TCP, DNS, and keyword monitoring with notifications. Simple and effective. [JavaScript] [MIT] — [GitHub](https://github.com/louislam/uptime-kuma)
+* * **[Sematext](https://www.sematext.com/synthetic-monitoring)** 🔵🟢🟠🧠📚🚀 — Playwright-based synthetic checks with CI/CD integration, Github synchronization, SSL certificate expiration monitoring. [TypeScript] [Commercial]
+
 
 ---
 
