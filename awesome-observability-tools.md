@@ -164,7 +164,7 @@ Tools are organized by **technical building blocks**, but observability problems
 
 *Full-stack platforms that combine metrics, logs, traces, and often profiling — trading flexibility for integration and convenience.*
 
-* **[Datadog](https://www.datadoghq.com/)** 🟠🧠 — Comprehensive SaaS observability platform with AI-powered features (Watchdog anomaly detection, automated root-cause analysis). Strong breadth, premium pricing. [Commercial]
+* **[Datadog](https://www.datadoghq.com/)** 🟠🧠 — SaaS observability platform with AI-powered features (Watchdog anomaly detection, automated root-cause analysis). Strong breadth, premium pricing. [Commercial]
 * **[Dynatrace](https://www.dynatrace.com/)** 🟠🧠 — AI-driven observability with automatic topology discovery and root-cause analysis (Davis AI). Strong in enterprise and complex Java environments. [Commercial]
 * **[New Relic](https://newrelic.com/)** 🟠🧠 — Developer-centric observability with a generous free tier. NRQL query language, strong APM heritage. [Commercial]
 * **[Splunk Observability](https://www.splunk.com/en_us/products/observability.html)** 🟠🧰 — Observability built on Splunk's machine data analytics platform. Strong for organizations already invested in Splunk. [Commercial]
@@ -258,7 +258,7 @@ This is an emerging and fast-moving space. The tools below represent current cap
 * **[Checkly](https://www.checklyhq.com/)** 🟢🔵🔗🧠 — Monitoring as code for APIs and browsers. Playwright-based synthetic checks with CI/CD integration. [TypeScript] [Free tier/Commercial] — [GitHub](https://github.com/checkly/checkly-cli)
 * **[Grafana Synthetic Monitoring](https://grafana.com/docs/grafana-cloud/testing/synthetic-monitoring/)** 🟢🔵 — Probe-based synthetic monitoring integrated into Grafana Cloud. Multi-location HTTP, DNS, TCP, and ICMP checks. [Commercial]
 * **[Uptime Kuma](https://uptime.kuma.pet/)** ⭐🟢🧪 — Self-hosted monitoring tool with a clean UI. HTTP, TCP, DNS, and keyword monitoring with notifications. Simple and effective. [JavaScript] [MIT] — [GitHub](https://github.com/louislam/uptime-kuma)
-* **[Sematext](https://www.sematext.com/synthetic-monitoring)** 🟢🟠🧠📚 — Playwright-based synthetic checks with CI/CD integration, Github synchronization, SSL certificate expiration monitoring. [TypeScript] [Commercial]
+* **[Sematext](https://www.sematext.com/synthetic-monitoring)** 🟢🟠🧠📚 — Playwright-based synthetic checks with CI/CD integration, GitHub synchronization, SSL certificate expiration monitoring. [TypeScript] [Commercial]
 
 ---
 
