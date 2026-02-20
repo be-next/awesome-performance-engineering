@@ -272,8 +272,20 @@ This is an emerging and fast-moving space. The tools below represent current cap
 * *Site Reliability Engineering* — Betsy Beyer et al. (O'Reilly / Google, 2016) — [Free online](https://sre.google/sre-book/table-of-contents/)
 * *BPF Performance Tools* — Brendan Gregg (Addison-Wesley, 2019) — The definitive reference for eBPF-based performance analysis
 * *Systems Performance* — Brendan Gregg (Addison-Wesley, 2nd ed. 2020) — Essential reading for anyone serious about performance engineering
+* *Practical Monitoring* — Mike Julian (O'Reilly, 2017) — Vendor-neutral monitoring principles, anti-patterns, and on-call design
+* *Understanding Software Dynamics* — Richard L. Sites (Addison-Wesley, 2021) — Modern performance profiling with KUtrace, by the DEC Alpha co-architect
+* *Designing Data-Intensive Applications* — Martin Kleppmann (O'Reilly, 2017) — Essential architecture reference for distributed systems and data pipelines
+* *Database Reliability Engineering* — Laine Campbell, Charity Majors (O'Reilly, 2017) — SRE principles applied to database operations and performance
 
-### Online Resources
+### Talks & Video Resources
+
+* [Brendan Gregg — Blazing Performance with Flame Graphs](https://www.brendangregg.com/) — The original flame graph introduction (USENIX LISA 2013)
+* [Brendan Gregg — Give Me 15 Minutes and I'll Change Your View of Linux Tracing](https://www.brendangregg.com/) — Concise Linux tracing primer (USENIX LISA 2016)
+* [Bryan Cantrill — The Hurricane's Butterfly](https://www.youtube.com/watch?v=7AO4wz6gI3Q) — Debugging pathologically performing systems (Jane Street 2018)
+* [Emery Berger — Performance Matters](https://www.youtube.com/watch?v=r-TLSBdHe1A) — Causal profiling and the Coz profiler (Strange Loop 2019)
+* [Martin Thompson — Mechanical Sympathy](https://www.infoq.com/presentations/mechanical-sympathy/) — Understanding hardware for high-performance software
+
+### Online Resources & Blogs
 
 * [OpenTelemetry Documentation](https://opentelemetry.io/docs/) — The primary reference for modern instrumentation
 * [Brendan Gregg's Blog](https://www.brendangregg.com/) — Deep technical content on systems performance, eBPF, and flame graphs
@@ -281,6 +293,9 @@ This is an emerging and fast-moving space. The tools below represent current cap
 * [Honeycomb Blog](https://www.honeycomb.io/blog) — Thought leadership on observability engineering
 * [Grafana Blog](https://grafana.com/blog/) — Technical content on the Grafana observability stack
 * [SRE Weekly](https://sreweekly.com/) — Weekly newsletter on reliability and observability
+* [Netflix TechBlog](https://netflixtechblog.com/) — Chaos engineering, adaptive streaming, and performance at massive scale
+* [Mechanical Sympathy Blog](http://mechanical-sympathy.blogspot.com) — Martin Thompson on low-latency, lock-free systems
+* [The Observation Deck](https://bcantrill.dtrace.org/) — Bryan Cantrill on DTrace, observability, and system debugging
 
 ---
 
