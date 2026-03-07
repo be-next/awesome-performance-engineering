@@ -67,7 +67,7 @@ Tools are organized by **technical building blocks**, but observability problems
 * **[Thanos](https://thanos.io/)** ⭐🟢🔵 — Adds long-term storage, global query view, and high availability to Prometheus. Sidecar architecture lets you keep existing Prometheus deployments while adding horizontal scale. [Go] [Apache-2.0] — [GitHub](https://github.com/thanos-io/thanos)
 * **[Mimir](https://grafana.com/oss/mimir/)** ⭐🟢🔵🚀 — Grafana's horizontally scalable, highly available Prometheus-compatible TSDB. Designed from the ground up for multi-tenant, large-scale deployments. [Go] [AGPL-3.0] — [GitHub](https://github.com/grafana/mimir)
 * **[InfluxDB](https://www.influxdata.com/)** 🟢🟠 — Purpose-built time-series database with high write throughput. Strong ecosystem. v3 re-open-sourced under Apache 2.0 in 2024 with a Rust-based engine. [Go/Rust] [Apache-2.0/Commercial] — [GitHub](https://github.com/influxdata/influxdb)
-* **[OpenTelemetry Collector](https://opentelemetry.io/docs/collector/)** — *(See [Observability Pipelines](#observability-pipelines--telemetry-processing) for full entry)*
+* **[OpenTelemetry Collector](https://opentelemetry.io/docs/collector/)** — *(See [Observability Pipelines](#observability-pipelines-and-telemetry-processing) for full entry)*
 * **[Grafana Alloy](https://grafana.com/oss/alloy-opentelemetry-collector/)** ⭐🟢🔵🧠 — OpenTelemetry-native telemetry collector from Grafana Labs (successor to Grafana Agent). Supports metrics, logs, traces, and profiles. Native integration with the Grafana stack. [Go] [Apache-2.0] — [GitHub](https://github.com/grafana/alloy)
 * **[Telegraf](https://www.influxdata.com/time-series-platform/telegraf/)** 🟢 — Plugin-driven agent for collecting and reporting metrics. 300+ input plugins make it versatile for heterogeneous environments. [Go] [MIT] — [GitHub](https://github.com/influxdata/telegraf)
 * **[StatsD](https://github.com/statsd/statsd)** 🧰 — Lightweight, UDP-based metrics aggregation daemon. Simple protocol, widely supported by applications. Still relevant in legacy environments. [Node.js] [MIT]
@@ -96,7 +96,7 @@ Tools are organized by **technical building blocks**, but observability problems
 * **[Grafana Loki](https://grafana.com/oss/loki/)** ⭐🟢🔵📚🧠 — Label-based log aggregation that indexes metadata, not content. Dramatically cheaper than full-text indexing at scale. Pairs with Grafana for exploration. [Go] [AGPL-3.0] — [GitHub](https://github.com/grafana/loki)
 * **[Fluent Bit](https://fluentbit.io/)** ⭐🟢🔵🚀 — Lightweight, high-performance log processor and forwarder designed for edge and containerized environments. Tiny memory footprint. [C] [Apache-2.0] — [GitHub](https://github.com/fluent/fluent-bit)
 * **[Fluentd](https://www.fluentd.org/)** 🟢🔵 — CNCF graduated unified logging layer with 1000+ plugins. Heavier than Fluent Bit but more flexible for complex routing. [Ruby/C] [Apache-2.0] — [GitHub](https://github.com/fluent/fluentd)
-* **[Vector](https://vector.dev/)** — *(See [Observability Pipelines](#observability-pipelines--telemetry-processing) for full entry)*
+* **[Vector](https://vector.dev/)** — *(See [Observability Pipelines](#observability-pipelines-and-telemetry-processing) for full entry)*
 * **[Elasticsearch](https://www.elastic.co/elasticsearch)** ⭐🟢🟠🧰 — Distributed search and analytics engine. Powerful full-text search, but storage costs and operational complexity can be significant at scale. License changed from Apache-2.0 to SSPL. [Java] [SSPL/Commercial] — [GitHub](https://github.com/elastic/elasticsearch)
 * **[OpenSearch](https://opensearch.org/)** 🟢🔵 — Community-driven fork of Elasticsearch (post-license change). AWS-backed, Apache-2.0 licensed. Drop-in replacement for Elasticsearch in most deployments. [Java] [Apache-2.0] — [GitHub](https://github.com/opensearch-project/OpenSearch)
 * **[Logstash](https://www.elastic.co/logstash)** 🧰 — Flexible log ingestion and transformation pipeline. Part of the Elastic Stack. Heavy JVM footprint. [Java] [SSPL/Commercial] — [GitHub](https://github.com/elastic/logstash)
@@ -105,7 +105,7 @@ Tools are organized by **technical building blocks**, but observability problems
 
 ---
 
-## Observability Pipelines & Telemetry Processing
+## Observability Pipelines and Telemetry Processing
 
 *Transport, transformation, sampling, and routing of observability data — increasingly critical as telemetry volumes grow and costs need control.*
 

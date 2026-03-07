@@ -135,7 +135,7 @@ Tools are organized by **functional category**, but real performance testing oft
 
 ---
 
-## Service Virtualization & Mocking
+## Service Virtualization and Mocking
 
 *Simulating dependencies to isolate components for targeted performance testing — essential when real services are unavailable, expensive, or rate-limited.*
 
@@ -192,7 +192,7 @@ Tools are organized by **functional category**, but real performance testing oft
 * **[Gremlin](https://www.gremlin.com/)** 🟠📚 — Enterprise chaos engineering platform. Managed experiments with safety controls (halt conditions). Supports infrastructure, application, and network attacks. [Commercial]
 * **[Chaos Monkey](https://netflix.github.io/chaosmonkey/)** ⭐🟢 — Netflix's original chaos tool: randomly terminates instances in production. Pioneered the discipline. [Go] [Apache-2.0] — [GitHub](https://github.com/Netflix/chaosmonkey)
 * **[Pumba](https://github.com/alexei-led/pumba)** 🟢🔵 — Chaos testing for Docker containers. Kill, pause, stop containers and inject network delays/packet loss. Lightweight alternative to full chaos platforms. [Go] [Apache-2.0]
-* **[Toxiproxy](https://github.com/Shopify/toxiproxy)** — *(See [Service Virtualization](#service-virtualization--mocking) for full entry)*
+* **[Toxiproxy](https://github.com/Shopify/toxiproxy)** — *(See [Service Virtualization](#service-virtualization-and-mocking) for full entry)*
 * **[Steadybit](https://www.steadybit.com/)** 🟠🔵 — Enterprise reliability platform combining chaos engineering with automated resilience validation. [Commercial]
 * **[AWS Fault Injection Service](https://aws.amazon.com/fis/)** 🟠🔵 — Managed fault injection for AWS resources. Native integration with AWS services. [Commercial]
 
@@ -203,7 +203,7 @@ Tools are organized by **functional category**, but real performance testing oft
 *Simulating real-world network conditions — latency, packet loss, bandwidth constraints — to test application behavior over imperfect networks.*
 
 * **[tc (Traffic Control)](https://man7.org/linux/man-pages/man8/tc.8.html)** 🧰 — Linux kernel traffic shaping. Netem qdisc for network emulation (delay, loss, reordering, corruption). The foundational tool. [C] [GPL-2.0]
-* **[Toxiproxy](https://github.com/Shopify/toxiproxy)** — *(See [Service Virtualization](#service-virtualization--mocking) for full entry)*
+* **[Toxiproxy](https://github.com/Shopify/toxiproxy)** — *(See [Service Virtualization](#service-virtualization-and-mocking) for full entry)*
 * **[Comcast](https://github.com/tylertreat/comcast)** 🧪🧰 — Simple CLI tool for simulating bad network conditions (packet loss, latency, bandwidth). Wraps tc/pfctl. No longer actively maintained. [Go] [Apache-2.0]
 * **[Clumsy](https://jagt.github.io/clumsy/)** 🟢🧪 — Windows network condition simulator. Drop, lag, throttle, and reorder packets. [C] [MIT] — [GitHub](https://github.com/jagt/clumsy)
 
