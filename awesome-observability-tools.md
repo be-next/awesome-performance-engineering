@@ -8,7 +8,7 @@ This list focuses on **modern observability practices** while acknowledging **le
 
 ---
 
-## 🎯 Scope & Intent
+## Scope & Intent
 
 This list is curated with the following principles:
 
@@ -26,11 +26,11 @@ The goal is to help practitioners:
 
 ---
 
-## 🧭 How to Read This List
+## How to Read This List
 
 Tools are organized by **technical building blocks**, but observability problems are usually expressed in terms of **intent**. A complementary reading by intent is recommended:
 
-### 🔎 Observability by Intent
+### Observability by Intent
 
 | Intent | Building blocks | Key tools |
 | ------ | --------------- | --------- |
@@ -67,11 +67,10 @@ Tools are organized by **technical building blocks**, but observability problems
 * **[Thanos](https://thanos.io/)** ⭐🟢🔵 — Adds long-term storage, global query view, and high availability to Prometheus. Sidecar architecture lets you keep existing Prometheus deployments while adding horizontal scale. [Go] [Apache-2.0] — [GitHub](https://github.com/thanos-io/thanos)
 * **[Mimir](https://grafana.com/oss/mimir/)** ⭐🟢🔵🚀 — Grafana's horizontally scalable, highly available Prometheus-compatible TSDB. Designed from the ground up for multi-tenant, large-scale deployments. [Go] [AGPL-3.0] — [GitHub](https://github.com/grafana/mimir)
 * **[InfluxDB](https://www.influxdata.com/)** 🟢🟠 — Purpose-built time-series database with high write throughput. Strong ecosystem. v3 re-open-sourced under Apache 2.0 in 2024 with a Rust-based engine. [Go/Rust] [Apache-2.0/Commercial] — [GitHub](https://github.com/influxdata/influxdb)
-* **[OpenTelemetry Collector](https://opentelemetry.io/docs/collector/)** ⭐🟢🔵🧠 — Vendor-neutral telemetry collection, processing, and export pipeline. The backbone of modern instrumentation architectures. [Go] [Apache-2.0] — [GitHub](https://github.com/open-telemetry/opentelemetry-collector)
+* **[OpenTelemetry Collector](https://opentelemetry.io/docs/collector/)** — *(See [Observability Pipelines](#observability-pipelines--telemetry-processing) for full entry)*
 * **[Grafana Alloy](https://grafana.com/oss/alloy-opentelemetry-collector/)** ⭐🟢🔵🧠 — OpenTelemetry-native telemetry collector from Grafana Labs (successor to Grafana Agent). Supports metrics, logs, traces, and profiles. Native integration with the Grafana stack. [Go] [Apache-2.0] — [GitHub](https://github.com/grafana/alloy)
 * **[Telegraf](https://www.influxdata.com/time-series-platform/telegraf/)** 🟢 — Plugin-driven agent for collecting and reporting metrics. 300+ input plugins make it versatile for heterogeneous environments. [Go] [MIT] — [GitHub](https://github.com/influxdata/telegraf)
 * **[StatsD](https://github.com/statsd/statsd)** 🧰 — Lightweight, UDP-based metrics aggregation daemon. Simple protocol, widely supported by applications. Still relevant in legacy environments. [Node.js] [MIT]
-* **[Graphite](https://graphiteapp.org/)** 🧰 — One of the original time-series storage and graphing systems. Whisper backend, Carbon collector. Historical significance but limited compared to modern alternatives. [Python] [Apache-2.0] — [GitHub](https://github.com/graphite-project/graphite-web)
 * **[Netdata](https://www.netdata.cloud/)** ⭐🟢🚀 — Real-time, per-second system and application monitoring with built-in anomaly detection. Zero-configuration agent with impressive out-of-the-box dashboards. [C] [GPL-3.0] — [GitHub](https://github.com/netdata/netdata)
 
 ---
@@ -97,7 +96,7 @@ Tools are organized by **technical building blocks**, but observability problems
 * **[Grafana Loki](https://grafana.com/oss/loki/)** ⭐🟢🔵📚🧠 — Label-based log aggregation that indexes metadata, not content. Dramatically cheaper than full-text indexing at scale. Pairs with Grafana for exploration. [Go] [AGPL-3.0] — [GitHub](https://github.com/grafana/loki)
 * **[Fluent Bit](https://fluentbit.io/)** ⭐🟢🔵🚀 — Lightweight, high-performance log processor and forwarder designed for edge and containerized environments. Tiny memory footprint. [C] [Apache-2.0] — [GitHub](https://github.com/fluent/fluent-bit)
 * **[Fluentd](https://www.fluentd.org/)** 🟢🔵 — CNCF graduated unified logging layer with 1000+ plugins. Heavier than Fluent Bit but more flexible for complex routing. [Ruby/C] [Apache-2.0] — [GitHub](https://github.com/fluent/fluentd)
-* **[Vector](https://vector.dev/)** 🟢🚀🧠 — High-performance observability data pipeline for logs, metrics, and traces. Built in Rust for reliability and throughput. Excellent for consolidating telemetry pipelines. [Rust] [MPL-2.0] — [GitHub](https://github.com/vectordotdev/vector)
+* **[Vector](https://vector.dev/)** — *(See [Observability Pipelines](#observability-pipelines--telemetry-processing) for full entry)*
 * **[Elasticsearch](https://www.elastic.co/elasticsearch)** ⭐🟢🟠🧰 — Distributed search and analytics engine. Powerful full-text search, but storage costs and operational complexity can be significant at scale. License changed from Apache-2.0 to SSPL. [Java] [SSPL/Commercial] — [GitHub](https://github.com/elastic/elasticsearch)
 * **[OpenSearch](https://opensearch.org/)** 🟢🔵 — Community-driven fork of Elasticsearch (post-license change). AWS-backed, Apache-2.0 licensed. Drop-in replacement for Elasticsearch in most deployments. [Java] [Apache-2.0] — [GitHub](https://github.com/opensearch-project/OpenSearch)
 * **[Logstash](https://www.elastic.co/logstash)** 🧰 — Flexible log ingestion and transformation pipeline. Part of the Elastic Stack. Heavy JVM footprint. [Java] [SSPL/Commercial] — [GitHub](https://github.com/elastic/logstash)
@@ -126,7 +125,6 @@ Tools are organized by **technical building blocks**, but observability problems
 * **[Kibana](https://www.elastic.co/kibana)** 🟢🟠🧰 — Visualization and exploration for Elasticsearch/OpenSearch data. Powerful for log exploration (Discover, Lens). Part of the Elastic Stack. [TypeScript] [SSPL/Commercial] — [GitHub](https://github.com/elastic/kibana)
 * **[OpenSearch Dashboards](https://opensearch.org/)** 🟢🔵 — Open-source fork of Kibana for OpenSearch. [TypeScript] [Apache-2.0] — [GitHub](https://github.com/opensearch-project/OpenSearch-Dashboards)
 * **[Apache Superset](https://superset.apache.org/)** 🟢 — Scalable analytics and dashboarding platform. SQL-first, strong at ad-hoc data exploration. [Python] [Apache-2.0] — [GitHub](https://github.com/apache/superset)
-* **[Redash](https://redash.io/)** 🧰 — SQL-first data visualization and collaboration. Connects to many data sources. Minimal maintenance since Databricks acquisition. [Python] [BSD-2-Clause] — [GitHub](https://github.com/getredash/redash)
 * **[Perses](https://perses.dev/)** 🟢🔵🧠 — CNCF sandbox project for dashboards-as-code. Native PromQL and TraceQL support. Designed for GitOps-driven observability. [Go/TypeScript] [Apache-2.0] — [GitHub](https://github.com/perses/perses)
 
 ---
@@ -220,8 +218,6 @@ Tools are organized by **technical building blocks**, but observability problems
 * **[Grafana Faro](https://grafana.com/oss/faro/)** 🟢🔵🧠 — Open-source frontend observability SDK. Captures errors, performance, and user events, sends to Grafana stack. [TypeScript] [Apache-2.0] — [GitHub](https://github.com/grafana/faro-web-sdk)
 * **[OpenTelemetry Browser SDK](https://opentelemetry.io/docs/languages/js/getting-started/browser/)** 🟢🧠 — OTel instrumentation for web applications. Captures page loads, resource timings, and user interactions. [TypeScript] [Apache-2.0]
 * **[LogRocket](https://logrocket.com/)** 🟠 — Session replay combined with frontend performance monitoring. [Commercial]
-* **[Plausible](https://plausible.io/)** 🟢🧰 — Lightweight, privacy-friendly web analytics. [Elixir] [AGPL-3.0] — [GitHub](https://github.com/plausible/analytics)
-* **[Matomo](https://matomo.org/)** 🟢🧰 — Privacy-focused, self-hosted web analytics. GDPR-friendly Google Analytics alternative. [PHP] [GPL-3.0] — [GitHub](https://github.com/matomo-org/matomo)
 
 ---
 
@@ -259,6 +255,16 @@ This is an emerging and fast-moving space. The tools below represent current cap
 * **[Grafana Synthetic Monitoring](https://grafana.com/docs/grafana-cloud/testing/synthetic-monitoring/)** 🟢🔵 — Probe-based synthetic monitoring integrated into Grafana Cloud. Multi-location HTTP, DNS, TCP, and ICMP checks. [Commercial]
 * **[Uptime Kuma](https://uptime.kuma.pet/)** ⭐🟢🧪 — Self-hosted monitoring tool with a clean UI. HTTP, TCP, DNS, and keyword monitoring with notifications. Simple and effective. [JavaScript] [MIT] — [GitHub](https://github.com/louislam/uptime-kuma)
 * **[Sematext](https://www.sematext.com/synthetic-monitoring)** 🟢🟠🧠📚 — Playwright-based synthetic checks with CI/CD integration, GitHub synchronization, SSL certificate expiration monitoring. [TypeScript] [Commercial]
+
+---
+
+## Legacy & Historical
+
+*Tools with historical significance that are no longer actively evolving but remain widely deployed. Included for context — practitioners may encounter them in existing environments.*
+
+* **[Graphite](https://graphiteapp.org/)** 🧰 — One of the original time-series storage and graphing systems. Whisper backend, Carbon collector. Historical significance but limited compared to modern alternatives. [Python] [Apache-2.0] — [GitHub](https://github.com/graphite-project/graphite-web)
+* **[Nagios](https://www.nagios.org/)** 🧰 — The grandfather of open-source monitoring. Check-based architecture with an enormous plugin ecosystem. Still widely deployed in enterprise environments. *(Also listed in [Monitoring Suites](#monitoring-suites-operations-oriented))* [C] [GPL-2.0] — [GitHub](https://github.com/NagiosEnterprises/nagioscore)
+* **[Redash](https://redash.io/)** 🧰 — SQL-first data visualization and collaboration. Connects to many data sources. Minimal maintenance since Databricks acquisition. [Python] [BSD-2-Clause] — [GitHub](https://github.com/getredash/redash)
 
 ---
 

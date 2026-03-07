@@ -8,7 +8,7 @@ This list covers the full performance testing lifecycle — from **workload desi
 
 ---
 
-## 🎯 Scope & Intent
+## Scope & Intent
 
 This list is curated with the following principles:
 
@@ -26,11 +26,11 @@ The goal is to help practitioners:
 
 ---
 
-## 🧭 How to Read This List
+## How to Read This List
 
 Tools are organized by **functional category**, but real performance testing often combines several categories. A complementary reading by use case:
 
-### 🔎 Performance Testing by Use Case
+### Performance Testing by Use Case
 
 | Use case | Categories involved | Key tools |
 | -------- | ------------------- | --------- |
@@ -192,7 +192,7 @@ Tools are organized by **functional category**, but real performance testing oft
 * **[Gremlin](https://www.gremlin.com/)** 🟠📚 — Enterprise chaos engineering platform. Managed experiments with safety controls (halt conditions). Supports infrastructure, application, and network attacks. [Commercial]
 * **[Chaos Monkey](https://netflix.github.io/chaosmonkey/)** ⭐🟢 — Netflix's original chaos tool: randomly terminates instances in production. Pioneered the discipline. [Go] [Apache-2.0] — [GitHub](https://github.com/Netflix/chaosmonkey)
 * **[Pumba](https://github.com/alexei-led/pumba)** 🟢🔵 — Chaos testing for Docker containers. Kill, pause, stop containers and inject network delays/packet loss. Lightweight alternative to full chaos platforms. [Go] [Apache-2.0]
-* **[Toxiproxy](https://github.com/Shopify/toxiproxy)** 🟢🔗 — TCP proxy for simulating network conditions. Programmatic control of latency, bandwidth, and connection failures. Simple, focused, effective. [Go] [MIT]
+* **[Toxiproxy](https://github.com/Shopify/toxiproxy)** — *(See [Service Virtualization](#service-virtualization--mocking) for full entry)*
 * **[Steadybit](https://www.steadybit.com/)** 🟠🔵 — Enterprise reliability platform combining chaos engineering with automated resilience validation. [Commercial]
 * **[AWS Fault Injection Service](https://aws.amazon.com/fis/)** 🟠🔵 — Managed fault injection for AWS resources. Native integration with AWS services. [Commercial]
 
@@ -203,7 +203,7 @@ Tools are organized by **functional category**, but real performance testing oft
 *Simulating real-world network conditions — latency, packet loss, bandwidth constraints — to test application behavior over imperfect networks.*
 
 * **[tc (Traffic Control)](https://man7.org/linux/man-pages/man8/tc.8.html)** 🧰 — Linux kernel traffic shaping. Netem qdisc for network emulation (delay, loss, reordering, corruption). The foundational tool. [C] [GPL-2.0]
-* **[Toxiproxy](https://github.com/Shopify/toxiproxy)** 🟢🔗 — Application-level TCP proxy for simulating network conditions. Easier to use than tc for application-level testing. [Go] [MIT]
+* **[Toxiproxy](https://github.com/Shopify/toxiproxy)** — *(See [Service Virtualization](#service-virtualization--mocking) for full entry)*
 * **[Comcast](https://github.com/tylertreat/comcast)** 🧪🧰 — Simple CLI tool for simulating bad network conditions (packet loss, latency, bandwidth). Wraps tc/pfctl. No longer actively maintained. [Go] [Apache-2.0]
 * **[Clumsy](https://jagt.github.io/clumsy/)** 🟢🧪 — Windows network condition simulator. Drop, lag, throttle, and reorder packets. [C] [MIT] — [GitHub](https://github.com/jagt/clumsy)
 
@@ -249,7 +249,6 @@ Tools are organized by **functional category**, but real performance testing oft
 
 * **[Grafana k6 Cloud](https://grafana.com/products/cloud/k6/)** 🟠🔗 — Managed k6 execution with geographic distribution across multiple global load zones, real-time result visualization in Grafana, and native CI/CD integration. Performance Insights provide automated analysis of test results. The natural choice for teams already using k6 OSS who need scale and collaboration. [Commercial]
 * **[Octoperf](https://octoperf.com/)** 🟠🔗📚 — SaaS performance testing platform built on JMeter with a modern UI, team collaboration, and trend analysis. European-hosted (GDPR-compliant). Supports JMeter scripts natively with enhanced reporting and distributed load generation. Good fit for teams migrating from JMeter to a managed platform. [Commercial]
-* **~~Flood (Tricentis)~~** — Cloud load testing platform supporting JMeter, Gatling, and Selenium. **Decommissioned in June 2024.** Tricentis has migrated users to NeoLoad. Listed for historical reference only.
 
 ### Enterprise Platforms
 
@@ -260,9 +259,9 @@ Tools are organized by **functional category**, but real performance testing oft
 
 ---
 
-## 🤖 AI-Augmented Performance Testing
+## AI-Augmented Performance Testing
 
-*AI is entering the performance testing lifecycle — from test generation and workload modeling to results analysis. For the broader perspective on AI in performance engineering, see the [README](README.md#-performance-engineering-in-the-age-of-ai).*
+*AI is entering the performance testing lifecycle — from test generation and workload modeling to results analysis.*
 
 Key areas where AI delivers value in performance testing today:
 

@@ -62,7 +62,7 @@ Each tool entry follows this pattern:
 
 ## Code of conduct
 
-Be respectful, constructive, and focused on the goal: helping practitioners find the right tools for their context.
+Please read and follow the **[Code of Conduct](code-of-conduct.md)**. Be respectful, constructive, and focused on the goal: helping practitioners find the right tools for their context.
 
 ## License
 
