@@ -1,6 +1,7 @@
 # Sites that block automated requests (WAF / bot protection)
 https://www.webpagetest.org/
 https://www.servicenow.com/
+https://www.opentext.com/
 
 # Temporarily unreachable
 https://academy.gatling.io/
@@ -10,6 +11,7 @@ https://www.neosync.dev/
 
 # Slow response — causes timeout on CI runners
 https://chaos-mesh.org/
+https://www.sigmetrics.org/
 
 # Unreliable server — connection reset intermittently
 https://www.rsyslog.com/
