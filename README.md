@@ -124,7 +124,7 @@
 - [Keep](https://github.com/keephq/keep) - Open-source alert management platform. Consolidates alerts from multiple sources with workflow automation. 🟢🔵
 - [Alerta](https://github.com/alerta/alerta) - Unified alert correlation and management. Consolidates alerts from multiple monitoring systems. 🟢
 - [PagerDuty](https://www.pagerduty.com/) - Industry-standard incident response and on-call management platform. 🟠
-- [Opsgenie](https://www.atlassian.com/software/opsgenie) - Alerting and escalation platform. Part of Atlassian suite. 🟠
+- [Opsgenie](https://www.atlassian.com/software/opsgenie/migration) - Alerting and escalation platform. Part of Atlassian suite. 🟠
 - [Rootly](https://rootly.com/) - AI-assisted incident management with automated timelines and postmortem generation. 🟠
 
 ### Observability Platforms (Integrated)
@@ -140,7 +140,7 @@
 - [AppDynamics (Splunk/Cisco)](https://www.splunk.com/en_us/products/splunk-appdynamics.html) - Enterprise APM with business transaction monitoring and code-level diagnostics. Merged into Splunk in 2025. 🟠
 - [Chronosphere](https://chronosphere.io/) - Cloud-native observability platform focused on metrics at scale. Founded by Uber M3 creators. Strong cost control and cardinality management. 🟠
 - [Lightstep / ServiceNow Cloud Observability](https://www.servicenow.com/products/observability.html) - OpenTelemetry-native observability platform, now part of ServiceNow. 🟠
-- [Sematext](https://www.sematext.com/) - SaaS observability platform with OpenTelemetry-native support and automatic topology discovery. 🟢🟠
+- [Sematext](https://sematext.com/) - SaaS observability platform with OpenTelemetry-native support and automatic topology discovery. 🟢🟠
 
 ### Monitoring Suites (Operations-Oriented)
 
@@ -191,7 +191,7 @@
 - [Checkly](https://github.com/checkly/checkly-cli) - Monitoring as code for APIs and browsers. Playwright-based synthetic checks with CI/CD integration. 🟢🔵
 - [Grafana Synthetic Monitoring](https://grafana.com/docs/grafana-cloud/testing/synthetic-monitoring/) - Probe-based synthetic monitoring integrated into Grafana Cloud. Multi-location HTTP, DNS, TCP, and ICMP checks. 🟢🔵
 - [Uptime Kuma](https://github.com/louislam/uptime-kuma) - Self-hosted monitoring tool with a clean UI. HTTP, TCP, DNS, and keyword monitoring with notifications. Simple and effective. ⭐🟢
-- [Sematext](https://www.sematext.com/synthetic-monitoring) - Playwright-based synthetic checks with CI/CD integration, GitHub synchronization, SSL certificate expiration monitoring. 🟢🟠
+- [Sematext](https://sematext.com/synthetic-monitoring/) - Playwright-based synthetic checks with CI/CD integration, GitHub synchronization, SSL certificate expiration monitoring. 🟢🟠
 
 ### Legacy & Historical
 
@@ -291,7 +291,7 @@
 - [Gremlin](https://www.gremlin.com/) - Enterprise chaos engineering platform. Managed experiments with safety controls (halt conditions). Supports infrastructure, application, and network attacks. 🟠
 - [Chaos Monkey](https://github.com/Netflix/chaosmonkey) - Netflix's original chaos tool: randomly terminates instances in production. Pioneered the discipline. ⭐🟢
 - [Pumba](https://github.com/alexei-led/pumba) - Chaos testing for Docker containers. Kill, pause, stop containers and inject network delays/packet loss. Lightweight alternative to full chaos platforms. 🟢🔵
-- [Steadybit](https://www.steadybit.com/) - Enterprise reliability platform combining chaos engineering with automated resilience validation. 🟠🔵
+- [Steadybit](https://steadybit.com/) - Enterprise reliability platform combining chaos engineering with automated resilience validation. 🟠🔵
 - [AWS Fault Injection Service](https://aws.amazon.com/fis/) - Managed fault injection for AWS resources. Native integration with AWS services. 🟠🔵
 
 ### Network Simulation & Traffic Shaping
@@ -321,7 +321,7 @@
 
 ### Developer-Centric Platforms
 
-- [Grafana k6 Cloud](https://grafana.com/products/cloud/k6/) - Managed k6 execution with geographic distribution across multiple global load zones, real-time result visualization in Grafana, and native CI/CD integration. Performance Insights provide automated analysis of test results. The natural choice for teams already using k6 OSS who need scale and collaboration. 🟠
+- [Grafana k6 Cloud](https://grafana.com/products/cloud/performance-load-testing-k6/) - Managed k6 execution with geographic distribution across multiple global load zones, real-time result visualization in Grafana, and native CI/CD integration. Performance Insights provide automated analysis of test results. The natural choice for teams already using k6 OSS who need scale and collaboration. 🟠
 - [Octoperf](https://octoperf.com/) - SaaS performance testing platform built on JMeter with a modern UI, team collaboration, and trend analysis. European-hosted (GDPR-compliant). Supports JMeter scripts natively with enhanced reporting and distributed load generation. Good fit for teams migrating from JMeter to a managed platform. 🟠
 
 ### Enterprise Platforms
