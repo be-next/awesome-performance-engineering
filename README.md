@@ -10,7 +10,6 @@
 
 ## Contents
 
-- [Legend](#legend)
 - [Observability](#observability)
   - [Metrics Collection & Time-Series Storage](#metrics-collection--time-series-storage)
   - [Distributed Tracing](#distributed-tracing)
@@ -48,290 +47,284 @@
   - [Tools & Integrations](#tools--integrations)
 - [Related](#related)
 
-## Legend
-
-- ⭐ Widely adopted / reference solution
-- 🟢 Actively maintained
-- 🔵 Cloud-native / Kubernetes-friendly
-- 🟠 Commercial / paid offering
-- 🚀 High performance / low overhead
+Indicators: ⭐ Widely adopted · 🟢 Active · 🔵 Cloud-native · 🟠 Commercial · 🚀 High performance
 
 ## Observability
 
 ### Metrics Collection & Time-Series Storage
 
-- [Prometheus](https://github.com/prometheus/prometheus) - The de facto standard for cloud-native metrics. Pull-based model, dimensional data model, and PromQL. Excels at service-level monitoring; limited by single-node storage for very large deployments. ⭐🟢🔵
-- [VictoriaMetrics](https://github.com/VictoriaMetrics/VictoriaMetrics) - High-performance, cost-efficient Prometheus-compatible TSDB. Handles significantly higher cardinality and longer retention than vanilla Prometheus. Excellent choice when Prometheus query compatibility matters but scale exceeds single-node limits. ⭐🟢🚀
-- [Thanos](https://github.com/thanos-io/thanos) - Adds long-term storage, global query view, and high availability to Prometheus. Sidecar architecture lets you keep existing Prometheus deployments while adding horizontal scale. ⭐🟢🔵
-- [Mimir](https://github.com/grafana/mimir) - Grafana's horizontally scalable, highly available Prometheus-compatible TSDB. Designed from the ground up for multi-tenant, large-scale deployments. ⭐🟢🔵🚀
-- [InfluxDB](https://github.com/influxdata/influxdb) - Purpose-built time-series database with high write throughput. Strong ecosystem. v3 re-open-sourced under Apache 2.0 in 2024 with a Rust-based engine. 🟢🟠
-- [Grafana Alloy](https://github.com/grafana/alloy) - OpenTelemetry-native telemetry collector from Grafana Labs (successor to Grafana Agent). Supports metrics, logs, traces, and profiles. Native integration with the Grafana stack. ⭐🟢🔵
-- [Telegraf](https://github.com/influxdata/telegraf) - Plugin-driven agent for collecting and reporting metrics. 300+ input plugins make it versatile for heterogeneous environments. 🟢
-- [StatsD](https://github.com/statsd/statsd) - Lightweight, UDP-based metrics aggregation daemon. Simple protocol, widely supported by applications. Still relevant in legacy environments.
-- [Netdata](https://github.com/netdata/netdata) - Real-time, per-second system and application monitoring with built-in anomaly detection. Zero-configuration agent with impressive out-of-the-box dashboards. ⭐🟢🚀
+- [Prometheus](https://github.com/prometheus/prometheus) - ⭐🟢🔵 Pull-based cloud-native metrics platform with dimensional data model and PromQL query language.
+- [VictoriaMetrics](https://github.com/VictoriaMetrics/VictoriaMetrics) - ⭐🟢🚀 High-performance, cost-efficient Prometheus-compatible TSDB with high-cardinality and long-retention support.
+- [Thanos](https://github.com/thanos-io/thanos) - ⭐🟢🔵 Long-term storage, global query view, and high availability layer for Prometheus via sidecar architecture.
+- [Mimir](https://github.com/grafana/mimir) - ⭐🟢🔵🚀 Horizontally scalable, multi-tenant Prometheus-compatible TSDB from Grafana Labs.
+- [InfluxDB](https://github.com/influxdata/influxdb) - 🟢🟠 Purpose-built time-series database with high write throughput and a Rust-based engine (v3).
+- [Grafana Alloy](https://github.com/grafana/alloy) - ⭐🟢🔵 OpenTelemetry-native telemetry collector supporting metrics, logs, traces, and profiles.
+- [Telegraf](https://github.com/influxdata/telegraf) - 🟢 Plugin-driven agent for collecting and reporting metrics with 300+ input plugins.
+- [StatsD](https://github.com/statsd/statsd) - Lightweight, UDP-based metrics aggregation daemon with broad application support.
+- [Netdata](https://github.com/netdata/netdata) - ⭐🟢🚀 Real-time per-second monitoring with built-in anomaly detection and zero-configuration agent.
 
 ### Distributed Tracing
 
-- [OpenTelemetry](https://github.com/open-telemetry) - The converging open standard for distributed tracing, metrics, and logs instrumentation. Language-specific SDKs, auto-instrumentation agents, and the Collector form a complete pipeline. If you're starting today, start here. ⭐🟢🔵
-- [Jaeger](https://github.com/jaegertracing/jaeger) - CNCF graduated distributed tracing backend and UI. Mature, well-documented, strong Kubernetes integration. Originally from Uber. ⭐🟢🔵
-- [Grafana Tempo](https://github.com/grafana/tempo) - High-scale, cost-efficient tracing backend that requires only object storage (no indexing infrastructure). Pairs naturally with Grafana, Loki, and Mimir. ⭐🟢🔵
-- [Zipkin](https://github.com/openzipkin/zipkin) - One of the pioneering distributed tracing systems (Twitter, 2012). Still actively maintained with a loyal community. Simpler architecture than Jaeger, good for smaller deployments. 🟢
-- [Apache SkyWalking](https://github.com/apache/skywalking) - Full observability platform with strong tracing capabilities. Popular in the Java/JVM ecosystem. Auto-instrumentation via bytecode injection. ⭐🟢🔵
-- [SigNoz](https://github.com/SigNoz/signoz) - Open-source observability platform built natively on OpenTelemetry. Unified metrics, traces, and logs in a single UI. ClickHouse-backed storage. Strong alternative to commercial APM. 🟢🔵
-- [Pinpoint](https://github.com/pinpoint-apm/pinpoint) - Bytecode-instrumentation-based APM and tracing for Java and PHP. Zero-code-change approach. Popular in Korean and Asian enterprise environments.
+- [OpenTelemetry](https://github.com/open-telemetry) - ⭐🟢🔵 Open standard for distributed tracing, metrics, and logs with language-specific SDKs and auto-instrumentation.
+- [Jaeger](https://github.com/jaegertracing/jaeger) - ⭐🟢🔵 CNCF graduated distributed tracing backend and UI, originally from Uber.
+- [Grafana Tempo](https://github.com/grafana/tempo) - ⭐🟢🔵 High-scale tracing backend requiring only object storage, with native Grafana integration.
+- [Zipkin](https://github.com/openzipkin/zipkin) - 🟢 Pioneering distributed tracing system (Twitter, 2012) with a simple architecture.
+- [Apache SkyWalking](https://github.com/apache/skywalking) - ⭐🟢🔵 Observability platform with bytecode-injection-based tracing, popular in the Java ecosystem.
+- [SigNoz](https://github.com/SigNoz/signoz) - 🟢🔵 Open-source OpenTelemetry-native observability platform with unified metrics, traces, and logs.
+- [Pinpoint](https://github.com/pinpoint-apm/pinpoint) - Bytecode-instrumentation-based APM and tracing for Java and PHP with zero-code-change approach.
 
 ### Log Management & Log Pipelines
 
-- [Grafana Loki](https://github.com/grafana/loki) - Label-based log aggregation that indexes metadata, not content. Dramatically cheaper than full-text indexing at scale. Pairs with Grafana for exploration. ⭐🟢🔵
-- [Fluent Bit](https://github.com/fluent/fluent-bit) - Lightweight, high-performance log processor and forwarder designed for edge and containerized environments. Tiny memory footprint. ⭐🟢🔵🚀
-- [Fluentd](https://github.com/fluent/fluentd) - CNCF graduated unified logging layer with 1000+ plugins. Heavier than Fluent Bit but more flexible for complex routing. 🟢🔵
-- [Elasticsearch](https://github.com/elastic/elasticsearch) - Distributed search and analytics engine. Powerful full-text search, but storage costs and operational complexity can be significant at scale. License changed from Apache-2.0 to SSPL. ⭐🟢🟠
-- [OpenSearch](https://github.com/opensearch-project/OpenSearch) - Community-driven fork of Elasticsearch (post-license change). AWS-backed, Apache-2.0 licensed. Drop-in replacement for Elasticsearch in most deployments. 🟢🔵
-- [Logstash](https://github.com/elastic/logstash) - Flexible log ingestion and transformation pipeline. Part of the Elastic Stack. Heavy JVM footprint.
-- [Graylog](https://github.com/Graylog2/graylog2-server) - Centralized log management with built-in alerting and dashboards. Good for teams that want a self-contained log platform. 🟢🟠
-- [rsyslog](https://github.com/rsyslog/rsyslog) - High-performance system logging daemon. Handles millions of messages per second. Essential in Linux infrastructure. 🟢🚀
+- [Grafana Loki](https://github.com/grafana/loki) - ⭐🟢🔵 Label-based log aggregation that indexes metadata instead of content for cost-efficient storage at scale.
+- [Fluent Bit](https://github.com/fluent/fluent-bit) - ⭐🟢🔵🚀 Lightweight, high-performance log processor and forwarder for edge and containerized environments.
+- [Fluentd](https://github.com/fluent/fluentd) - 🟢🔵 CNCF graduated unified logging layer with 1000+ plugins for complex routing.
+- [Elasticsearch](https://github.com/elastic/elasticsearch) - ⭐🟢🟠 Distributed search and analytics engine with powerful full-text search capabilities.
+- [OpenSearch](https://github.com/opensearch-project/OpenSearch) - 🟢🔵 Community-driven, Apache-2.0-licensed fork of Elasticsearch, backed by AWS.
+- [Logstash](https://github.com/elastic/logstash) - Flexible log ingestion and transformation pipeline, part of the Elastic Stack.
+- [Graylog](https://github.com/Graylog2/graylog2-server) - 🟢🟠 Centralized log management with built-in alerting and dashboards.
+- [rsyslog](https://github.com/rsyslog/rsyslog) - 🟢🚀 High-performance system logging daemon handling millions of messages per second.
 
 ### Observability Pipelines and Telemetry Processing
 
-- [OpenTelemetry Collector](https://github.com/open-telemetry/opentelemetry-collector) - The standard telemetry processing pipeline. Receivers, processors, and exporters for any signal to any backend. Supports tail-based sampling, attribute enrichment, and routing. ⭐🟢🔵
-- [Vector](https://github.com/vectordotdev/vector) - End-to-end observability data routing and transformation. Programmable transforms (VRL language), strong at log-to-metric conversion and pipeline consolidation. 🟢🚀
-- [Logstash](https://www.elastic.co/logstash) - ETL-style processing for observability data. Powerful filter plugins but resource-intensive.
-- [Cribl Stream](https://cribl.io/) - Commercial observability pipeline for routing, reducing, and enriching telemetry data before it reaches backends. Strong ROI story for organizations with high telemetry costs. 🟠🚀
+- [OpenTelemetry Collector](https://github.com/open-telemetry/opentelemetry-collector) - ⭐🟢🔵 Standard telemetry processing pipeline with receivers, processors, and exporters for any signal.
+- [Vector](https://github.com/vectordotdev/vector) - 🟢🚀 End-to-end observability data routing and transformation with programmable VRL transforms.
+- [Logstash](https://www.elastic.co/logstash) - ETL-style processing for observability data with powerful filter plugins.
+- [Cribl Stream](https://cribl.io/) - 🟠🚀 Commercial observability pipeline for routing, reducing, and enriching telemetry data.
 
 ### Visualization & Dashboards
 
-- [Grafana](https://github.com/grafana/grafana) - The de facto standard for observability dashboards. Supports 100+ data sources, alerting, annotations, and increasingly sophisticated exploration features. The center of gravity for open-source observability UIs. ⭐🟢
-- [Kibana](https://github.com/elastic/kibana) - Visualization and exploration for Elasticsearch/OpenSearch data. Powerful for log exploration (Discover, Lens). Part of the Elastic Stack. 🟢🟠
-- [OpenSearch Dashboards](https://github.com/opensearch-project/OpenSearch-Dashboards) - Open-source fork of Kibana for OpenSearch. 🟢🔵
-- [Apache Superset](https://github.com/apache/superset) - Scalable analytics and dashboarding platform. SQL-first, strong at ad-hoc data exploration. 🟢
-- [Perses](https://github.com/perses/perses) - CNCF sandbox project for dashboards-as-code. Native PromQL and TraceQL support. Designed for GitOps-driven observability. 🟢🔵
+- [Grafana](https://github.com/grafana/grafana) - ⭐🟢 Open-source observability dashboard platform supporting 100+ data sources with alerting and annotations.
+- [Kibana](https://github.com/elastic/kibana) - 🟢🟠 Visualization and log exploration for Elasticsearch and OpenSearch data.
+- [OpenSearch Dashboards](https://github.com/opensearch-project/OpenSearch-Dashboards) - 🟢🔵 Open-source fork of Kibana for OpenSearch.
+- [Apache Superset](https://github.com/apache/superset) - 🟢 SQL-first analytics and dashboarding platform for ad-hoc data exploration.
+- [Perses](https://github.com/perses/perses) - 🟢🔵 CNCF sandbox dashboards-as-code project with native PromQL and TraceQL support.
 
 ### Profiling & Continuous Performance Analysis
 
-- [Parca](https://github.com/parca-dev/parca) - eBPF-based continuous profiling platform. Zero-instrumentation, always-on profiling with differential flame graphs. CNCF sandbox project. ⭐🟢🔵
-- [Grafana Pyroscope](https://github.com/grafana/pyroscope) - Continuous profiling with flame graph visualization. Supports multiple languages. Integrates naturally with the Grafana stack. ⭐🟢🔵
-- [async-profiler](https://github.com/async-profiler/async-profiler) - Low-overhead sampling profiler for JVM. Captures CPU, allocation, lock contention, and wall-clock profiles. The reference tool for Java performance analysis. 🟢🚀
-- [perf](https://perfwiki.github.io/) - Linux kernel performance analysis tool. Hardware counters, tracepoints, and sampling. Foundational for system-level performance work. 🚀
-- [bpftrace](https://github.com/bpftrace/bpftrace) - High-level tracing language for Linux eBPF. One-liners and scripts for dynamic kernel and user-space tracing. Invaluable for ad-hoc production investigation. 🟢🚀
-- [bcc (BPF Compiler Collection)](https://github.com/iovisor/bcc) - Toolkit for creating eBPF-based tracing and networking programs. Includes dozens of ready-to-use tools (execsnoop, biolatency, tcplife, etc.). 🟢🚀
-- [Grafana Beyla](https://github.com/grafana/beyla) - eBPF-based auto-instrumentation for HTTP and gRPC services. Zero-code, zero-configuration application observability. Generates RED metrics and distributed traces without SDK integration. 🟢🔵🚀
-- [Perfetto](https://github.com/google/perfetto) - System-wide tracing and profiling toolkit from Google. Designed for Android and Chrome but increasingly used for general system analysis. 🟢
+- [Parca](https://github.com/parca-dev/parca) - ⭐🟢🔵 eBPF-based continuous profiling platform with zero-instrumentation and differential flame graphs (CNCF sandbox).
+- [Grafana Pyroscope](https://github.com/grafana/pyroscope) - ⭐🟢🔵 Continuous profiling with flame graph visualization and multi-language support.
+- [async-profiler](https://github.com/async-profiler/async-profiler) - 🟢🚀 Low-overhead JVM sampling profiler capturing CPU, allocation, and lock contention profiles.
+- [perf](https://perfwiki.github.io/) - 🚀 Linux kernel performance analysis tool with hardware counters, tracepoints, and sampling.
+- [bpftrace](https://github.com/bpftrace/bpftrace) - 🟢🚀 High-level tracing language for Linux eBPF with dynamic kernel and user-space tracing.
+- [bcc (BPF Compiler Collection)](https://github.com/iovisor/bcc) - 🟢🚀 Toolkit for creating eBPF-based tracing programs with dozens of ready-to-use tools.
+- [Grafana Beyla](https://github.com/grafana/beyla) - 🟢🔵🚀 eBPF-based zero-code auto-instrumentation generating RED metrics and distributed traces.
+- [Perfetto](https://github.com/google/perfetto) - 🟢 System-wide tracing and profiling toolkit from Google for Android, Chrome, and general system analysis.
 
 ### Alerting & Incident Response
 
-- [Alertmanager](https://github.com/prometheus/alertmanager) - Prometheus-native alert handling with grouping, silencing, inhibition, and routing. ⭐🟢
-- [Grafana OnCall](https://github.com/grafana/oncall) - Open-source on-call management and alert routing. Integrates natively with Grafana alerting. 🟢🔵
-- [Keep](https://github.com/keephq/keep) - Open-source alert management platform. Consolidates alerts from multiple sources with workflow automation. 🟢🔵
-- [Alerta](https://github.com/alerta/alerta) - Unified alert correlation and management. Consolidates alerts from multiple monitoring systems. 🟢
-- [PagerDuty](https://www.pagerduty.com/) - Industry-standard incident response and on-call management platform. 🟠
-- [Opsgenie](https://www.atlassian.com/software/opsgenie/migration) - Alerting and escalation platform. Part of Atlassian suite. 🟠
-- [Rootly](https://rootly.com/) - AI-assisted incident management with automated timelines and postmortem generation. 🟠
+- [Alertmanager](https://github.com/prometheus/alertmanager) - ⭐🟢 Prometheus-native alert handling with grouping, silencing, inhibition, and routing.
+- [Grafana OnCall](https://github.com/grafana/oncall) - 🟢🔵 Open-source on-call management and alert routing with native Grafana integration.
+- [Keep](https://github.com/keephq/keep) - 🟢🔵 Open-source alert management platform consolidating alerts from multiple sources.
+- [Alerta](https://github.com/alerta/alerta) - 🟢 Unified alert correlation and management across multiple monitoring systems.
+- [PagerDuty](https://www.pagerduty.com/) - 🟠 Industry-standard incident response and on-call management platform.
+- [Opsgenie](https://www.atlassian.com/software/opsgenie/migration) - 🟠 Alerting and escalation platform, part of the Atlassian suite.
+- [Rootly](https://rootly.com/) - 🟠 AI-assisted incident management with automated timelines and postmortem generation.
 
 ### Observability Platforms (Integrated)
 
-- [Datadog](https://www.datadoghq.com/) - SaaS observability platform with AI-powered features (Watchdog anomaly detection, automated root-cause analysis). Strong breadth, premium pricing. 🟠
-- [Dynatrace](https://www.dynatrace.com/) - AI-driven observability with automatic topology discovery and root-cause analysis (Davis AI). Strong in enterprise and complex Java environments. 🟠
-- [New Relic](https://newrelic.com/) - Developer-centric observability with a generous free tier. NRQL query language, strong APM heritage. 🟠
-- [Splunk Observability](https://www.splunk.com/en_us/products/observability.html) - Observability built on Splunk's machine data analytics platform. Strong for organizations already invested in Splunk. 🟠
-- [Elastic Observability](https://www.elastic.co/observability) - Observability solution built on the Elastic Stack (Elasticsearch, Kibana, APM). Self-managed and cloud options. 🟠
-- [Honeycomb](https://www.honeycomb.io/) - Observability platform built around high-cardinality, high-dimensionality event data. Pioneers of the "observability vs. monitoring" distinction. BubbleUp feature for automated correlation. 🟠
-- [Grafana Cloud](https://grafana.com/products/cloud/) - Managed Grafana stack (Mimir, Loki, Tempo, Pyroscope) with a generous free tier. Best of open-source with SaaS convenience. 🟠
-- [Instana (IBM)](https://www.ibm.com/products/instana) - Automatic infrastructure and application discovery with real-time observability. Strong in containerized and microservice environments. 🟠
-- [AppDynamics (Splunk/Cisco)](https://www.splunk.com/en_us/products/splunk-appdynamics.html) - Enterprise APM with business transaction monitoring and code-level diagnostics. Merged into Splunk in 2025. 🟠
-- [Chronosphere](https://chronosphere.io/) - Cloud-native observability platform focused on metrics at scale. Founded by Uber M3 creators. Strong cost control and cardinality management. 🟠
-- [Lightstep / ServiceNow Cloud Observability](https://www.servicenow.com/products/observability.html) - OpenTelemetry-native observability platform, now part of ServiceNow. 🟠
-- [Sematext](https://sematext.com/) - SaaS observability platform with OpenTelemetry-native support and automatic topology discovery. 🟢🟠
+- [Datadog](https://www.datadoghq.com/) - 🟠 SaaS observability platform with AI-powered anomaly detection and root-cause analysis.
+- [Dynatrace](https://www.dynatrace.com/) - 🟠 AI-driven observability with automatic topology discovery and root-cause analysis (Davis AI).
+- [New Relic](https://newrelic.com/) - 🟠 Developer-centric observability platform with NRQL query language and a generous free tier.
+- [Splunk Observability](https://www.splunk.com/en_us/products/observability.html) - 🟠 Observability built on Splunk's machine data analytics platform.
+- [Elastic Observability](https://www.elastic.co/observability) - 🟠 Observability solution built on the Elastic Stack with self-managed and cloud options.
+- [Honeycomb](https://www.honeycomb.io/) - 🟠 Observability platform for high-cardinality event data with BubbleUp automated correlation.
+- [Grafana Cloud](https://grafana.com/products/cloud/) - 🟠 Managed Grafana stack (Mimir, Loki, Tempo, Pyroscope) with a generous free tier.
+- [Instana (IBM)](https://www.ibm.com/products/instana) - 🟠 Automatic infrastructure and application discovery with real-time observability.
+- [AppDynamics (Splunk/Cisco)](https://www.splunk.com/en_us/products/splunk-appdynamics.html) - 🟠 Enterprise APM with business transaction monitoring and code-level diagnostics.
+- [Chronosphere](https://chronosphere.io/) - 🟠 Cloud-native observability platform focused on metrics at scale with cost control.
+- [Lightstep / ServiceNow Cloud Observability](https://www.servicenow.com/products/observability.html) - 🟠 OpenTelemetry-native observability platform, now part of ServiceNow.
+- [Sematext](https://sematext.com/) - 🟢🟠 SaaS observability platform with OpenTelemetry-native support and topology discovery.
 
 ### Monitoring Suites (Operations-Oriented)
 
-- [Zabbix](https://github.com/zabbix/zabbix) - Enterprise-grade monitoring platform with agent-based and agentless monitoring. Mature, highly configurable, strong in traditional infrastructure. 🟢
-- [Nagios](https://github.com/NagiosEnterprises/nagioscore) - The grandfather of open-source monitoring. Check-based architecture. Enormous plugin ecosystem but showing its age. 🟢
-- [Icinga](https://github.com/Icinga/icinga2) - Modern evolution of Nagios with better APIs, configuration management, and scalability. 🟢
-- [Checkmk](https://github.com/Checkmk/checkmk) - Infrastructure and application monitoring with auto-discovery. Scales well for large enterprise environments. 🟢🟠
+- [Zabbix](https://github.com/zabbix/zabbix) - 🟢 Enterprise-grade monitoring platform with agent-based and agentless monitoring.
+- [Nagios](https://github.com/NagiosEnterprises/nagioscore) - 🟢 Pioneering open-source check-based monitoring with an enormous plugin ecosystem.
+- [Icinga](https://github.com/Icinga/icinga2) - 🟢 Modern evolution of Nagios with improved APIs, configuration management, and scalability.
+- [Checkmk](https://github.com/Checkmk/checkmk) - 🟢🟠 Infrastructure and application monitoring with auto-discovery for large environments.
 
 ### Service Mesh Observability
 
-- [Kiali](https://github.com/kiali/kiali) - Observability console for Istio service mesh. Topology visualization, traffic flow, and health analysis. 🟢🔵
-- [Linkerd Viz](https://github.com/linkerd/linkerd2) - Built-in telemetry and dashboard for Linkerd service mesh. Lightweight, opinionated. 🟢🔵
-- [Hubble](https://github.com/cilium/hubble) - eBPF-powered network observability for Cilium. L3/L4/L7 flow visibility, DNS monitoring, and service dependency mapping — all without sidecars. 🟢🔵🚀
+- [Kiali](https://github.com/kiali/kiali) - 🟢🔵 Observability console for Istio with topology visualization and traffic flow analysis.
+- [Linkerd Viz](https://github.com/linkerd/linkerd2) - 🟢🔵 Built-in telemetry and dashboard for Linkerd service mesh.
+- [Hubble](https://github.com/cilium/hubble) - 🟢🔵🚀 eBPF-powered network observability for Cilium with L3/L4/L7 flow visibility.
 
 ### Database Observability
 
-- [PMM (Percona Monitoring and Management)](https://github.com/percona/pmm) - Open-source database performance monitoring for MySQL, PostgreSQL, and MongoDB. Query analytics, slow query analysis. 🟢
-- [pgwatch](https://github.com/cybertec-postgresql/pgwatch) - PostgreSQL-specific monitoring and metrics collection. 🟢
-- [pg_stat_monitor](https://github.com/percona/pg_stat_monitor) - PostgreSQL extension for enhanced query performance monitoring. More granular than pg_stat_statements. 🟢
-- [VividCortex / SolarWinds DPM](https://www.solarwinds.com/solarwinds-observability/use-cases/system-performance) - SaaS query-level database performance monitoring. 🟠
-- [Datadog DBM](https://www.datadoghq.com/product/database-monitoring/) - Database monitoring with query-level explain plans, wait event analysis, and trace correlation. 🟠
+- [PMM (Percona Monitoring and Management)](https://github.com/percona/pmm) - 🟢 Open-source database performance monitoring for MySQL, PostgreSQL, and MongoDB.
+- [pgwatch](https://github.com/cybertec-postgresql/pgwatch) - 🟢 PostgreSQL-specific monitoring and metrics collection.
+- [pg_stat_monitor](https://github.com/percona/pg_stat_monitor) - 🟢 PostgreSQL extension for enhanced query performance monitoring.
+- [VividCortex / SolarWinds DPM](https://www.solarwinds.com/solarwinds-observability/use-cases/system-performance) - 🟠 SaaS query-level database performance monitoring.
+- [Datadog DBM](https://www.datadoghq.com/product/database-monitoring/) - 🟠 Database monitoring with query-level explain plans, wait event analysis, and trace correlation.
 
 ### Real User Monitoring (RUM) & Frontend Observability
 
-- [Sentry](https://github.com/getsentry/sentry) - Error tracking and performance monitoring for frontend and backend. Session replay, Web Vitals, and release health tracking. 🟢
-- [Grafana Faro](https://github.com/grafana/faro-web-sdk) - Open-source frontend observability SDK. Captures errors, performance, and user events, sends to Grafana stack. 🟢🔵
-- [OpenTelemetry Browser SDK](https://opentelemetry.io/docs/languages/js/getting-started/browser/) - OTel instrumentation for web applications. Captures page loads, resource timings, and user interactions. 🟢
-- [LogRocket](https://logrocket.com/) - Session replay combined with frontend performance monitoring. 🟠
+- [Sentry](https://github.com/getsentry/sentry) - 🟢 Error tracking and performance monitoring with session replay and Web Vitals.
+- [Grafana Faro](https://github.com/grafana/faro-web-sdk) - 🟢🔵 Open-source frontend observability SDK capturing errors, performance, and user events.
+- [OpenTelemetry Browser SDK](https://opentelemetry.io/docs/languages/js/getting-started/browser/) - 🟢 OTel instrumentation for web applications capturing page loads and resource timings.
+- [LogRocket](https://logrocket.com/) - 🟠 Session replay combined with frontend performance monitoring.
 
 ### AI-Augmented Observability
 
-- [Dynatrace Davis AI](https://www.dynatrace.com/platform/artificial-intelligence/) - Deterministic and causal AI for automatic root-cause analysis. Topology-aware, goes beyond statistical correlation. 🟠
-- [Datadog Watchdog](https://docs.datadoghq.com/watchdog/) - ML-driven anomaly detection across metrics, logs, and APM data. Automatic story generation for correlated anomalies. 🟠
-- [Moogsoft](https://www.moogsoft.com/) - AIOps platform for alert correlation, noise reduction, and incident clustering. 🟠
-- [New Relic AI](https://newrelic.com/platform/applied-intelligence) - Applied intelligence with anomaly detection, incident correlation, and natural-language querying (NRAI). 🟠
-- [Honeycomb BubbleUp](https://www.honeycomb.io/platform/bubbleup) - Automated outlier correlation across high-cardinality dimensions. Helps identify "what's different" about slow requests without manual hypotheses. 🟠
-- [Coroot](https://github.com/coroot/coroot) - Open-source eBPF-powered observability with automated service map discovery and anomaly detection. 🟢🔵
+- [Dynatrace Davis AI](https://www.dynatrace.com/platform/artificial-intelligence/) - 🟠 Deterministic and causal AI for topology-aware automatic root-cause analysis.
+- [Datadog Watchdog](https://docs.datadoghq.com/watchdog/) - 🟠 ML-driven anomaly detection across metrics, logs, and APM data.
+- [Moogsoft](https://www.moogsoft.com/) - 🟠 AIOps platform for alert correlation, noise reduction, and incident clustering.
+- [New Relic AI](https://newrelic.com/platform/applied-intelligence) - 🟠 Applied intelligence with anomaly detection, incident correlation, and natural-language querying.
+- [Honeycomb BubbleUp](https://www.honeycomb.io/platform/bubbleup) - 🟠 Automated outlier correlation across high-cardinality dimensions.
+- [Coroot](https://github.com/coroot/coroot) - 🟢🔵 Open-source eBPF-powered observability with automated service map discovery.
 
 ### SLO Management
 
-- [Sloth](https://github.com/slok/sloth) - SLO generation for Prometheus. Define SLOs in YAML, generates multi-window multi-burn-rate alerts automatically. 🟢🔵
-- [Pyrra](https://github.com/pyrra-dev/pyrra) - SLO management and alerting with a web UI. Kubernetes-native, generates Prometheus recording rules and alerts from SLO definitions. 🟢🔵
-- [OpenSLO](https://github.com/OpenSLO/OpenSLO) - Open specification for defining SLOs as code. Vendor-neutral, enables GitOps-driven SLO management. 🟢
-- [Nobl9](https://www.nobl9.com/) - Enterprise SLO platform connecting multiple data sources to unified SLO tracking and error budget management. 🟠
+- [Sloth](https://github.com/slok/sloth) - 🟢🔵 SLO generation for Prometheus with YAML definitions and multi-window multi-burn-rate alerts.
+- [Pyrra](https://github.com/pyrra-dev/pyrra) - 🟢🔵 Kubernetes-native SLO management generating Prometheus recording rules and alerts.
+- [OpenSLO](https://github.com/OpenSLO/OpenSLO) - 🟢 Open, vendor-neutral specification for defining SLOs as code.
+- [Nobl9](https://www.nobl9.com/) - 🟠 Enterprise SLO platform with unified tracking and error budget management.
 
 ### Synthetic Monitoring
 
-- [Checkly](https://github.com/checkly/checkly-cli) - Monitoring as code for APIs and browsers. Playwright-based synthetic checks with CI/CD integration. 🟢🔵
-- [Grafana Synthetic Monitoring](https://grafana.com/docs/grafana-cloud/testing/synthetic-monitoring/) - Probe-based synthetic monitoring integrated into Grafana Cloud. Multi-location HTTP, DNS, TCP, and ICMP checks. 🟢🔵
-- [Uptime Kuma](https://github.com/louislam/uptime-kuma) - Self-hosted monitoring tool with a clean UI. HTTP, TCP, DNS, and keyword monitoring with notifications. Simple and effective. ⭐🟢
-- [Sematext](https://sematext.com/synthetic-monitoring/) - Playwright-based synthetic checks with CI/CD integration, GitHub synchronization, SSL certificate expiration monitoring. 🟢🟠
+- [Checkly](https://github.com/checkly/checkly-cli) - 🟢🔵 Monitoring as code for APIs and browsers with Playwright-based synthetic checks.
+- [Grafana Synthetic Monitoring](https://grafana.com/docs/grafana-cloud/testing/synthetic-monitoring/) - 🟢🔵 Probe-based multi-location synthetic monitoring integrated into Grafana Cloud.
+- [Uptime Kuma](https://github.com/louislam/uptime-kuma) - ⭐🟢 Self-hosted monitoring tool with HTTP, TCP, DNS, and keyword checks.
+- [Sematext](https://sematext.com/synthetic-monitoring/) - 🟢🟠 Playwright-based synthetic checks with CI/CD integration and SSL monitoring.
 
 ### Legacy & Historical
 
-- [Graphite](https://github.com/graphite-project/graphite-web) - One of the original time-series storage and graphing systems. Whisper backend, Carbon collector. Historical significance but limited compared to modern alternatives.
-- [Redash](https://github.com/getredash/redash) - SQL-first data visualization and collaboration. Connects to many data sources. Minimal maintenance since Databricks acquisition.
+- [Graphite](https://github.com/graphite-project/graphite-web) - Pioneering time-series storage and graphing system with Whisper backend and Carbon collector.
+- [Redash](https://github.com/getredash/redash) - SQL-first data visualization and collaboration connecting to many data sources.
 
 ## Performance Testing
 
 ### Load & Stress Testing
 
-- [k6](https://github.com/grafana/k6) - Modern load testing tool with JavaScript ES6 scripting. Developer-friendly, excellent CLI experience, native Prometheus/Grafana integration. Extensible via Go (xk6). Acquired by Grafana Labs. The current reference for shift-left performance testing. ⭐🟢🔵
-- [Gatling](https://github.com/gatling/gatling) - High-performance load testing framework with Scala/Java/Kotlin DSL. Excellent for complex, protocol-level scenarios. Produces detailed HTML reports. Strong in enterprise Java environments. ⭐🟢🚀
-- [Locust](https://github.com/locustio/locust) - Python-based load testing framework. Define user behavior in plain Python code. Distributed mode for scaling. Low barrier to entry for Python teams. ⭐🟢
-- [Apache JMeter](https://github.com/apache/jmeter) - Veteran load testing tool with GUI and extensive protocol support (HTTP, JDBC, JMS, LDAP, SOAP, etc.). Massive plugin ecosystem. Heavyweight but unmatched protocol breadth. Still widely used in enterprise testing. ⭐🟢
-- [Artillery](https://github.com/artilleryio/artillery) - Node.js-based load testing toolkit with YAML-based scenarios. Cloud-native, good Kubernetes support. Supports HTTP, WebSocket, Socket.io, and custom engines. 🟢🔵
-- [NBomber](https://github.com/PragmaticFlow/NBomber) - Load testing framework for .NET. C#/F# scripting with a focus on developer ergonomics. v5+ requires commercial license for organizational use (v4 remains Apache-2.0). 🟢
-- [Tsung](https://github.com/processone/tsung) - Distributed, multi-protocol load testing tool built on Erlang. Handles massive concurrent connections efficiently. Supports HTTP, WebSocket, XMPP, LDAP, and database protocols. Low maintenance activity since 2023. 🚀
-- [GoReplay (gor)](https://github.com/probelabs/goreplay) - Capture and replay production HTTP traffic for load testing and monitoring. Uses real traffic patterns for maximum realism. 🟢🚀
-- [Anteon (formerly Ddosify)](https://github.com/getanteon/anteon) - eBPF-based Kubernetes monitoring and performance testing platform with distributed load generation and visual UI. Reduced development activity since mid-2024. 🔵
-- [Neoload](https://www.tricentis.com/products/performance-testing-neoload) - Enterprise performance testing platform with codeless and as-code options. Strong SAP, Citrix, and legacy protocol support. 🟠
-- [LoadRunner / OpenText](https://www.opentext.com/products/professional-performance-engineering) - The legacy enterprise standard for performance testing. Broad protocol support. Expensive but deeply embedded in many large organizations. 🟠
+- [k6](https://github.com/grafana/k6) - ⭐🟢🔵 Modern load testing tool with JavaScript ES6 scripting and native Prometheus/Grafana integration.
+- [Gatling](https://github.com/gatling/gatling) - ⭐🟢🚀 High-performance load testing framework with Scala/Java/Kotlin DSL and detailed HTML reports.
+- [Locust](https://github.com/locustio/locust) - ⭐🟢 Python-based load testing framework defining user behavior in plain Python code.
+- [Apache JMeter](https://github.com/apache/jmeter) - ⭐🟢 Load testing tool with GUI and extensive protocol support (HTTP, JDBC, JMS, LDAP, SOAP).
+- [Artillery](https://github.com/artilleryio/artillery) - 🟢🔵 Node.js-based load testing toolkit with YAML scenarios supporting HTTP, WebSocket, and Socket.io.
+- [NBomber](https://github.com/PragmaticFlow/NBomber) - 🟢 Load testing framework for .NET with C#/F# scripting.
+- [Tsung](https://github.com/processone/tsung) - 🚀 Erlang-based distributed load testing tool handling massive concurrent connections across multiple protocols.
+- [GoReplay (gor)](https://github.com/probelabs/goreplay) - 🟢🚀 Capture and replay production HTTP traffic for load testing with real traffic patterns.
+- [Anteon (formerly Ddosify)](https://github.com/getanteon/anteon) - 🔵 eBPF-based Kubernetes performance testing platform with distributed load generation.
+- [Neoload](https://www.tricentis.com/products/performance-testing-neoload) - 🟠 Enterprise performance testing platform with codeless and as-code options.
+- [LoadRunner / OpenText](https://www.opentext.com/products/professional-performance-engineering) - 🟠 Enterprise performance testing platform with broad protocol support.
 
 ### HTTP Benchmarking & Micro-Benchmarking
 
-- [wrk2](https://github.com/giltene/wrk2) - Constant-throughput HTTP benchmarking tool that produces accurate latency histograms (HdrHistogram). Fixes the coordinated omission problem present in most benchmarking tools. Essential for understanding true tail latency. Stable but not actively maintained (last significant commits ~2019). 🚀
-- [wrk](https://github.com/wg/wrk) - Modern HTTP benchmarking tool with Lua scripting. Fast and simple, but susceptible to coordinated omission. Best used for relative comparisons, not absolute latency measurement. Stable, minimal recent activity. 🚀
-- [Vegeta](https://github.com/tsenart/vegeta) - HTTP load testing tool with constant request rate mode. Clean CLI, library usage in Go, and built-in plotting. Good for saturation testing. 🟢🚀
-- [hey](https://github.com/rakyll/hey) - Simple HTTP load generator. Successor to Apache Bench (ab). Quick and easy for ad-hoc benchmarks. 🟢
-- [oha](https://github.com/hatoo/oha) - HTTP load generator with real-time TUI. Written in Rust for performance. Modern alternative to hey/ab. 🟢🚀
-- [bombardier](https://github.com/codesenberg/bombardier) - Fast, cross-platform HTTP benchmarking tool with good latency reporting. 🟢🚀
-- [hyperfoil](https://github.com/Hyperfoil/Hyperfoil) - Distributed benchmarking framework designed to avoid coordinated omission. Built for microservice architectures. 🟢🔵🚀
+- [wrk2](https://github.com/giltene/wrk2) - 🚀 Constant-throughput HTTP benchmarking with accurate latency histograms that avoids coordinated omission.
+- [wrk](https://github.com/wg/wrk) - 🚀 HTTP benchmarking tool with Lua scripting for quick relative performance comparisons.
+- [Vegeta](https://github.com/tsenart/vegeta) - 🟢🚀 HTTP load testing tool with constant request rate mode and built-in plotting.
+- [hey](https://github.com/rakyll/hey) - 🟢 Simple HTTP load generator, successor to Apache Bench (ab).
+- [oha](https://github.com/hatoo/oha) - 🟢🚀 Rust-based HTTP load generator with real-time TUI.
+- [bombardier](https://github.com/codesenberg/bombardier) - 🟢🚀 Fast, cross-platform HTTP benchmarking tool with detailed latency reporting.
+- [hyperfoil](https://github.com/Hyperfoil/Hyperfoil) - 🟢🔵🚀 Distributed benchmarking framework designed to avoid coordinated omission.
 
 ### API Testing & Contract Testing
 
-- [Hurl](https://github.com/Orange-OpenSource/hurl) - Run and test HTTP requests with plain text. Excellent for API testing in CI pipelines. Supports assertions, captures, and chaining. 🟢
-- [Postman](https://www.postman.com/) - API development and testing platform. Collection Runner for basic load testing. Newman CLI for CI/CD integration. Ubiquitous in API development. ⭐🟢🟠
-- [REST-assured](https://github.com/rest-assured/rest-assured) - Java DSL for testing REST APIs. Fluent syntax, integrates with JUnit/TestNG. Standard for Java-based API testing. 🟢
-- [Karate](https://github.com/karatelabs/karate) - BDD-style API testing framework that combines API testing, mocking, and performance testing. Unique Gherkin-like syntax for non-developers. Built-in Gatling integration for load testing. 🟢
-- [Step CI](https://github.com/stepci/stepci) - Open-source API testing and monitoring framework. YAML-based workflow definitions, designed for CI/CD. 🟢
-- [Pact](https://github.com/pact-foundation) - Contract testing framework for HTTP APIs and messaging. Ensures provider-consumer compatibility without integration tests. Catches breaking changes that cause performance degradation. 🟢
-- [Dredd](https://github.com/apiaryio/dredd) - API testing from API description documents (OpenAPI, API Blueprint). Validates implementation matches specification. In maintenance mode.
+- [Hurl](https://github.com/Orange-OpenSource/hurl) - 🟢 Plain-text HTTP request runner for API testing in CI with assertions and chaining.
+- [Postman](https://www.postman.com/) - ⭐🟢🟠 API development and testing platform with Newman CLI for CI/CD integration.
+- [REST-assured](https://github.com/rest-assured/rest-assured) - 🟢 Java DSL for testing REST APIs with fluent syntax and JUnit/TestNG integration.
+- [Karate](https://github.com/karatelabs/karate) - 🟢 BDD-style API testing framework combining API testing, mocking, and performance testing.
+- [Step CI](https://github.com/stepci/stepci) - 🟢 Open-source YAML-based API testing and monitoring framework for CI/CD.
+- [Pact](https://github.com/pact-foundation) - 🟢 Contract testing framework ensuring provider-consumer compatibility for HTTP APIs and messaging.
+- [Dredd](https://github.com/apiaryio/dredd) - API testing tool that validates implementations against OpenAPI and API Blueprint specifications.
 
 ### gRPC & Protocol-Specific Testing
 
-- [ghz](https://github.com/bojand/ghz) - Simple gRPC benchmarking and load testing tool. Supports unary and streaming RPCs, configurable concurrency, and multiple output formats (CSV, JSON, HTML). 🟢🚀
-- [k6 + xk6-grpc](https://github.com/grafana/xk6-grpc) - k6 extension for gRPC load testing. Scriptable gRPC scenarios with the full k6 ecosystem. 🟢🔵
-- [k6 + xk6-kafka](https://github.com/mostafa/xk6-kafka) - k6 extension for Apache Kafka load testing. Produce and consume messages at scale. 🟢🔵
-- [kafka-producer-perf-test / kafka-consumer-perf-test](https://kafka.apache.org/documentation/#basic_ops_producer_consumer_perf) - Built-in Kafka benchmarking tools for measuring producer and consumer throughput. 🟢
-- [RabbitMQ PerfTest](https://github.com/rabbitmq/rabbitmq-perf-test) - Official benchmarking tool for RabbitMQ. Measures throughput and latency for publishing and consuming. 🟢
-- [k6 + xk6-websockets](https://grafana.com/docs/k6/latest/javascript-api/k6-websockets/) - Built-in k6 WebSocket support for testing real-time applications, streaming APIs, and bidirectional protocols. 🟢🔵
+- [ghz](https://github.com/bojand/ghz) - 🟢🚀 gRPC benchmarking and load testing tool supporting unary and streaming RPCs.
+- [k6 + xk6-grpc](https://github.com/grafana/xk6-grpc) - 🟢🔵 k6 extension for scriptable gRPC load testing scenarios.
+- [k6 + xk6-kafka](https://github.com/mostafa/xk6-kafka) - 🟢🔵 k6 extension for Apache Kafka load testing at scale.
+- [kafka-producer-perf-test / kafka-consumer-perf-test](https://kafka.apache.org/documentation/#basic_ops_producer_consumer_perf) - 🟢 Built-in Kafka benchmarking tools for producer and consumer throughput.
+- [RabbitMQ PerfTest](https://github.com/rabbitmq/rabbitmq-perf-test) - 🟢 Official RabbitMQ benchmarking tool for throughput and latency measurement.
+- [k6 + xk6-websockets](https://grafana.com/docs/k6/latest/javascript-api/k6-websockets/) - 🟢🔵 Built-in k6 WebSocket support for testing real-time and bidirectional protocols.
 
 ### Browser & Frontend Performance
 
-- [Lighthouse](https://github.com/GoogleChrome/lighthouse) - Google's auditing tool for performance, accessibility, SEO, and best practices. Produces actionable scores and recommendations. Runnable in Chrome DevTools, CLI, or CI. The baseline for web performance assessment. ⭐🟢
-- [WebPageTest](https://github.com/catchpoint/WebPageTest) - Deep web performance analysis with filmstrip views, waterfall charts, and multi-location testing. The gold standard for detailed frontend performance diagnosis. Self-hostable. ⭐🟢
-- [Playwright](https://github.com/microsoft/playwright) - Browser automation framework with built-in performance timing APIs. Supports Chromium, Firefox, and WebKit. Excellent for performance testing of single-page applications. ⭐🟢
-- [Sitespeed.io](https://github.com/sitespeedio/sitespeed.io) - Open-source toolkit for monitoring and measuring web performance. Integrates Lighthouse, WebPageTest, and browser-level metrics into dashboards (Grafana). Strong for continuous performance monitoring. 🟢
-- [Puppeteer](https://github.com/puppeteer/puppeteer) - Chrome DevTools Protocol API for Node.js. Enables programmatic access to Chrome performance traces, network interception, and rendering metrics. 🟢
-- [Yellowlab Tools](https://github.com/YellowLabTools/YellowLabTools) - Online tool for auditing frontend code quality and performance. Detects heavy JavaScript, CSS complexity, and rendering issues. 🟢
-- [SpeedCurve](https://www.speedcurve.com/) - Continuous frontend performance monitoring with Core Web Vitals tracking, competitive benchmarking, and visual regression. 🟠
+- [Lighthouse](https://github.com/GoogleChrome/lighthouse) - ⭐🟢 Google's auditing tool for performance, accessibility, and SEO with actionable scores.
+- [WebPageTest](https://github.com/catchpoint/WebPageTest) - ⭐🟢 Web performance analysis with filmstrip views, waterfall charts, and multi-location testing.
+- [Playwright](https://github.com/microsoft/playwright) - ⭐🟢 Browser automation framework with built-in performance timing APIs for Chromium, Firefox, and WebKit.
+- [Sitespeed.io](https://github.com/sitespeedio/sitespeed.io) - 🟢 Open-source web performance monitoring integrating Lighthouse, WebPageTest, and Grafana dashboards.
+- [Puppeteer](https://github.com/puppeteer/puppeteer) - 🟢 Chrome DevTools Protocol API enabling programmatic access to performance traces and network interception.
+- [Yellowlab Tools](https://github.com/YellowLabTools/YellowLabTools) - 🟢 Frontend code quality and performance auditing for JavaScript, CSS, and rendering issues.
+- [SpeedCurve](https://www.speedcurve.com/) - 🟠 Continuous frontend performance monitoring with Core Web Vitals tracking and competitive benchmarking.
 
 ### Service Virtualization and Mocking
 
-- [WireMock](https://github.com/wiremock/wiremock) - Flexible HTTP mock server and service virtualization tool. Supports request matching, stateful behavior, response templating, and fault injection. Runs standalone or embedded in JVM tests. ⭐🟢🔵
-- [Mountebank](https://github.com/mountebank-testing/mountebank) - Multi-protocol service virtualization (HTTP, HTTPS, TCP, SMTP). Supports stubs, proxies, and injection. Test doubles over the wire. 🟢
-- [Hoverfly](https://github.com/SpectoLabs/hoverfly) - Lightweight service virtualization for API simulation and testing. Capture-and-replay mode for building realistic simulations from production traffic. 🟢🔵
-- [MockServer](https://github.com/mock-server/mockserver) - Enables mocking of any HTTP/HTTPS system via expectations. Supports forward and callback actions. 🟢
-- [Microcks](https://github.com/microcks/microcks) - Open-source tool for API mocking and testing. Imports OpenAPI, AsyncAPI, gRPC, GraphQL, and SOAP contracts. Kubernetes-native. 🟢🔵
+- [WireMock](https://github.com/wiremock/wiremock) - ⭐🟢🔵 HTTP mock server with request matching, stateful behavior, response templating, and fault injection.
+- [Mountebank](https://github.com/mountebank-testing/mountebank) - 🟢 Multi-protocol service virtualization supporting HTTP, HTTPS, TCP, and SMTP.
+- [Hoverfly](https://github.com/SpectoLabs/hoverfly) - 🟢🔵 Lightweight service virtualization with capture-and-replay mode for API simulation.
+- [MockServer](https://github.com/mock-server/mockserver) - 🟢 HTTP/HTTPS mock server with expectation-based matching and callback actions.
+- [Microcks](https://github.com/microcks/microcks) - 🟢🔵 Kubernetes-native API mocking and testing importing OpenAPI, AsyncAPI, gRPC, and GraphQL contracts.
 
 ### Synthetic Data Generation
 
-- [Faker](https://github.com/faker-js/faker) - Generate realistic fake data (names, addresses, emails, etc.) in JavaScript/TypeScript. Massive locale support. Available in many languages ([Python](https://github.com/joke2k/faker), [Ruby](https://github.com/faker-ruby/faker), [Java — use DataFaker](https://github.com/datafaker-net/datafaker), [Go](https://github.com/bxcodec/faker)). ⭐🟢
-- [DataFaker](https://github.com/datafaker-net/datafaker) - Modern Java data generation library. Successor to java-faker with better performance, more providers, and expression-based generation. 🟢
-- [Mimesis](https://github.com/lk-geimfari/mimesis) - High-performance fake data generator for Python. Faster than Faker for bulk generation. Strong locale support. 🟢🚀
-- [Neosync](https://github.com/nucleuscloud/neosync) - Open-source platform for anonymizing production data and generating synthetic datasets. Acquired by Grow Therapy in 2025; no longer actively maintained. Still usable as a self-hosted solution. 🔵
+- [Faker](https://github.com/faker-js/faker) - ⭐🟢 Realistic fake data generation for JavaScript/TypeScript with massive locale support.
+- [DataFaker](https://github.com/datafaker-net/datafaker) - 🟢 Modern Java data generation library with expression-based generation.
+- [Mimesis](https://github.com/lk-geimfari/mimesis) - 🟢🚀 High-performance fake data generator for Python with strong locale support.
+- [Neosync](https://github.com/nucleuscloud/neosync) - 🔵 Open-source platform for anonymizing production data and generating synthetic datasets.
 
 ### Database Performance Testing & Benchmarking
 
-- [HammerDB](https://github.com/TPC-Council/HammerDB) - Open-source database benchmarking tool supporting TPC-C and TPC-H workloads. Supports Oracle, SQL Server, PostgreSQL, MySQL, and MariaDB. Industry standard for database benchmarks. ⭐🟢
-- [sysbench](https://github.com/akopytov/sysbench) - Scriptable multi-threaded benchmark tool. Database benchmarks (OLTP), CPU, memory, and file I/O tests. Standard tool for MySQL/MariaDB performance evaluation. ⭐🟢🚀
-- [pgbench](https://www.postgresql.org/docs/current/pgbench.html) - PostgreSQL built-in benchmarking. Custom scripts for workload simulation. 🟢
-- [YCSB (Yahoo! Cloud Serving Benchmark)](https://github.com/brianfrankcooper/YCSB) - Framework for benchmarking NoSQL and NewSQL databases. Standard workloads (A-F) enable fair comparison across database technologies. ⭐🟢
-- [benchbase (formerly OLTPBench)](https://github.com/cmu-db/benchbase) - Multi-DBMS benchmarking framework supporting TPC-C, TPC-H, YCSB, and other workloads. From Carnegie Mellon Database Group. 🟢
-- [mysqlslap](https://dev.mysql.com/doc/refman/en/mysqlslap.html) - MySQL built-in load emulation client. Quick and simple for MySQL-specific benchmarks.
+- [HammerDB](https://github.com/TPC-Council/HammerDB) - ⭐🟢 Open-source database benchmarking tool supporting TPC-C and TPC-H workloads across major databases.
+- [sysbench](https://github.com/akopytov/sysbench) - ⭐🟢🚀 Scriptable multi-threaded benchmark tool for OLTP, CPU, memory, and I/O tests.
+- [pgbench](https://www.postgresql.org/docs/current/pgbench.html) - 🟢 PostgreSQL built-in benchmarking tool with custom scripts for workload simulation.
+- [YCSB (Yahoo! Cloud Serving Benchmark)](https://github.com/brianfrankcooper/YCSB) - ⭐🟢 Framework for benchmarking NoSQL and NewSQL databases with standard workloads.
+- [benchbase (formerly OLTPBench)](https://github.com/cmu-db/benchbase) - 🟢 Multi-DBMS benchmarking framework supporting TPC-C, TPC-H, and YCSB workloads.
+- [mysqlslap](https://dev.mysql.com/doc/refman/en/mysqlslap.html) - MySQL built-in load emulation client for quick benchmarks.
 
 ### System & Infrastructure Benchmarking
 
-- [fio](https://github.com/axboe/fio) - The reference tool for I/O benchmarking. Configurable workloads (sequential, random, mixed), multiple I/O engines (libaio, io_uring, etc.). Essential for storage performance evaluation. ⭐🟢🚀
-- [stress-ng](https://github.com/ColinIanKing/stress-ng) - System stress testing tool covering CPU, memory, I/O, network, and OS-level stressors. 300+ stress methods. Excellent for validating system stability and thermal limits. 🟢🚀
-- [Phoronix Test Suite](https://github.com/phoronix-test-suite/phoronix-test-suite) - Comprehensive benchmarking platform with 500+ test profiles. Automated testing, result comparison, and historical tracking. 🟢
-- [iperf3](https://github.com/esnet/iperf) - Network bandwidth measurement tool. TCP/UDP throughput testing between two endpoints. The standard for network performance validation. ⭐🟢🚀
+- [fio](https://github.com/axboe/fio) - ⭐🟢🚀 Reference I/O benchmarking tool with configurable workloads and multiple engines (libaio, io_uring).
+- [stress-ng](https://github.com/ColinIanKing/stress-ng) - 🟢🚀 System stress testing tool with 300+ methods covering CPU, memory, I/O, and network.
+- [Phoronix Test Suite](https://github.com/phoronix-test-suite/phoronix-test-suite) - 🟢 Comprehensive benchmarking platform with 500+ test profiles and result comparison.
+- [iperf3](https://github.com/esnet/iperf) - ⭐🟢🚀 Network bandwidth measurement tool for TCP/UDP throughput testing.
 
 ### Chaos Engineering & Fault Injection
 
-- [Litmus](https://github.com/litmuschaos/litmus) - CNCF incubating chaos engineering platform for Kubernetes. Extensive experiment library (ChaosHub), GitOps-friendly, Prometheus integration for measuring impact. ⭐🟢🔵
-- [Chaos Mesh](https://github.com/chaos-mesh/chaos-mesh) - CNCF incubating Kubernetes-native chaos engineering platform. Pod, network, I/O, time, and JVM fault injection. Dashboard and scheduling. ⭐🟢🔵
-- [Gremlin](https://www.gremlin.com/) - Enterprise chaos engineering platform. Managed experiments with safety controls (halt conditions). Supports infrastructure, application, and network attacks. 🟠
-- [Chaos Monkey](https://github.com/Netflix/chaosmonkey) - Netflix's original chaos tool: randomly terminates instances in production. Pioneered the discipline. ⭐🟢
-- [Pumba](https://github.com/alexei-led/pumba) - Chaos testing for Docker containers. Kill, pause, stop containers and inject network delays/packet loss. Lightweight alternative to full chaos platforms. 🟢🔵
-- [Steadybit](https://steadybit.com/) - Enterprise reliability platform combining chaos engineering with automated resilience validation. 🟠🔵
-- [AWS Fault Injection Service](https://aws.amazon.com/fis/) - Managed fault injection for AWS resources. Native integration with AWS services. 🟠🔵
+- [Litmus](https://github.com/litmuschaos/litmus) - ⭐🟢🔵 CNCF incubating Kubernetes chaos engineering platform with extensive experiment library.
+- [Chaos Mesh](https://github.com/chaos-mesh/chaos-mesh) - ⭐🟢🔵 CNCF incubating Kubernetes-native chaos platform with pod, network, and I/O fault injection.
+- [Gremlin](https://www.gremlin.com/) - 🟠 Enterprise chaos engineering platform with managed experiments and safety controls.
+- [Chaos Monkey](https://github.com/Netflix/chaosmonkey) - ⭐🟢 Netflix's pioneering chaos tool that randomly terminates instances in production.
+- [Pumba](https://github.com/alexei-led/pumba) - 🟢🔵 Chaos testing for Docker containers with network delay and packet loss injection.
+- [Steadybit](https://steadybit.com/) - 🟠🔵 Enterprise reliability platform combining chaos engineering with resilience validation.
+- [AWS Fault Injection Service](https://aws.amazon.com/fis/) - 🟠🔵 Managed fault injection for AWS resources with native service integration.
 
 ### Network Simulation & Traffic Shaping
 
-- [tc (Traffic Control)](https://man7.org/linux/man-pages/man8/tc.8.html) - Linux kernel traffic shaping. Netem qdisc for network emulation (delay, loss, reordering, corruption). The foundational tool.
-- [Comcast](https://github.com/tylertreat/comcast) - Simple CLI tool for simulating bad network conditions (packet loss, latency, bandwidth). Wraps tc/pfctl. No longer actively maintained.
-- [Clumsy](https://github.com/jagt/clumsy) - Windows network condition simulator. Drop, lag, throttle, and reorder packets. 🟢
+- [tc (Traffic Control)](https://man7.org/linux/man-pages/man8/tc.8.html) - Linux kernel traffic shaping with netem qdisc for network emulation.
+- [Comcast](https://github.com/tylertreat/comcast) - CLI tool for simulating bad network conditions wrapping tc/pfctl.
+- [Clumsy](https://github.com/jagt/clumsy) - 🟢 Windows network condition simulator for packet drop, lag, throttle, and reordering.
 
 ### CI/CD Integration & Performance Gates
 
-- [Gatling Enterprise](https://gatling.io/platform) - Managed Gatling execution with CI/CD integrations, team collaboration, and historical comparison. 🟠
-- [Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci) - Run Lighthouse in CI with performance budgets. Assert on scores, compare against baselines, and track trends. 🟢
-- [Taurus](https://github.com/Blazemeter/taurus) - Automation wrapper for JMeter, Gatling, Locust, and other tools. YAML-based test configuration, unified reporting. Simplifies CI/CD integration for existing test suites. 🟢
+- [Gatling Enterprise](https://gatling.io/platform) - 🟠 Managed Gatling execution with CI/CD integrations and historical comparison.
+- [Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci) - 🟢 Run Lighthouse in CI with performance budgets, baseline comparison, and trend tracking.
+- [Taurus](https://github.com/Blazemeter/taurus) - 🟢 YAML-based automation wrapper for JMeter, Gatling, Locust with unified reporting.
 
 ### Results Analysis & Reporting
 
-- [k6 HTML Report](https://github.com/benc-uk/k6-reporter) - Generate standalone HTML reports from k6 test results. 🟢
-- [HdrHistogram](https://github.com/HdrHistogram/HdrHistogram) - High Dynamic Range Histogram for latency measurement. Captures the full distribution without data loss. Foundation of accurate latency reporting. Available in [Java](https://github.com/HdrHistogram/HdrHistogram), [Go](https://github.com/HdrHistogram/hdrhistogram-go), [C](https://github.com/HdrHistogram/HdrHistogram_c), and more. 🟢🚀
-- [Gatling Reports](https://gatling.io/) - Built-in HTML reports with percentile distributions, request/response time series, and active users timeline. Generated automatically after each Gatling run. 🟢
-- [Apache JMeter Dashboard](https://jmeter.apache.org/usermanual/generating-dashboard.html) - Built-in HTML dashboard report generator for JMeter. Produces APDEX scores, response time distributions, and throughput analysis. 🟢
-- [Taurus Reporting](https://gettaurus.org/docs/Reporting/) - Unified reporting across multiple load testing engines. BlazeMeter integration for cloud reporting. 🟢
+- [k6 HTML Report](https://github.com/benc-uk/k6-reporter) - 🟢 Standalone HTML report generator for k6 test results.
+- [HdrHistogram](https://github.com/HdrHistogram/HdrHistogram) - 🟢🚀 High Dynamic Range Histogram for accurate latency measurement capturing the full distribution.
+- [Gatling Reports](https://gatling.io/) - 🟢 Built-in HTML reports with percentile distributions and response time series.
+- [Apache JMeter Dashboard](https://jmeter.apache.org/usermanual/generating-dashboard.html) - 🟢 Built-in HTML dashboard generating APDEX scores and response time distributions.
+- [Taurus Reporting](https://gettaurus.org/docs/Reporting/) - 🟢 Unified reporting across multiple load testing engines with BlazeMeter integration.
 
 ### Cloud Provider Services
 
-- [Azure App Testing](https://azure.microsoft.com/en-us/products/app-testing/) - Microsoft's managed load testing service (formerly Azure Load Testing, rebranded September 2025). Supports JMeter and Locust natively with multi-region traffic simulation, server-side metrics correlation via Azure Monitor, and CI/CD integration (Azure DevOps, GitHub Actions). Copilot-assisted test authoring. Pay-per-use pricing (~$0.15/VUH). The most complete first-party cloud provider offering for performance testing. 🟠🔵
-- [AWS Distributed Load Testing](https://github.com/aws-solutions/distributed-load-testing-on-aws) - AWS Solutions Implementation that deploys a distributed load testing architecture via CloudFormation (ECS Fargate). Supports JMeter, k6, and Locust scripts. Multi-region execution, scheduling, and baseline comparison. Not a managed SaaS — you deploy and pay for the underlying AWS resources. 🟠🔵
+- [Azure App Testing](https://azure.microsoft.com/en-us/products/app-testing/) - 🟠🔵 Microsoft's managed load testing service supporting JMeter and Locust with multi-region simulation.
+- [AWS Distributed Load Testing](https://github.com/aws-solutions/distributed-load-testing-on-aws) - 🟠🔵 Distributed load testing architecture on AWS via CloudFormation supporting JMeter, k6, and Locust.
 
 ### Developer-Centric Platforms
 
-- [Grafana k6 Cloud](https://grafana.com/products/cloud/performance-load-testing-k6/) - Managed k6 execution with geographic distribution across multiple global load zones, real-time result visualization in Grafana, and native CI/CD integration. Performance Insights provide automated analysis of test results. The natural choice for teams already using k6 OSS who need scale and collaboration. 🟠
-- [Octoperf](https://octoperf.com/) - SaaS performance testing platform built on JMeter with a modern UI, team collaboration, and trend analysis. European-hosted (GDPR-compliant). Supports JMeter scripts natively with enhanced reporting and distributed load generation. Good fit for teams migrating from JMeter to a managed platform. 🟠
+- [Grafana k6 Cloud](https://grafana.com/products/cloud/performance-load-testing-k6/) - 🟠 Managed k6 execution with multi-region load zones and real-time Grafana visualization.
+- [Octoperf](https://octoperf.com/) - 🟠 SaaS performance testing platform built on JMeter with distributed load generation.
 
 ### Enterprise Platforms
 
-- [BlazeMeter](https://www.blazemeter.com/) - Cloud performance testing supporting JMeter, Gatling, Locust, Selenium, and Playwright. Mock services, API monitoring, and shared workspaces. Part of Perforce. 🟠
+- [BlazeMeter](https://www.blazemeter.com/) - 🟠 Cloud performance testing platform supporting JMeter, Gatling, Locust, Selenium, and Playwright.
 
 ### Tools & Integrations
 
-- [Datadog Synthetic Monitoring + AI](https://docs.datadoghq.com/synthetics/) - Synthetic API and browser tests with ML-powered anomaly detection and intelligent alerting. Correlates synthetic test failures with APM traces. 🟠
-- [Dynatrace Load Testing Integration](https://docs.dynatrace.com/docs/deliver/test-pipeline-observability) - Automated quality gates in CI/CD using AI-based performance evaluation. Davis AI compares test results against baselines and detects anomalies in real time. 🟠
+- [Datadog Synthetic Monitoring + AI](https://docs.datadoghq.com/synthetics/) - 🟠 Synthetic API and browser tests with ML-powered anomaly detection and APM correlation.
+- [Dynatrace Load Testing Integration](https://docs.dynatrace.com/docs/deliver/test-pipeline-observability) - 🟠 Automated CI/CD quality gates using AI-based performance evaluation against baselines.
 
 ## Related
 

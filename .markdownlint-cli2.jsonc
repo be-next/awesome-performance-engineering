@@ -4,5 +4,8 @@
     "MD033": false,
     "MD041": false,
     "MD029": false
-  }
+  },
+  "ignores": [
+    "drafts/**"
+  ]
 }
