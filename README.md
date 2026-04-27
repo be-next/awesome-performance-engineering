@@ -98,6 +98,7 @@ Indicators: ⭐ Widely adopted · 🟢 Active · 🔵 Cloud-native · 🟠 Comme
 - [OpenSearch Dashboards](https://github.com/opensearch-project/OpenSearch-Dashboards) - 🟢🔵 Open-source fork of Kibana for OpenSearch.
 - [Apache Superset](https://github.com/apache/superset) - 🟢 SQL-first analytics and dashboarding platform for ad-hoc data exploration.
 - [Perses](https://github.com/perses/perses) - 🟢🔵 CNCF sandbox dashboards-as-code project with native PromQL and TraceQL support.
+- [KubeStellar Console](https://github.com/kubestellar/console) - 🟢🔵 Multi-cluster Kubernetes dashboard with real-time observability, AI-powered operations, and CNCF project integrations across edge and cloud clusters.
 
 ### Profiling & Continuous Performance Analysis
 
