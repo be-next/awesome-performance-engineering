@@ -134,6 +134,7 @@ Indicators: ⭐ Widely adopted · 🟢 Active · 🔵 Cloud-native · 🟠 Comme
 - [Chronosphere](https://chronosphere.io/) - 🟠 Cloud-native observability platform focused on metrics at scale with cost control.
 - [Lightstep / ServiceNow Cloud Observability](https://www.servicenow.com/products/observability.html) - 🟠 OpenTelemetry-native observability platform, now part of ServiceNow.
 - [Sematext](https://sematext.com/) - 🟢🟠 SaaS observability platform with OpenTelemetry-native support and topology discovery.
+- [Middleware](https://middleware.io/) - 🟠 Full-stack observability platform with AI SRE Agent for automated troubleshooting and telemetry analysis. 
 
 ### Monitoring Suites (Operations-Oriented)
 
@@ -185,6 +186,7 @@ Indicators: ⭐ Widely adopted · 🟢 Active · 🔵 Cloud-native · 🟠 Comme
 - [Grafana Synthetic Monitoring](https://grafana.com/docs/grafana-cloud/testing/synthetic-monitoring/) - 🟢🔵 Probe-based multi-location synthetic monitoring integrated into Grafana Cloud.
 - [Uptime Kuma](https://github.com/louislam/uptime-kuma) - ⭐🟢 Self-hosted monitoring tool with HTTP, TCP, DNS, and keyword checks.
 - [Sematext](https://sematext.com/synthetic-monitoring/) - 🟢🟠 Playwright-based synthetic checks with CI/CD integration and SSL monitoring.
+- [Middleware Synthetic Monitoring](https://middleware.io/product/synthetic-monitoring/) - 🟢🟠 Synthetic monitoring with integrated logs, metrics, and traces. 
 
 ### Legacy & Historical
 
