@@ -134,7 +134,7 @@ Indicators: ⭐ Widely adopted · 🟢 Active · 🔵 Cloud-native · 🟠 Comme
 - [Chronosphere](https://chronosphere.io/) - 🟠 Cloud-native observability platform focused on metrics at scale with cost control.
 - [Lightstep / ServiceNow Cloud Observability](https://www.servicenow.com/products/observability.html) - 🟠 OpenTelemetry-native observability platform, now part of ServiceNow.
 - [Sematext](https://sematext.com/) - 🟢🟠 SaaS observability platform with OpenTelemetry-native support and topology discovery.
-- [Middleware](https://middleware.io/) - 🟠 Full-stack observability platform with AI SRE Agent for automated troubleshooting and telemetry analysis. 
+- [Middleware](https://middleware.io/) - 🟢🟠 Full-stack observability platform with AI SRE Agent for automated troubleshooting and telemetry analysis. 
 
 ### Monitoring Suites (Operations-Oriented)
 
