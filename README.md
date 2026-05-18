@@ -184,7 +184,6 @@ Indicators: ⭐ Widely adopted · 🟢 Active · 🔵 Cloud-native · 🟠 Comme
 - [Checkly](https://github.com/checkly/checkly-cli) - 🟢🔵 Monitoring as code for APIs and browsers with Playwright-based synthetic checks.
 - [Grafana Synthetic Monitoring](https://grafana.com/docs/grafana-cloud/testing/synthetic-monitoring/) - 🟢🔵 Probe-based multi-location synthetic monitoring integrated into Grafana Cloud.
 - [Uptime Kuma](https://github.com/louislam/uptime-kuma) - ⭐🟢 Self-hosted monitoring tool with HTTP, TCP, DNS, and keyword checks.
-- [Sematext](https://sematext.com/synthetic-monitoring/) - 🟢🟠 Playwright-based synthetic checks with CI/CD integration and SSL monitoring.
 
 ### Legacy & Historical
 
