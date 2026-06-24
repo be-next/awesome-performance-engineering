@@ -254,6 +254,8 @@ Indicators: ⭐ Widely adopted · 🟢 Active · 🔵 Cloud-native · 🟠 Comme
 - [DataFaker](https://github.com/datafaker-net/datafaker) - 🟢 Modern Java data generation library with expression-based generation.
 - [Mimesis](https://github.com/lk-geimfari/mimesis) - 🟢🚀 High-performance fake data generator for Python with strong locale support.
 - [Neosync](https://github.com/nucleuscloud/neosync) - 🔵 Open-source platform for anonymizing production data and generating synthetic datasets.
+- [Mock Jutsu](https://github.com/altansayan/mock-jutsu-api) - 🟢🚀 Algorithmic open-source mock data engine generating 390+ format-valid types with real checksums (IBAN, TCKN, Luhn, VIN, NHS, SWIFT, MRZ and more). Unlike random-string
+  generators, produces mathematically correct data. CLI + REST API + Python package + JMeter plugin, 6 locales.
 
 ### Database Performance Testing & Benchmarking
 
