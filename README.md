@@ -258,6 +258,7 @@ Indicators: ⭐ Widely adopted · 🟢 Active · 🔵 Cloud-native · 🟠 Comme
 - [Puppeteer](https://github.com/puppeteer/puppeteer) - 🟢 Chrome DevTools Protocol API enabling programmatic access to performance traces and network interception.- [SpeedCurve](https://www.speedcurve.com/) - 🟠 Continuous frontend performance monitoring with Core Web Vitals tracking and competitive benchmarking.
 - [Unlighthouse](https://github.com/harlan-zw/unlighthouse) - 🟢 Site-wide Lighthouse scanning that crawls and audits every page of a site with a unified UI.
 - [DebugBear](https://www.debugbear.com/) - 🟠 Web performance monitoring with scheduled Lighthouse tests, Core Web Vitals tracking, and regression alerts.
+- [Screpy](https://screpy.com/) - 🟠 Commercial website monitoring for Core Web Vitals, page speed, uptime, and technical SEO checks.
 
 ### Service Virtualization and Mocking
 
