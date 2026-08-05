@@ -316,6 +316,7 @@ Indicators: ⭐ Widely adopted · 🟢 Active · 🔵 Cloud-native · 🟠 Comme
 - [Taurus](https://github.com/Blazemeter/taurus) - 🟢 YAML-based automation wrapper for JMeter, Gatling, Locust with unified reporting.
 - [Bencher](https://github.com/bencherdev/bencher) - 🟢 Continuous benchmarking suite tracking results over time and catching performance regressions in CI.
 - [CodSpeed](https://codspeed.io/) - 🟠 Continuous benchmarking service for CI with low-variance instrumented measurements and flame graphs on pull requests.
+- [QAPractices CI/CD Test Automation Setup](https://qapractices.com/documentation/cicd-pipeline-test-automation-setup/) - Practical guide to setting up test automation in CI/CD pipelines with performance gates.
 
 ### Results Analysis & Reporting
 
