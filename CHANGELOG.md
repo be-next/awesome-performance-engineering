@@ -2,6 +2,20 @@
 
 Notable changes to this list are documented in this file, grouped by date — the list is continuously curated rather than versioned. Format inspired by [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## 2026-08-06
+
+### Added
+
+- PageSpeed.ONE (Browser & Frontend Performance) — synthetic speed testing combined with historical CrUX field data; the entry links to the English site since the bare domain serves the Czech locale.
+
+### Fixed
+
+- Restored the Keep (Alerting & Incident Response) and SpeedCurve (Browser & Frontend Performance) entries, which had lost the line break separating them from the preceding entry and no longer rendered as list items. Neither `awesome-lint` nor `markdownlint` reports this defect.
+
+### Changed
+
+- Rewrote the contribution guidelines: the documented entry format no longer matched the one `awesome-lint` enforces, and the guidelines still invited learning resources that the single-file list has no section for. Added a submission policy covering disclosure and bulk cross-list submissions.
+
 ## 2026-07-17
 
 ### Added
