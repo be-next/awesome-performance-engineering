@@ -19,6 +19,16 @@ Thanks for your interest in contributing. This list is an opinionated, curated c
 - Purely promotional or marketing-driven content.
 - Articles, tutorials, blog posts, books, and talks. This list is a single `awesome-lint`-compliant file of tools and has no section for learning resources.
 
+## Submission policy
+
+Curation here is editorial, not procedural: a submission can be declined even when the tool is real, maintained, and well built. The following applies to every pull request that adds an entry.
+
+- **Disclose any affiliation.** If you built the tool, work for the vendor, wrote the linked page, or were asked to submit it, say so in the pull request. A disclosed affiliation is welcome and does not disqualify a submission; an undisclosed one does.
+- **One list at a time.** Submissions that are part of a bulk campaign — the same tool opened against many awesome lists on the same day, usually from freshly created forks — are declined by default, whatever the tool's merit.
+- **Describe the submission accurately.** Pull requests that claim capabilities the tool does not have, or report checks that were not run, are closed without further review.
+- **Show adoption beyond the author.** An entry sits next to established projects in its section, and is expected to show external contributors, downstream users, or a track record. Promising projects that are only a few months old are better resubmitted once that exists.
+- **Expect a slow, opinionated review.** Being a good tool is necessary, not sufficient: the question is whether the entry helps a reader who already has the section's other entries in front of them.
+
 ## Entry format
 
 Every entry is a **single line** matching the pattern `awesome-lint` validates:
