@@ -119,7 +119,8 @@ Indicators: ⭐ Widely adopted · 🟢 Active · 🔵 Cloud-native · 🟠 Comme
 
 ### Alerting & Incident Response
 
-- [Alertmanager](https://github.com/prometheus/alertmanager) - ⭐🟢 Prometheus-native alert handling with grouping, silencing, inhibition, and routing.- [Keep](https://github.com/keephq/keep) - 🟢🔵 Open-source alert management platform consolidating alerts from multiple sources.
+- [Alertmanager](https://github.com/prometheus/alertmanager) - ⭐🟢 Prometheus-native alert handling with grouping, silencing, inhibition, and routing.
+- [Keep](https://github.com/keephq/keep) - 🟢🔵 Open-source alert management platform consolidating alerts from multiple sources.
 - [Alerta](https://github.com/alerta/alerta) - 🟢 Unified alert correlation and management across multiple monitoring systems.
 - [PagerDuty](https://www.pagerduty.com/) - 🟠 Industry-standard incident response and on-call management platform.
 - [Rootly](https://rootly.com/) - 🟠 AI-assisted incident management with automated timelines and postmortem generation.
