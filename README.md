@@ -125,6 +125,7 @@ Indicators: ⭐ Widely adopted · 🟢 Active · 🔵 Cloud-native · 🟠 Comme
 - [PagerDuty](https://www.pagerduty.com/) - 🟠 Industry-standard incident response and on-call management platform.
 - [Rootly](https://rootly.com/) - 🟠 AI-assisted incident management with automated timelines and postmortem generation.
 - [incident.io](https://incident.io/) - 🟠 Incident management platform with on-call scheduling, Slack/Teams-native response workflows, and status pages.
+- [Spike](https://spike.sh) - 🟠 Incident management and on-call alerting platform with escalation policies, on-call schedules, and status pages.
 
 ### Observability Platforms (Integrated)
 
