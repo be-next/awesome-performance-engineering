@@ -2,6 +2,13 @@
 
 Notable changes to this list are documented in this file, grouped by date — the list is continuously curated rather than versioned. Format inspired by [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## 2026-10-01
+
+### Changed
+
+- Added the missing indicators to five entries that carried none, applied from verified status: StatsD (⭐ — the line protocol is implemented well beyond the reference daemon, whose last commit is 2025-05-20, so no 🟢), Pinpoint (🟢), Logstash (⭐🟢), mysqlslap (🟢, matching pgbench), and tc (🟢 — shipped by iproute2, last updated 2026-09-21).
+- Comcast and Graphite deliberately keep no indicator. Graphite sits in Legacy & Historical, where the absence is the point. Comcast's last commit is 2025-03-20 and its last release 2015, so 🟢 would be wrong and its adoption does not reach the bar the list applies to ⭐; it needs a keep-or-remove decision before it crosses the two-year inactivity rule in March 2027.
+
 ## 2026-08-06
 
 ### Added

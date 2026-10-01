@@ -57,7 +57,7 @@ Indicators: ⭐ Widely adopted · 🟢 Active · 🔵 Cloud-native · 🟠 Comme
 - [InfluxDB](https://github.com/influxdata/influxdb) - 🟢🟠 Purpose-built time-series database with high write throughput and a Rust-based engine (v3).
 - [Grafana Alloy](https://github.com/grafana/alloy) - ⭐🟢🔵 OpenTelemetry-native telemetry collector supporting metrics, logs, traces, and profiles.
 - [Telegraf](https://github.com/influxdata/telegraf) - 🟢 Plugin-driven agent for collecting and reporting metrics with 300+ input plugins.
-- [StatsD](https://github.com/statsd/statsd) - Lightweight, UDP-based metrics aggregation daemon with broad application support.
+- [StatsD](https://github.com/statsd/statsd) - ⭐ Lightweight, UDP-based metrics aggregation daemon with broad application support.
 - [Netdata](https://github.com/netdata/netdata) - ⭐🟢🚀 Real-time per-second monitoring with built-in anomaly detection and zero-configuration agent.
 - [TimescaleDB](https://github.com/timescale/timescaledb) - ⭐🟢🟠 PostgreSQL extension for time-series workloads with automatic partitioning, columnar compression, and continuous aggregates.
 - [QuestDB](https://github.com/questdb/questdb) - 🟢🚀 High-performance time-series database with SQL queries and InfluxDB line protocol ingestion.
@@ -72,7 +72,7 @@ Indicators: ⭐ Widely adopted · 🟢 Active · 🔵 Cloud-native · 🟠 Comme
 - [Zipkin](https://github.com/openzipkin/zipkin) - 🟢 Pioneering distributed tracing system (Twitter, 2012) with a simple architecture.
 - [Apache SkyWalking](https://github.com/apache/skywalking) - ⭐🟢🔵 Observability platform with bytecode-injection-based tracing, popular in the Java ecosystem.
 - [SigNoz](https://github.com/SigNoz/signoz) - 🟢🔵 Open-source OpenTelemetry-native observability platform with unified metrics, traces, and logs.
-- [Pinpoint](https://github.com/pinpoint-apm/pinpoint) - Bytecode-instrumentation-based APM and tracing for Java and PHP with zero-code-change approach.
+- [Pinpoint](https://github.com/pinpoint-apm/pinpoint) - 🟢 Bytecode-instrumentation-based APM and tracing for Java and PHP with zero-code-change approach.
 
 ### Log Management & Log Pipelines
 
@@ -89,7 +89,7 @@ Indicators: ⭐ Widely adopted · 🟢 Active · 🔵 Cloud-native · 🟠 Comme
 
 - [OpenTelemetry Collector](https://github.com/open-telemetry/opentelemetry-collector) - ⭐🟢🔵 Standard telemetry processing pipeline with receivers, processors, and exporters for any signal.
 - [Vector](https://github.com/vectordotdev/vector) - 🟢🚀 End-to-end observability data routing and transformation with programmable VRL transforms.
-- [Logstash](https://www.elastic.co/logstash) - ETL-style processing for observability data with powerful filter plugins.
+- [Logstash](https://www.elastic.co/logstash) - ⭐🟢 ETL-style processing for observability data with powerful filter plugins.
 - [Cribl Stream](https://cribl.io/) - 🟠🚀 Commercial observability pipeline for routing, reducing, and enriching telemetry data.
 
 ### Visualization & Dashboards
@@ -284,7 +284,7 @@ Indicators: ⭐ Widely adopted · 🟢 Active · 🔵 Cloud-native · 🟠 Comme
 - [pgbench](https://www.postgresql.org/docs/current/pgbench.html) - 🟢 PostgreSQL built-in benchmarking tool with custom scripts for workload simulation.
 - [YCSB (Yahoo! Cloud Serving Benchmark)](https://github.com/brianfrankcooper/YCSB) - ⭐🟢 Framework for benchmarking NoSQL and NewSQL databases with standard workloads.
 - [benchbase (formerly OLTPBench)](https://github.com/cmu-db/benchbase) - 🟢 Multi-DBMS benchmarking framework supporting TPC-C, TPC-H, and YCSB workloads.
-- [mysqlslap](https://dev.mysql.com/doc/refman/en/mysqlslap.html) - MySQL built-in load emulation client for quick benchmarks.
+- [mysqlslap](https://dev.mysql.com/doc/refman/en/mysqlslap.html) - 🟢 MySQL built-in load emulation client for quick benchmarks.
 - [NoSQLBench](https://github.com/nosqlbench/nosqlbench) - 🟢 Extensible benchmarking suite for NoSQL databases with workload modeling for Cassandra, DynamoDB, and more.
 
 ### System & Infrastructure Benchmarking
@@ -307,7 +307,7 @@ Indicators: ⭐ Widely adopted · 🟢 Active · 🔵 Cloud-native · 🟠 Comme
 
 ### Network Simulation & Traffic Shaping
 
-- [tc (Traffic Control)](https://man7.org/linux/man-pages/man8/tc.8.html) - Linux kernel traffic shaping with netem qdisc for network emulation.
+- [tc (Traffic Control)](https://man7.org/linux/man-pages/man8/tc.8.html) - 🟢 Linux kernel traffic shaping with netem qdisc for network emulation.
 - [Comcast](https://github.com/tylertreat/comcast) - CLI tool for simulating bad network conditions wrapping tc/pfctl.
 - [Clumsy](https://github.com/jagt/clumsy) - 🟢 Windows network condition simulator for packet drop, lag, throttle, and reordering.
 - [Toxiproxy](https://github.com/Shopify/toxiproxy) - ⭐🟢 TCP proxy from Shopify injecting latency, bandwidth limits, and connection failures for resilience testing.
