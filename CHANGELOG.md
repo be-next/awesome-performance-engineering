@@ -2,6 +2,12 @@
 
 Notable changes to this list are documented in this file, grouped by date — the list is continuously curated rather than versioned. Format inspired by [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## 2026-10-07
+
+### Added
+
+- Gigapipe (Observability Platforms (Integrated)) — ClickHouse-backed observability warehouse whose read path is protocol-compatible, serving one store over LogQL, PromQL, TraceQL and FlameQL. 33 contributors, weekly releases, developed publicly since 2018 under its former name qryn, and listed in the OpenTelemetry registry as a collector exporter. The submitted description was condensed from 294 to 200 characters to match the surrounding entries; its indicators were already correct.
+
 ## 2026-10-06
 
 ### Removed
