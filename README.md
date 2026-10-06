@@ -275,7 +275,6 @@ Indicators: ⭐ Widely adopted · 🟢 Active · 🔵 Cloud-native · 🟠 Comme
 - [Faker](https://github.com/faker-js/faker) - ⭐🟢 Realistic fake data generation for JavaScript/TypeScript with massive locale support.
 - [DataFaker](https://github.com/datafaker-net/datafaker) - 🟢 Modern Java data generation library with expression-based generation.
 - [Mimesis](https://github.com/lk-geimfari/mimesis) - 🟢🚀 High-performance fake data generator for Python with strong locale support.
-- [Neosync](https://github.com/nucleuscloud/neosync) - 🔵 Open-source platform for anonymizing production data and generating synthetic datasets.
 
 ### Database Performance Testing & Benchmarking
 
