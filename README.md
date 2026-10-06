@@ -97,7 +97,7 @@ Indicators: ⭐ Widely adopted · 🟢 Active · 🔵 Cloud-native · 🟠 Comme
 - [Grafana](https://github.com/grafana/grafana) - ⭐🟢 Open-source observability dashboard platform supporting 100+ data sources with alerting and annotations.
 - [Kibana](https://github.com/elastic/kibana) - 🟢🟠 Visualization and log exploration for Elasticsearch and OpenSearch data.
 - [OpenSearch Dashboards](https://github.com/opensearch-project/OpenSearch-Dashboards) - 🟢🔵 Open-source fork of Kibana for OpenSearch.
-- [Apache Superset](https://github.com/apache/superset) - 🟢 SQL-first analytics and dashboarding platform for ad-hoc data exploration.
+- [Apache Superset](https://github.com/apache/superset) - ⭐🟢 SQL-first analytics and dashboarding platform for ad-hoc data exploration.
 - [Perses](https://github.com/perses/perses) - 🟢🔵 CNCF sandbox dashboards-as-code project with native PromQL and TraceQL support.
 - [Redash](https://github.com/getredash/redash) - 🟢 SQL-first data visualization and collaboration connecting to many data sources, maintained by the community with regular releases.
 
@@ -168,7 +168,7 @@ Indicators: ⭐ Widely adopted · 🟢 Active · 🔵 Cloud-native · 🟠 Comme
 
 ### Real User Monitoring (RUM) & Frontend Observability
 
-- [Sentry](https://github.com/getsentry/sentry) - 🟢 Error tracking and performance monitoring with session replay and Web Vitals.
+- [Sentry](https://github.com/getsentry/sentry) - ⭐🟢 Error tracking and performance monitoring with session replay and Web Vitals.
 - [Grafana Faro](https://github.com/grafana/faro-web-sdk) - 🟢🔵 Open-source frontend observability SDK capturing errors, performance, and user events.
 - [OpenTelemetry Browser SDK](https://opentelemetry.io/docs/languages/js/getting-started/browser/) - 🟢 OTel instrumentation for web applications capturing page loads and resource timings.
 - [LogRocket](https://logrocket.com/) - 🟠 Session replay combined with frontend performance monitoring.
@@ -256,7 +256,7 @@ Indicators: ⭐ Widely adopted · 🟢 Active · 🔵 Cloud-native · 🟠 Comme
 - [WebPageTest](https://github.com/catchpoint/WebPageTest) - ⭐ Web performance analysis with filmstrip views, waterfall charts, and multi-location testing.
 - [Playwright](https://github.com/microsoft/playwright) - ⭐🟢 Browser automation framework with built-in performance timing APIs for Chromium, Firefox, and WebKit.
 - [Sitespeed.io](https://github.com/sitespeedio/sitespeed.io) - 🟢 Open-source web performance monitoring integrating Lighthouse, WebPageTest, and Grafana dashboards.
-- [Puppeteer](https://github.com/puppeteer/puppeteer) - 🟢 Chrome DevTools Protocol API enabling programmatic access to performance traces and network interception.
+- [Puppeteer](https://github.com/puppeteer/puppeteer) - ⭐🟢 Chrome DevTools Protocol API enabling programmatic access to performance traces and network interception.
 - [SpeedCurve](https://www.speedcurve.com/) - 🟠 Continuous frontend performance monitoring with Core Web Vitals tracking and competitive benchmarking.
 - [Unlighthouse](https://github.com/harlan-zw/unlighthouse) - 🟢 Site-wide Lighthouse scanning that crawls and audits every page of a site with a unified UI.
 - [DebugBear](https://www.debugbear.com/) - 🟠 Web performance monitoring with scheduled Lighthouse tests, Core Web Vitals tracking, and regression alerts.
