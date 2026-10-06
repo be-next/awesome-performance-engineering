@@ -195,7 +195,7 @@ Indicators: ⭐ Widely adopted · 🟢 Active · 🔵 Cloud-native · 🟠 Comme
 
 ### Legacy & Historical
 
-- [Graphite](https://github.com/graphite-project/graphite-web) - Pioneering time-series storage and graphing system with Whisper backend and Carbon collector.
+- [Graphite](https://github.com/graphite-project/graphite-web) - 🟢 Pioneering time-series storage and graphing system with Whisper backend and Carbon collector.
 
 ## Performance Testing
 
@@ -207,9 +207,9 @@ Indicators: ⭐ Widely adopted · 🟢 Active · 🔵 Cloud-native · 🟠 Comme
 - [Apache JMeter](https://github.com/apache/jmeter) - ⭐🟢 Load testing tool with GUI and extensive protocol support (HTTP, JDBC, JMS, LDAP, SOAP).
 - [Artillery](https://github.com/artilleryio/artillery) - 🟢🔵 Node.js-based load testing toolkit with YAML scenarios supporting HTTP, WebSocket, and Socket.io.
 - [NBomber](https://github.com/PragmaticFlow/NBomber) - 🟢 Load testing framework for .NET with C#/F# scripting.
-- [Tsung](https://github.com/processone/tsung) - 🚀 Erlang-based distributed load testing tool handling massive concurrent connections across multiple protocols.
-- [GoReplay (gor)](https://github.com/probelabs/goreplay) - 🟢🚀 Capture and replay production HTTP traffic for load testing with real traffic patterns.
-- [Anteon (formerly Ddosify)](https://github.com/getanteon/anteon) - 🔵 eBPF-based Kubernetes performance testing platform with distributed load generation.
+- [Tsung](https://github.com/processone/tsung) - 🟢🚀 Erlang-based distributed load testing tool handling massive concurrent connections across multiple protocols.
+- [GoReplay (gor)](https://github.com/probelabs/goreplay) - 🚀 Capture and replay production HTTP traffic for load testing with real traffic patterns.
+- [Anteon (formerly Ddosify)](https://github.com/getanteon/anteon) - 🟢🔵 eBPF-based Kubernetes performance testing platform with distributed load generation.
 - [NeoLoad](https://www.tricentis.com/products/performance-testing-neoload) - 🟠 Enterprise performance testing platform with codeless and as-code options.
 - [LoadRunner / OpenText](https://www.opentext.com/products/professional-performance-engineering) - 🟠 Enterprise performance testing platform with broad protocol support.
 - [Fortio](https://github.com/fortio/fortio) - 🟢🚀 HTTP and gRPC load testing tool from the Istio ecosystem running at fixed query rates with latency histograms.
@@ -223,7 +223,7 @@ Indicators: ⭐ Widely adopted · 🟢 Active · 🔵 Cloud-native · 🟠 Comme
 - [Vegeta](https://github.com/tsenart/vegeta) - 🟢🚀 HTTP load testing tool with constant request rate mode and built-in plotting.
 - [hey](https://github.com/rakyll/hey) - 🟢 Simple HTTP load generator, successor to Apache Bench (ab).
 - [oha](https://github.com/hatoo/oha) - 🟢🚀 Rust-based HTTP load generator with real-time TUI.
-- [bombardier](https://github.com/codesenberg/bombardier) - 🟢🚀 Fast, cross-platform HTTP benchmarking tool with detailed latency reporting.
+- [bombardier](https://github.com/codesenberg/bombardier) - 🚀 Fast, cross-platform HTTP benchmarking tool with detailed latency reporting.
 - [hyperfoil](https://github.com/Hyperfoil/Hyperfoil) - 🟢🔵🚀 Distributed benchmarking framework designed to avoid coordinated omission.
 - [JMH (Java Microbenchmark Harness)](https://github.com/openjdk/jmh) - ⭐🟢 Reference microbenchmark harness for the JVM handling warmup, dead-code elimination, and statistical analysis.
 - [hyperfine](https://github.com/sharkdp/hyperfine) - ⭐🟢 Command-line benchmarking tool with statistical analysis, warmup runs, and outlier detection.
@@ -236,7 +236,7 @@ Indicators: ⭐ Widely adopted · 🟢 Active · 🔵 Cloud-native · 🟠 Comme
 - [Postman](https://www.postman.com/) - ⭐🟢🟠 API development and testing platform with Newman CLI for CI/CD integration.
 - [REST-assured](https://github.com/rest-assured/rest-assured) - 🟢 Java DSL for testing REST APIs with fluent syntax and JUnit/TestNG integration.
 - [Karate](https://github.com/karatelabs/karate) - 🟢 BDD-style API testing framework combining API testing, mocking, and performance testing.
-- [Step CI](https://github.com/stepci/stepci) - 🟢 Open-source YAML-based API testing and monitoring framework for CI/CD.
+- [Step CI](https://github.com/stepci/stepci) - Open-source YAML-based API testing and monitoring framework for CI/CD.
 - [Pact](https://github.com/pact-foundation) - 🟢 Contract testing framework ensuring provider-consumer compatibility for HTTP APIs and messaging.
 - [Bruno](https://github.com/usebruno/bruno) - ⭐🟢 Open-source API client storing collections as plain text files in Git repositories, with a CLI for CI runs.
 - [Schemathesis](https://github.com/schemathesis/schemathesis) - 🟢 Property-based API testing generating test cases from OpenAPI and GraphQL schemas to find crashes and spec violations.
@@ -253,7 +253,7 @@ Indicators: ⭐ Widely adopted · 🟢 Active · 🔵 Cloud-native · 🟠 Comme
 ### Browser & Frontend Performance
 
 - [Lighthouse](https://github.com/GoogleChrome/lighthouse) - ⭐🟢 Google's auditing tool for performance, accessibility, and SEO with actionable scores.
-- [WebPageTest](https://github.com/catchpoint/WebPageTest) - ⭐🟢 Web performance analysis with filmstrip views, waterfall charts, and multi-location testing.
+- [WebPageTest](https://github.com/catchpoint/WebPageTest) - ⭐ Web performance analysis with filmstrip views, waterfall charts, and multi-location testing.
 - [Playwright](https://github.com/microsoft/playwright) - ⭐🟢 Browser automation framework with built-in performance timing APIs for Chromium, Firefox, and WebKit.
 - [Sitespeed.io](https://github.com/sitespeedio/sitespeed.io) - 🟢 Open-source web performance monitoring integrating Lighthouse, WebPageTest, and Grafana dashboards.
 - [Puppeteer](https://github.com/puppeteer/puppeteer) - 🟢 Chrome DevTools Protocol API enabling programmatic access to performance traces and network interception.
@@ -280,7 +280,7 @@ Indicators: ⭐ Widely adopted · 🟢 Active · 🔵 Cloud-native · 🟠 Comme
 ### Database Performance Testing & Benchmarking
 
 - [HammerDB](https://github.com/TPC-Council/HammerDB) - ⭐🟢 Open-source database benchmarking tool supporting TPC-C and TPC-H workloads across major databases.
-- [sysbench](https://github.com/akopytov/sysbench) - ⭐🟢🚀 Scriptable multi-threaded benchmark tool for OLTP, CPU, memory, and I/O tests.
+- [sysbench](https://github.com/akopytov/sysbench) - ⭐🚀 Scriptable multi-threaded benchmark tool for OLTP, CPU, memory, and I/O tests.
 - [pgbench](https://www.postgresql.org/docs/current/pgbench.html) - 🟢 PostgreSQL built-in benchmarking tool with custom scripts for workload simulation.
 - [YCSB (Yahoo! Cloud Serving Benchmark)](https://github.com/brianfrankcooper/YCSB) - ⭐🟢 Framework for benchmarking NoSQL and NewSQL databases with standard workloads.
 - [benchbase (formerly OLTPBench)](https://github.com/cmu-db/benchbase) - 🟢 Multi-DBMS benchmarking framework supporting TPC-C, TPC-H, and YCSB workloads.
@@ -309,13 +309,13 @@ Indicators: ⭐ Widely adopted · 🟢 Active · 🔵 Cloud-native · 🟠 Comme
 
 - [tc (Traffic Control)](https://man7.org/linux/man-pages/man8/tc.8.html) - 🟢 Linux kernel traffic shaping with netem qdisc for network emulation.
 - [Comcast](https://github.com/tylertreat/comcast) - CLI tool for simulating bad network conditions wrapping tc/pfctl.
-- [Clumsy](https://github.com/jagt/clumsy) - 🟢 Windows network condition simulator for packet drop, lag, throttle, and reordering.
+- [Clumsy](https://github.com/jagt/clumsy) - Windows network condition simulator for packet drop, lag, throttle, and reordering.
 - [Toxiproxy](https://github.com/Shopify/toxiproxy) - ⭐🟢 TCP proxy from Shopify injecting latency, bandwidth limits, and connection failures for resilience testing.
 
 ### CI/CD Integration & Performance Gates
 
 - [Gatling Enterprise](https://gatling.io/platform) - 🟠 Managed Gatling execution with CI/CD integrations and historical comparison.
-- [Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci) - 🟢 Run Lighthouse in CI with performance budgets, baseline comparison, and trend tracking.
+- [Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci) - Run Lighthouse in CI with performance budgets, baseline comparison, and trend tracking.
 - [Taurus](https://github.com/Blazemeter/taurus) - 🟢 YAML-based automation wrapper for JMeter, Gatling, Locust with unified reporting.
 - [Bencher](https://github.com/bencherdev/bencher) - 🟢 Continuous benchmarking suite tracking results over time and catching performance regressions in CI.
 - [CodSpeed](https://codspeed.io/) - 🟠 Continuous benchmarking service for CI with low-variance instrumented measurements and flame graphs on pull requests.
@@ -323,14 +323,14 @@ Indicators: ⭐ Widely adopted · 🟢 Active · 🔵 Cloud-native · 🟠 Comme
 ### Results Analysis & Reporting
 
 - [k6 HTML Report](https://github.com/benc-uk/k6-reporter) - 🟢 Standalone HTML report generator for k6 test results.
-- [HdrHistogram](https://github.com/HdrHistogram/HdrHistogram) - 🟢🚀 High Dynamic Range Histogram for accurate latency measurement capturing the full distribution.
+- [HdrHistogram](https://github.com/HdrHistogram/HdrHistogram) - 🚀 High Dynamic Range Histogram for accurate latency measurement capturing the full distribution.
 - [Apache JMeter Dashboard](https://jmeter.apache.org/usermanual/generating-dashboard.html) - 🟢 Built-in HTML dashboard generating APDEX scores and response time distributions.
 - [Taurus Reporting](https://gettaurus.org/docs/Reporting/) - 🟢 Unified reporting across multiple load testing engines with BlazeMeter integration.
 
 ### Managed Load Testing Platforms
 
 - [Azure App Testing](https://azure.microsoft.com/en-us/products/app-testing/) - 🟠🔵 Microsoft's managed load testing service supporting JMeter and Locust with multi-region simulation.
-- [AWS Distributed Load Testing](https://github.com/aws-solutions/distributed-load-testing-on-aws) - 🟠🔵 Distributed load testing architecture on AWS via CloudFormation supporting JMeter, k6, and Locust.
+- [AWS Distributed Load Testing](https://github.com/aws-solutions/distributed-load-testing-on-aws) - 🟠🔵🟢 Distributed load testing architecture on AWS via CloudFormation supporting JMeter, k6, and Locust.
 - [Grafana k6 Cloud](https://grafana.com/products/cloud/performance-load-testing-k6/) - 🟠 Managed k6 execution with multi-region load zones and real-time Grafana visualization.
 - [Octoperf](https://octoperf.com/) - 🟠 SaaS performance testing platform built on JMeter with distributed load generation.
 - [BlazeMeter](https://www.blazemeter.com/) - 🟠 Cloud performance testing platform supporting JMeter, Gatling, Locust, Selenium, and Playwright.
