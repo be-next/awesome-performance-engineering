@@ -105,15 +105,15 @@ Indicators: ⭐ Category reference · 🟢 Active · 🔵 Cloud-native · 🟠 C
 
 - [Parca](https://github.com/parca-dev/parca) - ⭐🟢🔵 eBPF-based continuous profiling platform with zero-instrumentation and differential flame graphs (CNCF sandbox).
 - [Grafana Pyroscope](https://github.com/grafana/pyroscope) - ⭐🟢🔵 Continuous profiling with flame graph visualization and multi-language support.
-- [async-profiler](https://github.com/async-profiler/async-profiler) - 🟢🚀 Low-overhead JVM sampling profiler capturing CPU, allocation, and lock contention profiles.
-- [perf](https://perfwiki.github.io/) - 🚀 Linux kernel performance analysis tool with hardware counters, tracepoints, and sampling.
-- [bpftrace](https://github.com/bpftrace/bpftrace) - 🟢🚀 High-level tracing language for Linux eBPF with dynamic kernel and user-space tracing.
-- [bcc (BPF Compiler Collection)](https://github.com/iovisor/bcc) - 🟢🚀 Toolkit for creating eBPF-based tracing programs with dozens of ready-to-use tools.
+- [async-profiler](https://github.com/async-profiler/async-profiler) - ⭐🟢🚀 Low-overhead JVM sampling profiler capturing CPU, allocation, and lock contention profiles.
+- [perf](https://perfwiki.github.io/) - ⭐🚀 Linux kernel performance analysis tool with hardware counters, tracepoints, and sampling.
+- [bpftrace](https://github.com/bpftrace/bpftrace) - ⭐🟢🚀 High-level tracing language for Linux eBPF with dynamic kernel and user-space tracing.
+- [bcc (BPF Compiler Collection)](https://github.com/iovisor/bcc) - ⭐🟢🚀 Toolkit for creating eBPF-based tracing programs with dozens of ready-to-use tools.
 - [OpenTelemetry eBPF Instrumentation](https://github.com/open-telemetry/opentelemetry-ebpf-instrumentation) - 🟢🔵🚀 eBPF-based zero-code auto-instrumentation generating RED metrics and distributed traces, donated to OpenTelemetry by Grafana Labs (formerly Beyla).
 - [Perfetto](https://github.com/google/perfetto) - 🟢 System-wide tracing and profiling toolkit from Google for Android, Chrome, and general system analysis.
 - [Pixie](https://github.com/pixie-io/pixie) - 🟢🔵🚀 eBPF-based Kubernetes observability capturing requests, metrics, and traces without manual instrumentation (CNCF sandbox).
-- [py-spy](https://github.com/benfred/py-spy) - 🟢🚀 Sampling profiler for Python that attaches to running processes without code changes or restarts.
-- [pprof](https://github.com/google/pprof) - 🟢 Profile visualization and analysis tool for the profile.proto format, standard across the Go ecosystem.
+- [py-spy](https://github.com/benfred/py-spy) - ⭐🟢🚀 Sampling profiler for Python that attaches to running processes without code changes or restarts.
+- [pprof](https://github.com/google/pprof) - ⭐🟢 Profile visualization and analysis tool for the profile.proto format, standard across the Go ecosystem.
 - [JDK Mission Control](https://github.com/openjdk/jmc) - 🟢 Production-time JVM profiling and diagnostics suite for visualizing JDK Flight Recorder data.
 - [Odigos](https://github.com/odigos-io/odigos) - 🟢🔵 Zero-code OpenTelemetry auto-instrumentation for Kubernetes generating distributed traces across Java, Python, .NET, Node.js, and Go.
 
