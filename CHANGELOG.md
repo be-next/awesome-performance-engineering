@@ -10,6 +10,9 @@ Notable changes to this list are documented in this file, grouped by date — th
 
 ### Changed
 
+- Redefined ⭐ in the legend from "Widely adopted" to "Category reference". A within-section audit found 32 entries without ⭐ carrying more stars than the lowest-starred ⭐ entry of their own section, which showed the indicator had never tracked adoption magnitude: it marks the default choice for a role, which is why HammerDB carries it at 792 stars and Telegraf does not at 17,850. The legend now says what the tags mean, and `CONTRIBUTING.md` documents the criterion for all five indicators.
+- Added ⭐ to the reference profiler for each platform in Profiling & Continuous Performance Analysis: perf (Linux), async-profiler (JVM), py-spy (Python), pprof (Go), bpftrace (ad-hoc eBPF tracing) and bcc (eBPF tool collection). The section previously marked only its two continuous-profiling backends.
+- Stated the reason for keeping the five entries inactive for two years or more, which the guidelines require: wrk2, wrk, Clumsy, HdrHistogram and Step CI. Step CI's commit history suggested abandonment, but its site is live and issues are still being filed in 2026 — only development has stalled.
 - Audited the 🟢 indicator across all 154 GitHub-hosted entries against the last commit on the default branch rather than GitHub's `pushedAt`, which counts pushes to any branch and overstates activity. Removed 🟢 from Clumsy, HdrHistogram, Step CI, bombardier, sysbench, GoReplay, Lighthouse CI and WebPageTest, none of which had committed in over a year. Added 🟢 to AWS Distributed Load Testing, Graphite, Tsung and Anteon, which are active but carried no such tag.
 - Added ⭐ to Puppeteer, Apache Superset and Sentry, where the omission contradicted a direct peer in the same section.
 
