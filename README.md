@@ -44,7 +44,7 @@
   - [Managed Load Testing Platforms](#managed-load-testing-platforms)
 - [Related](#related)
 
-Indicators: ⭐ Widely adopted · 🟢 Active · 🔵 Cloud-native · 🟠 Commercial · 🚀 High performance
+Indicators: ⭐ Category reference · 🟢 Active · 🔵 Cloud-native · 🟠 Commercial · 🚀 High performance
 
 ## Observability
 

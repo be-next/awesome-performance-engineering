@@ -40,12 +40,24 @@ Every entry is a **single line** matching the pattern `awesome-lint` validates:
 - **Bullet** — a hyphen `-`, not an asterisk.
 - **Link text** — the plain tool name. No bold, no backticks.
 - **Separator** — ` - `, a single hyphen surrounded by spaces. Not an em dash.
-- **Indicators** — emoji from the legend, placed at the start of the description in legend order: ⭐ widely adopted, 🟢 active, 🔵 cloud-native, 🟠 commercial, 🚀 high performance. Apply them honestly, based on the tool's actual status rather than its ambitions.
+- **Indicators** — emoji from the legend, placed at the start of the description in legend order. Apply them honestly, against the tool's actual status rather than its ambitions; the criteria are below.
 - **Description** — one to three factual sentences in neutral third person, in your own words, ending with a period. Keep it on one line; a wrapped continuation line breaks the convention even though the linters tolerate it.
 - **URL** — prefer the GitHub repository. Fall back to the official website for commercial tools with no public repo, and link the English version when the site is localized.
 - **No bracketed metadata** — tokens such as `[Language]` or `[License]` are parsed as undefined link references and fail `awesome-lint`.
 
 Add new tools at the end of the relevant section; sections are reordered periodically.
+
+### What each indicator means
+
+An entry carries only the indicators it actually earns. Several entries carry none, and that is a valid outcome.
+
+- **⭐ Category reference** — the tool most practitioners in that category would name first: the default choice, or the de facto standard for its role. This is not a popularity measure. HammerDB earns it at under 1k stars because it is the standard TPC-C harness, while much larger projects that are strong alternatives rather than the default do not.
+- **🟢 Active** — the default branch has commits from within the last year. Check the last commit, not GitHub's "pushed" date, which counts pushes to any branch and overstates activity.
+- **🔵 Cloud-native** — designed to run on Kubernetes, or offered as a managed cloud service. Merely being deployable in a container does not qualify.
+- **🟠 Commercial** — sold as a paid product or service. An open-core project whose paid tier is a separate hosted offering carries it; a freely licensed component of a commercial vendor's stack does not.
+- **🚀 High performance** — performance is an explicit design goal of the tool itself, backed by published benchmarks or an architecture built around it.
+
+A tool that has been inactive for two years or more belongs here only with the reason stated in its description — feature-complete, superseded, or kept for lack of an alternative. Without that, it is removed.
 
 ### Writing the description
 
