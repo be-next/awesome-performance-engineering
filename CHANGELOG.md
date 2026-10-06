@@ -2,6 +2,17 @@
 
 Notable changes to this list are documented in this file, grouped by date — the list is continuously curated rather than versioned. Format inspired by [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## 2026-10-06
+
+### Removed
+
+- Neosync (Synthetic Data Generation) — repository archived after the project was acquired by Grow Therapy; its README states it is no longer actively maintained.
+
+### Changed
+
+- Audited the 🟢 indicator across all 154 GitHub-hosted entries against the last commit on the default branch rather than GitHub's `pushedAt`, which counts pushes to any branch and overstates activity. Removed 🟢 from Clumsy, HdrHistogram, Step CI, bombardier, sysbench, GoReplay, Lighthouse CI and WebPageTest, none of which had committed in over a year. Added 🟢 to AWS Distributed Load Testing, Graphite, Tsung and Anteon, which are active but carried no such tag.
+- Added ⭐ to Puppeteer, Apache Superset and Sentry, where the omission contradicted a direct peer in the same section.
+
 ## 2026-10-01
 
 ### Changed
