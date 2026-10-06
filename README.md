@@ -218,8 +218,8 @@ Indicators: ⭐ Category reference · 🟢 Active · 🔵 Cloud-native · 🟠 C
 
 ### HTTP Benchmarking & Micro-Benchmarking
 
-- [wrk2](https://github.com/giltene/wrk2) - 🚀 Constant-throughput HTTP benchmarking with accurate latency histograms that avoids coordinated omission.
-- [wrk](https://github.com/wg/wrk) - 🚀 HTTP benchmarking tool with Lua scripting for quick relative performance comparisons.
+- [wrk2](https://github.com/giltene/wrk2) - 🚀 Constant-throughput HTTP benchmarking with accurate latency histograms that avoids coordinated omission. Unmaintained since 2019, still the common reference for coordinated-omission-free measurement.
+- [wrk](https://github.com/wg/wrk) - 🚀 HTTP benchmarking tool with Lua scripting for quick relative performance comparisons. Unmaintained since 2021, still widely used as a throughput baseline.
 - [Vegeta](https://github.com/tsenart/vegeta) - 🟢🚀 HTTP load testing tool with constant request rate mode and built-in plotting.
 - [hey](https://github.com/rakyll/hey) - 🟢 Simple HTTP load generator, successor to Apache Bench (ab).
 - [oha](https://github.com/hatoo/oha) - 🟢🚀 Rust-based HTTP load generator with real-time TUI.
@@ -236,7 +236,7 @@ Indicators: ⭐ Category reference · 🟢 Active · 🔵 Cloud-native · 🟠 C
 - [Postman](https://www.postman.com/) - ⭐🟢🟠 API development and testing platform with Newman CLI for CI/CD integration.
 - [REST-assured](https://github.com/rest-assured/rest-assured) - 🟢 Java DSL for testing REST APIs with fluent syntax and JUnit/TestNG integration.
 - [Karate](https://github.com/karatelabs/karate) - 🟢 BDD-style API testing framework combining API testing, mocking, and performance testing.
-- [Step CI](https://github.com/stepci/stepci) - Open-source YAML-based API testing and monitoring framework for CI/CD.
+- [Step CI](https://github.com/stepci/stepci) - Open-source YAML-based API testing and monitoring framework for CI/CD. Development stalled since 2024, though the project is still distributed and in use.
 - [Pact](https://github.com/pact-foundation) - 🟢 Contract testing framework ensuring provider-consumer compatibility for HTTP APIs and messaging.
 - [Bruno](https://github.com/usebruno/bruno) - ⭐🟢 Open-source API client storing collections as plain text files in Git repositories, with a CLI for CI runs.
 - [Schemathesis](https://github.com/schemathesis/schemathesis) - 🟢 Property-based API testing generating test cases from OpenAPI and GraphQL schemas to find crashes and spec violations.
@@ -308,7 +308,7 @@ Indicators: ⭐ Category reference · 🟢 Active · 🔵 Cloud-native · 🟠 C
 
 - [tc (Traffic Control)](https://man7.org/linux/man-pages/man8/tc.8.html) - 🟢 Linux kernel traffic shaping with netem qdisc for network emulation.
 - [Comcast](https://github.com/tylertreat/comcast) - CLI tool for simulating bad network conditions wrapping tc/pfctl.
-- [Clumsy](https://github.com/jagt/clumsy) - Windows network condition simulator for packet drop, lag, throttle, and reordering.
+- [Clumsy](https://github.com/jagt/clumsy) - Windows network condition simulator for packet drop, lag, throttle, and reordering. Unmaintained since 2022, with no comparable Windows alternative.
 - [Toxiproxy](https://github.com/Shopify/toxiproxy) - ⭐🟢 TCP proxy from Shopify injecting latency, bandwidth limits, and connection failures for resilience testing.
 
 ### CI/CD Integration & Performance Gates
@@ -322,7 +322,7 @@ Indicators: ⭐ Category reference · 🟢 Active · 🔵 Cloud-native · 🟠 C
 ### Results Analysis & Reporting
 
 - [k6 HTML Report](https://github.com/benc-uk/k6-reporter) - 🟢 Standalone HTML report generator for k6 test results.
-- [HdrHistogram](https://github.com/HdrHistogram/HdrHistogram) - 🚀 High Dynamic Range Histogram for accurate latency measurement capturing the full distribution.
+- [HdrHistogram](https://github.com/HdrHistogram/HdrHistogram) - 🚀 High Dynamic Range Histogram for accurate latency measurement capturing the full distribution. Feature-complete since 2024 and vendored by many load testing tools.
 - [Apache JMeter Dashboard](https://jmeter.apache.org/usermanual/generating-dashboard.html) - 🟢 Built-in HTML dashboard generating APDEX scores and response time distributions.
 - [Taurus Reporting](https://gettaurus.org/docs/Reporting/) - 🟢 Unified reporting across multiple load testing engines with BlazeMeter integration.
 
